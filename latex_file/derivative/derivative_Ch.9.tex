@@ -1,0 +1,119 @@
+\documentclass{article}
+\title{Machanics of Option Markets}
+\author{Dawei Wang}
+\date{\today}
+%\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+	\maketitle
+\section{TYPES OF OPTIONS}
+\subsection{Call Options}
+\subsection{Put Options}
+
+\section{OPTION POSITIONS}
+
+\section{UNDERLYING ASSETS}
+\subsection{Stock Options}
+Most trading in stock options is on exchanges. One contract gives the holder the right to but or sell 100 shares at the specified strike price. This contract size is convenient because the shares themselves are normally traded in lots of 100.
+
+\subsection{Foreign Currency Options}
+Most currency options trading is now in the over-the-counter market, but there is some exchange trading.
+
+\subsection{Index Options}
+Many different index options currently trade throughout the world in both over-the-counter market and the exchange-traded market. Most of the contracts are European. An exception is the OEX contract on the S\&P 100, which is American. One contract is usually to buy or sell 100 times the index at the specified strike price. Settlement is  always in cash, rather than by delivering the portfolio underlying the index.
+
+\subsection{Futures Options}
+When an exchange trades a particular futures contract, it often also trade options on that contract. A futures option normally matures just before the delivery period in the futures contract. When a call option is exercised, the holder's gain equals the excess of the futures price over the strike price. When a put option is exercised, the holder's gain equals the excess of the strike price over the futures price.
+
+\section{SPECIFICATION OF STOCK OPTIONS}
+As already mentioned, an exchange-traded stock option in the United States is an American-style option contract to buy or sell 100 shares of the stock. Details of the contract (the expiration date, the strike price, what happens when dividends are declared, how large a position investors can hold, and so on) are specified by the exchange.
+
+\subsection{Expiration Dates}
+One of the items used to describe a stock option is the month in which the expiration date occurs. The precise expiration date is the Saturday immediately following the third Friday of the expiration month. The last day on which options trade is the third Friday of the expiration month. 
+
+Stock options in the United States are on a January, February, or March cycle. If the  expiration date for the current month has not yet been reached, options trade with expiration dates in the current month, the following month, and the next two months in the cycle. If the expiration date of the current month has passed, options trade with expiration dates in the next month, the next-but-one month, and the next two month of the expiration cycle.
+
+\subsection{Stike Prices}
+The exchange normally chooses the strike prices at which options can be written so that they are spaced \$w.50, \$5, or \$10 apart. Typically the spacing is \$2.50 when stock price is between \$5 and \$25, \$5 when the price is between \$25 and \$200, and \$10 for stock prices above \$200. As will be explained shortly, stock splits and stock dividends can lead to nonstandard strike prices.
+
+When a new expiration date is introduced, the two or three strike prices closest to the current stock price are usually selected by the exchange. If the stock price moves outside the range defined by the highest and lowest strike price, trading is usually introduced in an option with a new strike price.
+
+\subsection{Terminology}
+For any given asset at any given time, many different option contracts may be trading. All options of the same type (calls or puts) are reffered to  as an option class. An option series consists of all the options of a given class with the same expiration date and strike price. In other words, an option series refers to a particular contract that is traded.
+
+Options are referred to as in the money, at the money, or out of money. If S is the stock price and K is the strike price, a call option is in the money when $ S>K $, at the money when $ S=K $, and out of money when $ S<K $. A put option is in the money when $ S<K $, at the money when $ S=k $, and out of money, when $ S>K $. Clearly, an option will be exercised only when it is in the money. In the absence of transactions costs, an in-the-money option will always be exercised on the expiration date if it has not been exercised previously.
+
+\subsection{FLEX Options}
+The Chicago Borad Options Exchange offers FLEX (short for flexible) options on equities and euity indices. These are options where the traders on the floor of the exchange agree to nonstandard terms. These nonstandard terms can involve a strike price or an expiration date that is different from what is usually offered by the exchange. It can also involve the option being European rather than American. FLEX options are an attempt by option exchanges to regain business from the OTC markets.
+
+\subsection{Dividends and Stock Splits}
+The early OTC options were dividend protected. If a company declared a cash dividend, the strike price for options on the company's stock was reduced on the ex-dividend day by the amount of the dividend. Exchange-traded options are not usually adjusted for cash dividends. In other words, when a cash dividend occurs, there are no adjustments to the terms of the option contract. An exception is sometimes made for large cash dividends.
+
+Exchange-traded options are adjusted for stock splits. In general, an n-for-m stock split should cause the stock price to go down to m/n of its previous value. The terms of option contracts are adjusted to reflect expected changes in a stock price arising from a stock split. After an n-for-m stock split, the strike price is reduced to m/n of its previous value, and the number of shares covered by one contract is increased to n/m of its previous value. If the stock price declines in the way expected, the position of both the writer and the purchaser of a contract remain unchanged.
+
+Stock options are adjusted for stock dividends. A stock dividend involves a company issuing more shares to its existing shareholders. For example, a 20\% stock dividend means that investors receive one new share for each five already owned. A stock dividend, like a stock split, has no effect on either the assets or the earning power of a company. The stock price can be expected to go down as a result of a stock dividend.
+
+Adjustments are also made for rights issues. The basic procedure is to calculate the theoretical price of the rights and then to reduce the strike price by this amount.
+
+\subsection{Position Limits and Exercise Limits}
+The Chicago Board Options Exchange often specifies a position limit for option contracts that an investor can hold on one side of the market. For this purpose, long calls and short puts are considered to be on the same side of the market. Also considered to be on the same side are short calls and long puts. The exercise limit usually equals the position limit. It defines the maximum number of contracts that can be exercised by any individual (or group of individuals acting together) in any period of five consecutive business days. Options on the largest and most frequently traded stocks have positions limits of 250,000 contracts. Smaller capitalization stocks have position limits of 200,000, 75,000, 50,000 or 25,000 contracts.
+
+Position limits and exercise limits are designed to prevent the market from being unduly influenced by the activities of an individual investor or group of investor.
+
+\section{TRADING}
+\subsection{Market Makers}
+Most options exchanges use market makers to facilitate trading. A market maker for a certain option is an individual who, when asked to do so, will quote both a bid and offer price on the option. The offer is always higher than the bid, and the amount by which the offer exceeds the bid is referred to as the bid-offer spread. The exchange sets upper limits for the bid-offer spread.
+
+The existence of the market maker ensures that buy and sell orders can always be executed at some price	without any delay. Market makers therefore add liquidity to the market. The market makers themselves make their profits from the bid-offer spread.
+
+\subsection{Offsetting Orders}
+An investor who has purchased options can close out the position by issuing an offsetting order to sell the same number of options. Similarly, an investor who has written options can close out the position by issuing an offsetting order to buy the same number of options.
+
+\section{COMMISSIONS}
+The types of orders that can be placed withe a broker for options trading are similar to those for futures trading.
+
+For a retail investor, commissions vary significantly from broker to broker. Discount brokers generally charge lower commissions than full-service  brokers. The actual amount charged is often calculated as a fixed cost plus a proportion of the dollar amount of the trade.
+
+If an option position is closed out by entering into an offsetting trade, the commission must be paid again. If the option is exercised, the commission is the same as it would be if the investor placed an order to buy or sell the underlying stock.
+
+\section{MARGINS}
+When shares are purchased in the United States, an investor can borrow up to 50\% of the price from the broker. This is known as buying on margin. If the share price declines so that the loan is substantially more than 50\% of the stock's current value, there is a "margin call", where the broker requests that cash be deposited by the investor. If the margin call is not met, the broker sells the stock.
+
+When call and put options with maturities less than 9 months are purchased, the option price must be paid in full. For options with maturities greater than 9 months investors can buy on margin, borrowing up to 25\% of the option value.
+
+A trader who writes options is required to maintain funds in a margin account. Both the trader's broker and the exchange want to be satisfied that the trader will not default if the option is exercised. The amount of margin required depends on the trader's position.
+
+A naked option is an option that is not combined with an offsetting position in the underlying stock.
+
+A calculation similar to the initial margin calculation is repeated every day. Funds can be withdrawn from the margin account when the calculation indicates that the margin required is less than the current balance in the margin account. When the calculation indicates that a greater margin is required, a margin call will be made.
+
+\section{THE OPTIONS CLEARING CORPORATION}
+The Option Clearing Corporation (OCC) performs much the same function for options markets as the clearing house does for futures markets. It guarantees that options writers will fulfill their obligations under the terms of options contracts and keeps a record of all long and short positions. The OCC has a number of members, and all option trades must be cleared through a member. If a broker is not itself a member of an exchange's OCC, it must arrange to clear its trades with a member. Members are required to have a certain minimum amount of capital and to contribute to a special fund that can be used if any member defaults on an option obligation.
+
+\section{REGULATION}
+Options markets are regulated in a number of different ways. Both the exchange and Options Clearing Corporations have rules governing the behavior of traders. In addition, the are both federal and state regulatory authorities.
+
+The Securities and Exchange Commission (SEC) is responsible for regulating options markets in stocks, stock indices, and bonds at the federal level. The Commodity Futures Trading Commission (CFTC) is responsible for regulating markets for options on futures.
+
+\section{TAXATION}
+
+\section{WARRANTS,EMPLOYEE STOCK OPTIONS,AND CONVERTIBLES}
+Warrants are options issued by a financial institution or nonfinancial corporation. For example, a financial institution might isse put warrants on one million ounces of gold and then proceed to create a market for the warrants. To exercise the warrant, the holder would contact the financial institution. A common use of warrants by a nonfinancial corporation is at the time of a bond issue. The corporation issues call warrants on its own stock and then attaches them to the bond issue to make it more attactive to investors.
+
+Employee stock options are call options issued to employees by their company to motivate them to act in the best interests of the company's shareholders. They are usually at the money at the time of issue. They are now a cost on the income statement of the company in most countries, making them a less attractive form of compensation than they used to be.
+
+Convertible bonds, often referred to as convertibles, are bonds issued by a company that can be converted into equity at certain times using a predetermined exchange ratio. They are therefore bonds with an embedded call option on the company's stock.
+
+One feature of warrants, employee stock options, and convertibles is that a predetermined number of options are issued. By contrast, the number of options on a particular stock that trade on the CBOE or another exchange is not predetermined. As people take positions in a particular option series, the number of options outstanding increases; as people close out positions, it declines. Warrants issued by a company on its own stock, employee stock options, and convertibles are different from exchange-traded options in another important way. When these instruments are exercised, the company issues more shares of its own stock and sells them to the option holder for the strike price. The exercise of the instrument therefore leads to an increase in the number of shares of the company's stock that are outstanding. By contrast, when an exchange-traded call option is exercised, the party with the short position buys in the market shares that have already been issued and sells them to the party with the long position for the strike price. The company whose stock underlies the option is not involved in any ways.
+
+\section{OVER-THE-COUNTER OPTIONS MARKETS}
+The instruments traded in the over-the-counter market are often structured by financial institutions to meet the precise needs of their clients. Sometimes this involves choosing exercise dates, strike prices, and contract sizes that are different from those offered by an exchange. In other cases the structure of the option is different from standard calls and puts. The option is then referred to as an exotic option.
+
+
+
+
+
+
+
+\end{document}

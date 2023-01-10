@@ -1,0 +1,731 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{mathrsfs}
+\usepackage{amsfonts,amssymb}
+\usepackage{euscript}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{CJKutf8}
+\usepackage{indentfirst}
+
+\usepackage{graphicx} %插入图片的宏包
+\usepackage{float} %设置图片浮动位置的宏包
+\usepackage{subfigure} %插入多图时用子图显示的宏包
+
+\title{Convex sets}
+
+\definecolor{highlight}{rgb}{1,0,0}
+
+\newtcolorbox{defi}[2][]{colback=Salmon!20, colframe=Salmon!90!Black,title=\textbf{#2}}
+
+\newtcolorbox{theo}[2][]{colback=JungleGreen!10!Cerulean!15,colframe=CornflowerBlue!60!Black,title=\textbf{#2}}
+\begin{document}
+\maketitle
+
+\section*{1 Affine and convex sets}
+
+\subsection*{1.1 Lines and line segments}
+
+Suppose $x_1\ne x_2$ are two points in $\mathbf{R}^n$. Points of the form
+
+\[
+y=\theta x_1+(1-\theta)x_2    
+\]
+
+where $\theta\in \mathbf{R}$, form the line passing through $x_1$ and $x_2$.
+
+\subsection*{1.2 Affine sets}
+
+A set $C\in \mathbf{R}^n$ is affine if the line through any two distinct points in C lies in C,
+i.e., if for any $x_1$, $x_2\in C$ and $\theta\in \mathbf{R}$, we have $\theta x_1 +(1-\theta)x_2\in C$. In other words,
+C contains the linear combination of any two points in C, provided the coefficients
+in the linear combination sum to one.
+
+This idea can be generalized to more than two points. We refer to a point
+of the form $\theta_1x_1+\cdots+\theta_kx_k$, where $\theta_1+\cdots+\theta_k=1$, as an affine combination
+of the points $x_1,\cdots,x_k$.
+
+If C is an affine set, $x_1,\cdots,x_k\in C$, and $\theta_1+\cdots+\theta_k=1$, then the point $\theta_1x_1+\cdots+\theta_kx_k$ also belongs
+to C.
+
+If C is an affine set and $x_0\in C$, then the set
+
+\[
+V=C-x_0=\{x-x_0|x\in C\}    
+\]
+
+is a subspace, i.e., closed under sums and scalar multiplication.
+
+Thus, the affine set C can be expressed as
+
+\[
+C=V+x_0=\{v+x_0|v\in V\}    
+\]
+
+i.e., as a subspace plus an offset. The subspace V associated with the affine set C
+does not depend on the choice of $x_0$, so $x_0$ can be chosen as any point in C. We
+define the dimension of an affine set C as the dimension of the subspace $V=C-x_0$,
+where $x_0$ is any element of C.
+
+The solution set of a system of linear
+equations, $C=\{x|Ax=b\}$, where $A\in \mathbf{R}^{m\times n}$ and $b \in\mathbf{R}^m$, is an affine set. To
+show this, suppose $x_1, x_2\in C$, i.e.,$ Ax_1=b, Ax_2=b$. Then for any $\theta$, we have
+
+\begin{equation*}
+    \begin{split}
+        A(\theta x_1 + (1-\theta)x_2)&= \theta Ax_1 + (1-\theta)Ax_2\\
+        &=\theta b + (1-\theta)b\\
+        &=b
+    \end{split}
+\end{equation*}
+
+which shows that the affine combination $\theta x_1 + (1-\theta)x_2$ is also in C. The subspace
+associated with the affine set C is the nullspace of A.
+
+We also have a converse: every affine set can be expressed as the solution set of a
+system of linear equations.
+
+The set of all affine combinations of points in some set $C\subseteq \mathbf{R}^n$ is called the
+\textit{affine hull of C}, and denoted $\mathbf{aff} C$:
+
+\[
+\mathbf{aff} C=\{\theta_1x_1+\cdots+\theta_kx_k|x_1\cdots x_k\in C,\theta_1+\cdots+\theta_k=1\}    
+\]
+
+The affine hull is the smallest affine set that contains C, in the following sense: if
+S is any affine set with $C \subseteq S$, then $\mathbf{aff} C \subseteq S$.
+
+\subsection*{1.3 Affine dimension and relative interior}
+
+We define the \textit{affine dimension} of a set C as the dimension of its affine hull.
+
+If the affine dimension of a set C ⊆ Rn is less than n, then the set lies in
+the affine set $\mathbf{aff} c\ne \mathbf{R}^n$. We define the relative interior of the set C, denoted
+$\mathbf{relintC}$, as its interior relative to $\mathbf{aff}C$ :
+
+\[
+relint\enspace C= \{x\in C|B(x,r)\cap \mathbf{aff} C\}   
+\]
+
+where $B(x,r)=\{y|\enspace||y-x||\le r\}$, the ball of radius r and center x in the norm $||\cdot||$. We can
+then define the \textit{relative boundary} of a set C as \textbf{clC $\backslash$ relintC}, where \textbf{cl}C is the
+closure of C.
+
+\subsection*{1.4 Convex sets}
+
+A set C is convex if the line segment between any two points in C lies in C, i.e.,
+if for any $x_1, x_2 \in C$ and any $\theta$ with $0 \le \theta\le 1$, we have
+
+\[
+    \theta x_1+(1-\theta)x_2\in C    
+\]
+
+We call a point of the form $\theta_1x_1 +\cdots+ \theta_k x_k$, where $\theta_1+\cdots+\theta_k=1$ and
+θi ≥ 0, i = 1, . . . , k, a convex combination of the points x1, . . . , xk. As with affine sets, it can be shown that a set is convex if and only if it contains every convex
+combination of its points.
+
+The \textit{convex hull} of a set C, denoted $\mathbf{conv}\enspace C$, is the set of all convex combinations
+of points in C:
+
+\[
+conv\enspace C=\{\theta_1x_1+\cdots+\theta_kx_k|x_i\in C, \theta_i\ge0, i=1,\cdots,k,\theta_1+\cdots+\theta_k=1\}    
+\]
+
+As the name suggests, the convex hull \textit{conv} C is always convex. It is the smallest
+convex set that contains C: If B is any convex set that contains C, then conv $C \subseteq B$.
+
+
+
+\subsection*{1.5 Cones}
+
+A set $C$ is called a cone, or \textit{nonnegative homogeneous}, if for every $x \in C$ and $\theta \ge0$
+we have $\theta x \in C$. A set $C$ is a \textit{convex cone} if it is convex and a cone, which means
+that for any $x_1, x_2 \in C$ and $\theta_1, \theta_2 \ge 0$, we have 
+
+\[
+    \theta_1x_1+\theta_2x_2\in C    
+\]
+
+A point of the form $\theta_1x_1 + \cdots + \theta_k x_k$ with $\theta_1, \cdots , \theta_k \ge 0$ is called a conic
+combination (or a nonnegative linear combination) of $x_1, \cdots , x_k$. If $x_i$ are in a
+convex cone $C$, then every conic combination of $x_i$ is in C. Conversely, a set C is
+a convex cone if and only if it contains all conic combinations of its elements. 
+
+The conic hull of a set C is the set of all conic combinations of points in C, i.e.,
+
+\[
+\{\theta_1x_1+\cdots+\theta_kx_k|x_i\in C,\theta_i\ge 0,i=1,\cdots,k\}    
+\]
+
+which is also the smallest convex cone that contains C.
+
+\section*{2}
+
+\begin{enumerate}
+    \item The empty set $\emptyset$, any single point (i.e., singleton) $\{x_0\}$, and the whole space
+    $\mathbf{R}_n$ are affine (hence, convex) subsets of $\mathbf{R}_n$.
+    \item Any line is affine. If it passes through zero, it is a subspace, hence also a
+    convex cone.
+    \item A line segment is convex, but not affine (unless it reduces to a point).
+    \item A ray, which has the form $\{x_0+\theta v|\theta\ge0\}$, where $v\ne0$, is convex, but not
+    affine. It is a convex cone if its base $x_0$ is 0.
+    \item Any subspace is affine, and a convex cone (hence convex).
+\end{enumerate}
+
+\subsection*{2.1 Hyperplanes and halfspaces}
+
+A hyperplane is a set of the form
+
+\[
+    \{x|a^Tx=b\}
+\]
+
+where $a\in \mathbf{R}^n, a\ne0$ and $b\in\mathbf{R}$.
+
+Geometrically,
+the hyperplane $\{x|a^Tx=b\}$ can be interpreted as the set of points with a
+constant inner product to a given vector a, or as a hyperplane with normal vector
+a; the constant $b\in \mathbf{R}$ determines the offset of the hyperplane from the origin. This
+geometric interpretation can be understood by expressing the hyperplane in the form
+
+\[
+    \{x|a^T(x-x_0)=0\}
+\]
+
+where $x_0$ is any point in the hyperplane (i.e., any point that satisfies $a^T x_0=b$).
+This representation can in turn be expressed as
+
+\[
+    \{x|a^T(x-x_0)=0\}=x_0+a^\perp     
+\]
+
+where $a^\perp$ denotes the orthogonal complement of a, i.e., the set of all vectors orthogonal
+to it:
+
+\[
+a^T=\{v|a^T=0\}
+\]
+
+This shows that the hyperplane consists of an offset $x_0$, plus all vectors orthogonal
+to the (normal) vector a.
+
+A hyperplane divides $\mathbf{R}^n$ into two \textit{halfspaces}. A (closed) halfspace is a set of
+the form
+
+\[
+\{x|a^T x\le b\}    
+\]
+
+where $a \ne 0$.
+
+\subsection*{2.2 Euclidean balls and ellipsoids}
+
+A (\textit{Euclidean}) ball (or just ball) in $\mathbf{R}^n$ has the form
+
+\[
+B(x_c,r)=\{\enspace ||x-x_c||\le r\}=\{x|(x-x_c)^T(x-x_c)\le r^2\}    
+\]
+
+Another common representation for the Euclidean ball is
+
+\[
+B(x_c,r)=\{x_c+ru|\enspace ||u||_2\le 1\}    
+\]
+
+A Euclidean ball is a convex set: if $||x_1-x_c||_2 \le r$, $||x_2-x_c||_2 \le r$, and
+$0 \le \theta \le1$, Then
+
+\[
+||\theta x_1+(1-\theta)x_2-x_c||_2\le r    
+\]
+
+A related family of convex sets is the ellipsoids, which have the form
+
+\[
+\varepsilon =\{x|(x-x_c)^TP^{-1}(x-x_c)\le1\}
+\]
+
+where $P=P^T\succ 0$, i.e., P is symmetric and positive definite. The vector $x_c \in \mathbf{R}^n$
+is the center of the ellipsoid. The matrix P determines how far the ellipsoid extends
+in every direction from $x_c$; the lengths of the semi-axes of E are given by $\sqrt{\lambda_i}$, where
+$\lambda_i$ are the eigenvalues of P. A ball is an ellipsoid with $P=r^2I$.
+
+Another common representation of an ellipsoid is
+
+\[
+\varepsilon =\{x_c+Au|\enspace ||u||_2\le1\}
+\]
+
+where A is square and nonsingular. In this representation we can assume without
+loss of generality that A is symmetric and positive definite. By taking $A=P^{1/2}$, this representation gives the ellipsoid definition. 
+When the matrix A is symmetric positive semidefinite but singular, the set is called a degenerate
+ellipsoid; its affine dimension is equal to the rank of A. Degenerate ellipsoids are
+also convex.
+
+\subsection*{2.3 Norm balls and norm cones}
+
+Suppose $||\cdot||$ is any norm on $\mathbf{R}^n$. From the general properties of norms it
+can be shown that a norm ball of radius r and center $x_c$, given by $\{x|\enspace ||x-x_c||\le r\}$,
+is convex. The norm cone associated with the norm $||\cdot||$ is the set
+
+\[
+C=\{(x,t)|\enspace ||x||\le t\} \subseteq \mathbf{R}^{n+1}    
+\]
+
+It is (as the name suggests) a convex cone.
+
+\subsection*{2.4 Polyhedra}
+
+A polyhedron is defined as the solution set of a finite number of linear equalities
+and inequalities:
+
+\[
+\mathcal{P}=\{a_j^Tx\le b_j, j=1,\cdots,m, c^T_jx=d_j, j=1,\cdots,p\}   
+\]
+
+A polyhedron is thus the intersection of a finite number of halfspaces and hyperplanes.
+Affine sets (e.g., subspaces, hyperplanes, lines), rays, line segments, and
+halfspaces are all polyhedra. It is easily shown that polyhedra are convex sets.
+
+A bounded polyhedron is sometimes called a polytope.
+
+It will be convenient to use the compact notation
+
+\[
+\mathcal{P}=\{x|Ax\preceq b,Cx=d\}    
+\]
+
+where
+
+\begin{equation*}
+    \begin{split}
+        A=
+        \begin{bmatrix}
+          a_1^T\\
+          \vdots\\
+          a_m^T  
+        \end{bmatrix}   
+        C=
+        \begin{bmatrix}
+          c_1^T\\
+          \vdots\\
+          c_p^T  
+        \end{bmatrix}             
+    \end{split}
+\end{equation*}
+
+and the symbol $\preceq$ denotes \textit{vector inequality} or \textit{componentwise inequality} in $\mathbf{R}^m$:
+$u \preceq v$ means $u_i \le v_i$ for $i=1,\cdots,m$.
+
+\subsubsection*{Simplexes}
+
+Simplexes are another important family of polyhedra. Suppose the $k+1$ points
+$v_0,\cdots,v_k \in \mathbf{R}^n$ are \textit{affinely independent}, which means $v_1-v_0,\cdots,v_k-v_0$ are
+linearly independent. The simplex determined by them is given by
+
+\[
+C=\mathbf{conv}\{v_0,\cdots,v_k\}=\{\theta_0v_0+\cdots+\theta_kv_k|\theta\succeq 0,\mathbf{1}^T\theta=1\}
+\]
+
+where \textbf{1} denotes the vector with all entries one. The affine dimension of this simplex
+is k, so it is sometimes referred to as a k-dimensional simplex in $\mathbf{R}^n$.
+
+\subsubsection*{Convex hull description of polyhedra}
+
+The convex hull of the finite set $\{v_1,\cdots,v_k\}$ is
+
+\[
+conv\{v_1,\cdots,v_k\}=\{\theta_1v_1+\cdots+\theta_kv_k|\theta\succeq 0,\mathbf{1}^T\theta=1\}.
+\]
+
+This set is a polyhedron, and bounded, but it is not simple to express it by a set of linear equalities and inequalities.
+
+A generalization of this convex hull description is
+
+\[
+\{\theta_1v_1+\cdots+\theta_kv_k|\theta_1+\cdots+\theta_m=1,\theta_i\ge0,i=1,\cdots,k\}    
+\]
+
+where $m\le k$. Here we consider nonnegative linear combinations of vi, but only
+the first m coefficients are required to sum to one. Alternatively, we can interpret generalized convex hull as the convex hull of the points $v_1,\cdots,v_m$, plus the conic hull of the
+points $v_{m+1},\cdots,v_k$. The above set defines a polyhedron, and conversely, every
+polyhedron can be represented in this form.
+
+\subsection*{2.5 The positive semidefinite cone}
+
+We use the notation $\mathbf{S}^n$ to denote the set of symmetric $n \times n$ matrices,
+
+\[
+\mathbf{S}^n=\{X\in \mathbf{R}^{n\times n}| X=X^T\}    
+\]
+
+which is a vector space with dimension n(n + 1)/2. We use the notation $\mathbf{S}^n_+$ to denote the set of symmetric positive semidefinite matrices:
+
+\[
+\mathbf{S}^n_+=\{X\in \mathbf{R}^{n\times n}| X\succeq 0\}    
+\]
+
+And the notation $\mathbf{S}^n_{++}$ to denote the set of symmetric positive semidefinite matrices:
+
+\[
+\mathbf{S}^n_{++}=\{X\in \mathbf{R}^{n\times n}| X\succ 0\}    
+\]
+
+The set $\mathbf{S}^n$ is a convex cone: if $\theta_1, \theta_2 \ge 0$ and $A,B\in\mathbf{S}^n_+$
+, then $\theta_1A+\theta_2B\in\mathbf{S}^n_+$.
+
+\section*{3}
+
+\subsection*{3.1 Intersection}
+
+Convexity is preserved under intersection: if $S_1$ and $S_2$ are convex, then $S_1 cap S_2$ is
+convex. This property extends to the intersection of an infinite number of sets: if $S_\alpha$ is convex for every $\alpha \in \mathcal{A}$, then
+$\cap_{\alpha\in\mathcal{A}}S_\alpha$ is convex.
+
+every closed convex set S is a (usually infinite) intersection of halfspaces.
+In fact, a closed convex set S is the intersection of all halfspaces that contain it:
+
+\[
+S=\cap \{\mathcal{H}|\mathcal{H}\enspace halfspace, S\subseteq \mathcal{H}\}
+\]
+
+\subsection*{3.2 Affine functions}
+
+Recall that a function $f:\mathbf{R}^n \rightarrow \mathbf{R}^m$ is affine if it is a sum of a linear function and
+a constant, i.e., if it has the form $f(x)=Ax+b$, where $A\in\mathbf{R}^{m\times n}$ and $b \in\mathbf{R}^m$.
+Suppose $S\subseteq\mathbf{R}^n$ is convex and $f:\mathbf{R}^n\rightarrow \mathbf{R}^m$ is an affine function. Then the image
+of S under f,
+
+\[
+f(S)=\{f(x)|x\in S\}    
+\]
+
+is convex. Similarly, if $f:\mathbf{R}^k \rightarrow \mathbf{R}^n$ is an affine function, the inverse image of S
+under f,
+
+\[
+f^{-1}(S)=\{x|f(x)\in S\}    
+\]
+
+is convex.
+
+\subsection*{3.3 Linear-fractional and perspective functions}
+
+\subsubsection*{The perspective function}
+
+We define the perspective function $P:\mathbf{R}^{n+1} \rightarrow \mathbf{R}^n$, with domain $\mathbf{dom}P=\mathbf{R}^n\times \mathbf{R}_{++}$, as $P(z,t)=z/t$.
+
+If $C \subseteq \mathbf{dom} P$ is convex, then its image
+\[
+    P(C)=\{P(x) | x \in C\}
+\]
+is convex.
+
+if $C \subseteq \mathbf{R}^n$ is convex, then
+\[
+    P^{-1}(C) = \{(x, t) \in \mathbf{R}^{n+1} | x/t \in C, t > 0\}
+\]
+is convex.
+
+\subsubsection*{Linear-fractional functions}
+
+A linear-fractional function is formed by composing the perspective function with
+an affine function. Suppose $g:\mathbf{R}^n \rightarrow \mathbf{R}^{m+1}$ is affine, i.e.,
+
+\begin{equation*}
+    \begin{split}
+        g(x)&=\begin{bmatrix}
+            A\\
+            c^T
+        \end{bmatrix}x+
+        \begin{bmatrix}
+            b\\
+            d
+        \end{bmatrix}
+    \end{split}
+\end{equation*}
+
+where $A \in \mathbf{R}^{m\times n}$, $b \in \mathbf{R}^m$, $c \in \mathbf{R}^n$, and $d \in \mathbf{R}$. The function $f : \mathbf{R}^n \in \mathbf{R}^m$ given
+by $f=P\circ g$, i.e.,
+
+\[
+f(x)=(Ax+b)/(c^Tx+d)\enspace \mathbf{dom} f=\{x|c^Tx+d>0\}    
+\]
+
+is called a linear-fractional (or projective) function. If $c=0$ and $d>0$, the domain
+of $f$ is $\mathbf{R}^n$, and $f$ is an affine function.
+
+Like the perspective function, linear-fractional functions preserve convexity. If
+C is convex and lies in the domain of f (i.e., $c^Tx+d > 0$ for $x \in C$), then its
+image f(C) is convex. Similarly, if $C \subseteq \mathbf{R}^m$ is
+convex, then the inverse image $f^{-1}(C)$ is convex.
+
+
+\section*{4 Generalized inequalities}
+
+\subsection*{4.1 Proper cones and generalized inequalities}
+
+A cone $K \subseteq \mathbf{R}^n$ is called a proper cone if it satisfies the following:
+
+\begin{enumerate}
+    \item K is convex
+    \item K is closed
+    \item K is solid, which means it has nonempty interior
+    \item K is is pointed, which means that it contains no line (or equivalently, $x \in K$, $-x \in K \Rightarrow x = 0$).
+\end{enumerate}
+
+A proper cone K can be used to define a generalized inequality, which is a partial
+ordering on $\mathbf{R}^n$ that has many of the properties of the standard ordering on $\mathbf{R}$.
+We associate with the proper cone K the partial ordering on $\mathbf{R}^n$ defined by
+
+\[
+x\preceq_k y\Leftrightarrow y-x\in K
+\]
+
+We also write $x \succeq_K y$ for $y \preceq_K x$. Similarly, we define an associated strict partial
+ordering by
+\[
+    x \prec_K y \Leftrightarrow y - x \in \mathbf{int}K,
+\]
+
+and write $x \succ_K y$ for $y \prec_K x$.
+
+\subsubsection*{Properties of generalized inequalities}
+
+A generalized inequality $\preceq_K$ satisfies many properties, such as
+
+\begin{enumerate}
+    \item $\preceq_K$ is preserved under addition: if $x \preceq_K y$ and $u \preceq_K v$, then $x+u \preceq_K y+v$.
+    \item $\preceq_K$ is transitive: if $x \preceq_K y$ and $y \preceq_K z$ then $x \preceq_K z$.
+    \item $\preceq_K$ is preserved under nonnegative scaling: if $x \preceq_K y$ and $\alpha\ge 0$, then $\alpha x \preceq_K \alpha y$.
+    \item $\preceq_K$ is reflexive: if $x \preceq_K x$.
+    \item $\preceq_K$ is antisymmetric: if $x \preceq_K y$, and $y \preceq_K x$, then $x=y$.
+    \item $\preceq_K$ is preserved under limits: if $x_i \preceq_K y_i$ for $i=1,2,\cdots,x_i \rightarrow x$ and $y_i \rightarrow y$
+    as $i \rightarrow \infty$, then $x \preceq_K y$.
+\end{enumerate}
+
+The corresponding strict generalized inequality $\prec K$ satisfies, for example,
+
+\begin{enumerate}
+    \item if $x\prec_K y$ then $x\preceq_K y$.
+    \item if $x\prec_K y$ and $u\preceq_K v$, then $x+u\prec_K y+v$.
+    \item if $x\prec_K y$ and $\alpha>0$, then $\alpha x\prec_K \alpha y$.
+    \item $x\nprec x$.
+    \item if $x\prec_K y$, then for u and v small enough, $x+u\prec_K y+v$.
+\end{enumerate}
+
+\subsection*{4.2 Minimum and minimal elements}
+
+We say that $x \in S$ is the \textit{minimum} element of S (with respect to the generalized
+inequality $\preceq_K$) if for every $y \in S$ we have $x \preceq_K y$. We define the maximum
+element of a set S, with respect to a generalized inequality, in a similar way. If a
+set has a minimum (maximum) element, then it is unique. A related concept is
+minimal element. We say that $x \in S$ is a minimal element of S (with respect to
+the generalized inequalit $y \preceq_K$) if $y \in S$, $y \preceq_K x$ only if y = x. We define maximal
+element in a similar way. A set can have many different minimal (maximal)
+elements.
+
+We can describe minimum and minimal elements using simple set notation. A
+point $x \in S$ is the minimum element of S if and only if
+
+\[
+S\subseteq x+K    
+\]
+
+Here $x+K$ denotes all the points that are comparable to x and greater than or
+equal to x (according to $\preceq_K$). A point $x \in S$ is a minimal element if and only if
+
+\[
+(x-K)\cap S=\{x\}    
+\]
+
+\section*{5 Separating and supporting hyperplanes}
+
+\subsection*{5.1 Separating hyperplane theorem}
+
+The basic result is the separating hyperplane theorem: Suppose C and D are nonempty disjoint
+convex sets, i.e., $C \cap D=\emptyset$. Then there exist $a \ne 0$ and b such that $a^T x\le b$
+for all $x \in C$ and $a^T x\ge b$ for all $x \in D$. In other words, the affine function $a^T x-b$
+is nonpositive on C and nonnegative on D. The hyperplane $\{x|a^T x=b\}$ is called
+a separating hyperplane for the sets C and D, or is said to separate the sets C and D.
+
+
+\subsubsection*{Strict separation}
+
+Strict separation of the sets C and D:
+
+\begin{center}
+    $a^T x < b$ for all $x \in C$ and $a^T x > b$ for all $x \in D$
+\end{center}
+
+Simple examples show that in general, disjoint convex sets need not be strictly separable by a hyperplane.
+
+Strict separation of a point and a closed convex set. 
+Let C be a closed convex set and $x_0\notin C$. Then there exists a hyperplane that strictly separates $x_0$
+from C.
+
+a closed convex set is the intersection of all halfspaces that contain it. Indeed,
+let C be closed and convex, and let S be the intersection of all halfspaces containing
+C. Obviously $x \in C \Rightarrow x \in S$. To show the converse, suppose there exists $x \in S$,
+$x \notin C$. By the strict separation result there exists a hyperplane that strictly separates
+x from C, i.e., there is a halfspace containing C but not x. In other words, $x \notin S$.
+
+\subsubsection*{Converse separating hyperplane theorems}
+
+The converse of the separating hyperplane theorem (i.e., existence of a separating
+hyperplane implies that C and D do not intersect) is not true.
+
+Any two convex sets C and D, at least one of which is open, are disjoint if and only if there exists a separating hyperplane.
+
+\vspace*{0.3cm}
+
+Theorem of alternatives for strict linear inequalities.
+
+We derive the necessary and sufficient conditions for solvability of a system of strict linear inequalities
+
+\[
+Ax\prec b    
+\]
+
+These inequalities are infeasible if and only if the (convex) sets:
+
+\[
+C=\{b-Ax|x\in \mathbf{R}^n\},\enspace D=\mathbf{R}^n_{++}=\{y\in \mathbf{R}^m|y\succ 0\}
+\]
+
+do not intersect.
+
+These two convex sets do not intersect if and only if there exists $\lambda \mathbf{R}^m$ such that 
+
+\[
+\lambda\ne0\qquad \lambda \succeq 0\qquad A^T\lambda=0 \qquad \lambda^Tb\le0    
+\]
+
+This is also a system of linear inequalities and linear equations in the variable $\lambda \in \mathbf{R}^m$.
+
+We say that these is a pair of alternatives: for any data A and b, exactly one of them is solvable.
+
+\subsection*{Supporting hyperplanes}
+
+Suppose $C \in \mathbf{R}^n$, and $x_0$ is a point in its boundary \textbf{bd}C, i.e.,
+\[
+    x_0 \in \mathbf{bd}C=\mathbf{cl}C \backslash \mathbf{int}C.
+\]
+
+If $a \ne 0$ satisfies $a^T x \le a^T x_0$ for all $x \in C$, then the hyperplane $\{x|a^Tx=a^Tx_0\}$ is called a supporting hyperplane to C at the point $x_0$.
+
+This is equivalent to saying that the point $x_0$ and the set C are separated by the hyperplane $\{x|a^Tx=a^T x_0\}$.
+
+A basic result, called the supporting hyperplane theorem, states that for any
+nonempty convex set C, and any $x_0 \in \mathbf{bd}C$, there exists a supporting hyperplane to
+C at $x_0$.
+
+There is also a partial converse of the supporting hyperplane theorem: If a set
+is closed, has nonempty interior, and has a supporting hyperplane at every point
+in its boundary, then it is convex.
+
+\section*{6 Dual cones and generalized inequalities}
+
+\subsection*{6.1 Dual cones}
+
+Let K be a cone. The set
+
+\begin{center}
+    $K^*=\{y | x^T y \ge 0$ for all $x \in K\}$   
+\end{center}
+
+is called the dual cone of K. As the name suggests, $K^*$ is a cone, and is always
+convex, even when the original cone K is not.
+Geometrically, $y \in K^*$ if and only if $-y$ is the normal of a hyperplane that
+supports K at the origin.
+
+\vspace*{0.3cm}
+
+Dual cones satisfy several properties, such as:
+
+\begin{enumerate}
+    \item $K^*$ is closed and convex
+    \item $K_1\subseteq K_2$ implies $K_2^*\subset K_1^*$
+    \item If K has nonempty interior, then $K^*$ is pointerd.
+    \item If the closure of K is pointed then $K^*$ has nonempty interior.
+    \item $K^{**}$ is the closure of the convex hull of K. (Hence if K is convex and closed,
+    $K^{**} = K$.)
+\end{enumerate}
+
+These properties show that if K is a proper cone, then so is its
+dual $K^{*}$, and moreover, that $K^{**} = K$.
+
+\subsection*{6.2 Dual generalized inequalities}
+
+Now suppose that the convex cone $K$ is proper, so it induces a generalized inequality
+$K$. Then its dual cone $K^*$ is also proper, and therefore induces a generalized
+inequality. We refer to the generalized inequality $K$ as the dual of the generalized
+inequality $K$.
+Some important properties relating a generalized inequality and its dual are:
+\begin{enumerate}
+    \item $x \preceq_K y$ if and only if $\lambda^T x \le \lambda^T y$ for all $\lambda \succeq_{K^*} 0$.
+    \item $x \prec_K y$ if and only if $\lambda^T x < \lambda^T y$ for all $\lambda \succeq_{K^*} 0$, $\lambda\ne 0$. 
+\end{enumerate}
+
+Since $K = K^{**}$, the dual generalized inequality associated with $\preceq_{K^*}$ is $\preceq_K$, so
+these properties hold if the generalized inequality and its dual are swapped.
+
+\vspace*{0.3cm}
+
+Theorem of alternatives for linear strict generalized inequalities.
+
+Suppose $K \subseteq \mathbf{R}^m$ is a proper cone. Consider the strict generalized inequality
+
+\[
+Ax\prec_K b    
+\]
+
+where $x\in \mathbf{R}^n$.
+
+if above inequality is infeasible, then there exists $\lambda$ such that
+
+\[
+    \lambda \ne 0,\qquad \lambda \succeq_{K^*} 0,\qquad A^T \lambda = 0,\qquad \lambda^T b \le 0    
+\]
+
+Thus, the inequality systems are alternatives: for any data A, b,
+exactly one of them is feasible.
+
+\subsection*{6.3 Minimum and minimal elements via dual inequalities}
+
+We can use dual generalized inequalities to characterize minimum and minimal
+elements of a (possibly nonconvex) set $S \subseteq \mathbf{R}^m$ with respect to the generalized
+inequality induced by a proper cone \textbf{K}.
+
+\subsubsection*{Dual characterization of minimum element}
+
+We first consider a characterization of the minimum element: x is the minimum
+element of S, with respect to the generalized inequality $\preceq K$, if and only if for all
+$\lambda \succ_{K^*} 0$, x is the unique minimizer of $\lambda^T z$ over $z \in S$. Geometrically, this means
+that for any $\lambda \succ_{K^*} 0$, the hyperplane
+
+\[
+    \{z|\lambda^T(z-x)=0\}
+\]
+
+is a strict supporting hyperplane to S at x. (By strict supporting hyperplane, we
+mean that the hyperplane intersects S only at the point x.) Note that convexity
+of the set S is not required.
+
+\subsubsection*{Dual characterization of minimal elements}
+
+We now turn to a similar characterization of minimal elements. Here there is a gap
+between the necessary and sufficient conditions. If $\lambda \succ_{K^*} 0$ and x minimizes $\lambda^T z$
+over $z \in S$, then x is minimal.
+
+Provided the set S is convex, we can say that for any minimal element x there
+exists a nonzero $\lambda \succeq 0$ such that x minimizes $\lambda^T z$ over $z \in S$.
+
+\subsection*{}
+
+
+
+\end{document}

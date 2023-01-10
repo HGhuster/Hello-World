@@ -1,0 +1,569 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{mathrsfs}
+\usepackage{amsfonts,amssymb}
+\usepackage{euscript}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{soul}
+
+\title{ABSTRACT INTEGRATION}
+
+\definecolor{highlight}{rgb}{1,0,0}
+
+\newtcolorbox{defi}[2][]{colback=Salmon!20, colframe=Salmon!90!Black,title=\textbf{#2}}
+
+\newtcolorbox{theo}[2][]{colback=JungleGreen!10!Cerulean!15,colframe=CornflowerBlue!60!Black,title=\textbf{#2}}
+
+\newtcolorbox{prop}[2][]{colback=Emerald!10,colframe=cyan!40!black,title=\textbf{#2}}
+
+\newtcolorbox{com}[2][]{colback=OliveGreen!10,colframe=Green!70,title=\textbf{#2}}
+%colback=OliveGreen!10,colframe=Green!70
+
+
+
+
+\begin{document}
+\maketitle
+
+\section*{The Concept of Measurability}
+
+\begin{defi}{1.2 Definition}
+	\begin{enumerate}
+  \item [(a)]
+  A collection $\tau$ of subsets of a set \textit{X} is said to be a \textit{topology} in \textit{X} if $\tau$ has the following three properties:
+  \begin{enumerate}
+  \item [(i)] \hl{$\varnothing\in\tau$ and $X\in\tau$}.
+  \item [(ii)] If $V_i\in\tau$ for $i=1,\cdots,n,$ \hl{then $V_1\cap\cdots\cap V_n\in\tau$}.
+  \item [(ii)] If ${V_\alpha}$ is an arbitrary collection of members of $\tau$ (finite, countable, or uncountable), then \hl{$\bigcup_\alpha V_\alpha\in\tau$}.
+\end{enumerate}
+  \item [(b)] If $\tau$ is a topology in \hl{\textit{X}}, then \textit{X} is called a \hl{\textit{topological space}}, and the \hl{members of $\tau$} are called the \hl{\textit{open sets} in \textit{X}}.
+  \item [(c)] If \textit{X} and \textit{Y} are topological spaces and if \textit{f} is a mapping of \textit{X} into \textit{Y}, then \hl{\textit{f}} is said to be \hl{\textit{continuous}} provided that \hl{$f^{-1}(V)$ is an open set in \textit{X} for every open set \textit{V} in \textit{Y}}. 
+
+\end{enumerate}
+
+\end{defi}
+
+\begin{defi}{1.3 Definition}
+	\begin{enumerate}
+  \item [(a)] A collection $\mathfrak{M}$ of subsets of a set X is said to be a $\sigma$-algebra in X if $\mathfrak{M}$ has the following properties:
+  \begin{enumerate}
+  \item [(i)] \hl{$X\in\mathfrak{M}$}.
+  \item [(ii)] If $A\in\mathfrak{M}$, then \hl{$A^c\in\mathfrak{M}$}, where $A^c$ is the complement of A relative to \textit{X}.
+  \item [(iii)] If \hl{$A=\cup^\infty_{n=1}A_n$} and if $A_n\in\mathfrak{M}$ for $n=1,2,3,\cdots$, then \hl{$A\in\mathfrak{M}$}.
+\end{enumerate}
+  \item [(b)] If $\mathfrak{M}$ is a $\sigma$-algebra in \hl{\textit{X}} is called a \hl{\textit{measureable space}}, and the \hl{members of $\mathfrak{M}$} are called the \hl{\textit{measurable sets} in \textit{X}}.
+  \item [(c)] If X is a measurable space, \textit{Y} is a topological space, and \textit{f} is a mapping of \textit{X} into \textit{Y}, then \hl{\textit{f}} is said to be \hl{\textit{measurable}} provided that \hl{$f^{-1}(V)$ is a measurable set in X for every open set \textit{V} in \textit{Y}}.
+\end{enumerate}
+
+\end{defi}
+
+\begin{com}{1.4 Comments on Definition 1.2}
+
+The definition of continuity given in Sec. 1.2(c) is a global one. Frequently it is desirable to define continuity locally: A mapping \hl{\textit{f}} of \textit{X} into \textit{Y} is said to be \hl{\textit{continuous}} at the point $x_0\in X$ if to \hl{every} neighborhood \hl{\textit{V} of $f(x_0)$} there \hl{corresponds} a neighborhood \hl{\textit{W} of $x_0$} such that \hl{$f(W)\subset V$}.
+	
+\end{com}
+
+\begin{prop}{1.5 Proposition}
+	Let \textit{X} and \textit{Y} be topological spaces. A mappinng of \textit{X} into \textit{Y} is continuous if and only if \textit{f} is continuous at every point of \textit{X}. 
+\end{prop}
+
+\begin{com}{1.6 Comments on Definition 1.3}
+
+Let $\mathfrak{M}$ be a $\sigma$-algebra in a set X. Referring to Properties (i) to (iii) of Definition 1.3(a), we immediately derive the following facts.
+
+\begin{enumerate}
+  \item [(a)] Since $\varnothing= X^c$, (i) and (ii) imply that \hl{$\varnothing\in\mathfrak{M}$}.
+  \item [(b)] Taking $A_{n+1}=A_{n+2}=\cdots=\varnothing$ in (iii), we see that \hl{$A_1\cup A_2\cup\cdots\cup A_n\in\mathfrak{M}$} if $A_i\in\mathfrak{M}$ for $i=1,\cdots,n$.
+  \item [(c)] Since
+  \begin{displaymath}
+  \bigcap_{n=1}^\infty A_n=(\bigcup_{n=1}^\infty A_n^c)^c,
+\end{displaymath}
+\hl{$\mathfrak{M}$ is closed under the formation of countable (and also finite) intersections.}
+  \item [(d)] Since$A-B=B^c\cap A$, we have \hl{$A-B\in\mathfrak{M}$} if $A\in\mathfrak{M}$ and $B\in\mathfrak{M}$.
+
+The prefix $\sigma$ refers to the fact that (iii) is required to hold for all \textit{countable} unions of members of $\mathfrak{M}$. If (iii) is required for finite unions only, then $\mathfrak{M}$ is called an algebra of sets.
+
+\end{enumerate}
+
+
+\end{com}
+
+\begin{theo}{1.7 Theorem}
+	Let \textit{Y} and \textit{Z} be topological spaces, and let $g: Y\rightarrow Z$ be continuous.
+	\begin{enumerate}
+  \item [(a)] If \textit{X} is a topological space, if $f: X\rightarrow Y$ is continuous, and if $h=g\circ h$, then $h: X\rightarrow Z$ is continuous.
+  \item [(b)] If \textit{X} is a measurable space, if $f: X\rightarrow Y$ is continuous, and if $h=g\circ h$, then $h: X\rightarrow Z$ is measurable.
+\end{enumerate}
+ 
+ Stated informally, \hl{continuous functions of continuous functions are continuous; continuous functions of measurable functions are measurable}.
+ 
+\end{theo}
+
+\begin{theo}{1.8 Theorem}
+Let \hl{\textit{u}} and \hl{\textit{v}} be real \hl{\textit{measurable}} functions \hl{on} a measurable space \hl{\textit{X}}, let \hl{$\Phi$} be a \hl{continuous} mapping of the plane into a topological space \textit{Y}, and define
+\begin{displaymath}
+  h(x)=\Phi(u(x),v(x))
+\end{displaymath}
+
+for $x\in X$. Then \hl{$h:X\rightarrow Y$ is measurable}.
+
+\end{theo}
+
+\begin{theo}{1.9 Corollaries of Theorems 1.7 and 1.8}
+\begin{enumerate}
+  \item [(a)] If \hl{$f=u+iv$}, where \hl{\textit{u}} and \hl{\textit{v}} are \hl{real measurable} functions on \textit{X}, then \hl{\textit{f}} is a \hl{complex measurable} function on \textit{X}.
+  \item [(b)] If \hl{$f=u+iv$} is a \hl{complex measurable} function on \textit{X}, then \hl{\textit{u}, \textit{v} and $|f|$ are real measurable} functions on \textit{X}.
+  \item [(c)] If \hl{\textit{f}} and \hl{\textit{g}} are \hl{complex measurable} functions on \textit{X}, then \hl{so are $f+g$ and $fg$}.
+  \item [(d)] If \hl{\textit{E}} is a \hl{measurable} set in \textit{X} and if 
+  
+\begin{displaymath}
+  \chi_E(x)=\left\{
+\begin{aligned}
+1 &\qquad if\enspace x\in E \\
+0 &\qquad if\enspace x\notin E
+\end{aligned}
+\right.
+\end{displaymath}
+	then \hl{$\chi_E$} is a \hl{measurable} function.
+  \item [(e)] If \hl{\textit{f}} is a \hl{complex measurable} function on \textit{X}, there is a complex measurable function \hl{$\alpha$} on \textit{X} such that \hl{$|\alpha|=1$} and \hl{$f=\alpha|f|$}.
+
+\end{enumerate}
+\end{theo}
+
+\begin{theo}{1.0 Theorem}
+	If \hl{$\mathscr{F}$} is any \hl{collection of subsets of \textit{X}}, there exists a \hl{smallest} $\sigma$-algebra $\mathfrak{M}^*$ in X such that \hl{$\mathscr{F}\subset\mathfrak{M}^*$}.
+\end{theo}
+
+\begin{defi}{1.11 Borel Sets}
+	Let \textit{X} be a topological space. By Theorem 1.10, there exists a \hl{smallest $\sigma$-algebra $\mathscr{R}$ in \textit{X}} such that \hl{every open set in \textit{X} belongs to $\mathscr{R}$}. The \hl{members} of $\mathscr{R}$ are called \hl{\textit{Borel sets}} of \textit{X}.
+	
+\vspace{0.2cm}
+	Consider the \hl{measurable space $(X,\mathscr{R})$}. If $f: X\rightarrow Y$ is a continuous mapping of \textit{X}, where \textit{Y} is any topological sapce, then it is evident from the definitions that $f^{-1}(V)\in\mathscr{R}$ for every open set \textit{V} in \textit{Y}. In other words, \hl{every continuous mapping of \textit{X} is \textit{Borel measurable}}. 
+\vspace{0.2cm}
+
+Borel measurable mappings are often called \textit{Borel mappings}, or \textit{Borel functions}.
+
+\end{defi}
+
+\begin{theo}{1.12 Theorem}
+Suppose $\mathfrak{M}$ is a $\sigma$-algebra in \textit{X}, and \textit{Y} is a topological space. Let \textit{f} map \textit{X} into \textit{Y}.
+	\begin{enumerate}
+	\item [(a)] If \hl{$\Omega$} is the collection of \hl{all sets $E\subset Y$} such that \hl{$f^{-1}(E)\in\mathfrak{M}$}, then \hl{$\Omega$ is a $\sigma$-algebra} in \textit{Y}.
+	\item [(b)] If \hl{\textit{f}} is \hl{measurable} and \hl{\textit{E}} is a \hl{\textit{Borel set}} in \textit{Y}, then \hl{$f^{-1}(E)\in\mathfrak{M}$}.
+	\item [(c)] If \hl{$Y=[-\infty,+\infty]$} and \hl{$f^{-1}((a,\infty])\in\mathfrak{M}$} for \hl{every real $\alpha$}, then \hl{\textit{f}} is \hl{measurable}.
+	\item [(d)] If \hl{\textit{f}} is \hl{measurable}, if \textit{Z} is a topological space, if \hl{$g: Y\rightarrow Z$} is a \hl{\textit{Borel mapping}}, and if \hl{$h=g\circ f$}, then $h: X\rightarrow Z$ is \hl{measurable}.
+
+
+	\end{enumerate}
+	
+\end{theo}
+
+\begin{defi}{1.13 Defitnion}
+Let $\{a_n\}$ be a sequence in $[-\infty,+\infty]$, and put
+
+\begin{displaymath}
+  b_k=\sup\{a_k,a_{k+1},a_{k+2},\cdots\}\qquad (k=1,2,3,\cdots)\eqno{(1)}
+\end{displaymath}
+
+and 
+
+\begin{displaymath}
+  \beta=\inf\{b_1,b_2,b_3,\cdots\}.\eqno{(2)}
+\end{displaymath}
+
+We call $\beta$ the \textit{upper limit} of $\{a_n\}$, and write
+
+\begin{displaymath}
+  \beta=\lim_{n\rightarrow\infty}\sup\enspace a_n	\eqno{(3)}
+\end{displaymath}
+
+The \textit{lower limit} is defined analogously: simply interchange sup and inf in (1) and (2). Note that
+
+\begin{displaymath}
+  \lim_{n\rightarrow\infty} \inf\enspace a_n=-\lim_{n\rightarrow\infty} \sup\enspace (-a_n)	\eqno{(4)}
+\end{displaymath}
+
+If $\{a_n\}$ converges, then evidently
+
+\begin{displaymath}
+  \lim_{n\rightarrow\infty} \sup\enspace a_n=\lim_{n\rightarrow\infty} \inf\enspace a_n=\lim_{n\rightarrow\infty} a_n\eqno{(5)}
+\end{displaymath}
+
+Suppose $\{f_n\}$ is a sequence of extended-real functions on a set \textit{X}. Then $\sup_n f_n$ are the functions defined on \textit{X} by
+\begin{displaymath}
+  (\sup_n f_n)(x)=\sup_n(f_n(x)),\eqno{(6)}
+\end{displaymath}
+\begin{displaymath}
+  (\lim_{n\rightarrow\infty}\sup f_n)(x)=\lim_{n\rightarrow\infty} \sup(f_n(x))\eqno{(7)}
+\end{displaymath}
+
+If
+
+\begin{displaymath}
+  f(x)=\lim_{n\rightarrow\infty}f_n(x)\eqno{(7)}
+\end{displaymath}
+
+the limit being assumed to exist at every $x\in X$, then we call $f$ the \textit{pointwise limit} of the seuqence $\{f_n\}$.
+ 	
+\end{defi}
+
+\begin{theo}{1.14 Theorem}
+If \hl{$f_n: X\rightarrow[-\infty,+\infty]$} is measurable, for $n=1,2,3,\cdots$, and 
+\begin{displaymath}
+  g=\sup_{n\ge 1} f_n, h=\lim_{n\rightarrow\infty} \sup f_n,
+\end{displaymath}
+ 
+then \hl{g and h are measurable}.
+\end{theo}
+
+\begin{theo}{Corollaries}
+\begin{enumerate}
+  \item [(a)] The \hl{limit} of every \hl{pointwise converge} sequence of \hl{complex measurable} functions is \hl{measurable}.
+  \item [(b)] If \hl{\textit{f}} and \hl{\textit{g}} are \hl{measurable} (with range \hl{in $[-\infty,+\infty]$}), then \hl{so are max $\{f,g\}$ and min $\{f,g\}$}. In particular, this is true of the functions
+  \begin{displaymath}
+  f^+=\max\{f,0\}\enspace and\enspace f^-=-\min\{f,0\}.
+\end{displaymath}
+
+\end{enumerate}
+	
+\end{theo}
+
+\begin{prop}{Proposition}
+If $f=g-h$, $g\ge0$, and $h\ge0$, then $f^+\le g$ and $f^-\le h$.	
+\end{prop}
+
+\section*{Simple Functions}
+
+\begin{defi}{1.16 Definition}
+A \hl{complex function} \textit{s} on a measurable space \textit{X} whose \hl{range} consists of only \hl{finitely many points} will be called a \hl{\textit{simple function}}. Among these are the \hl{nonnegative} simple functions, whose \hl{range} is a \hl{finite subset of $[0,\infty)$}. Note that we explicitly \hl{exclude $\infty$} from the values of a simple function.
+
+\vspace{0.2cm}
+
+If $\alpha_1,\cdots,\alpha_n$ are the distinct values of a simple function \textit{s}, and if we set $A_i={x:s(x)=\alpha_i}$, then clearly
+\begin{displaymath}
+  s=\sum^n_{i=1}\alpha_i\chi_{A_i},
+\end{displaymath}
+
+where $\chi_{A_i}$ is the characteristic function of $A_i$, as defined in Sec. 1.9(d).
+
+\vspace{0.2cm}
+
+It is also clear that \hl{\textit{s}} is \hl{measurable if and only if each of the sets $A_i$ is measurable}. 
+
+
+\end{defi}
+
+\begin{theo}{1.17 Theorem}
+Let \hl{$f: X\rightarrow[0,\infty]$} be \hl{\textit{measurable}}. There \hl{exist} \textit{simple measurable functions} \hl{$s_n$ on \textit{X}} such that
+\begin{enumerate}
+  \item [(a)] \hl{$0\le s_1\le s_2\le\cdots\le f$}.
+  \item [(b)] \hl{$s_n(x)\rightarrow f(x)$ as $n\rightarrow\infty$, for every $x\in X$}.
+\end{enumerate}
+	
+\end{theo}
+
+\section*{Elementary Properties of Measures}
+
+\begin{defi}{1.18 Definition}
+\begin{enumerate}
+  \item [(a)]
+  A positive measure is a \hl{function} $\mu$, \hl{defined on a $\sigma$-algebra $\mathfrak{M}$}, whose \hl{range} is in \hl{$[0,\infty]$} and which is \hl{countably additive}. This means that if ${A_i}$ is a \textit{disjoint} countable collection of members of $\mathfrak{M}$, then 
+  \begin{displaymath}
+  \mu(\bigcup_{i=1}^\infty A_i)=\sum_{i=1}^\infty\mu(A_i).
+\end{displaymath}
+
+  \item [(b)]
+  
+  A \hl{\textit{measure space}} is a \hl{measurable space} which \hl{has a positive measure} defined on the $\sigma$-algebra of its measurable sets.
+  \item [(c)] 
+  
+  A \hl{\textit{complex measure}} is a \hl{complex-valued countably additive function} defined on a $\sigma$-algebra.
+\end{enumerate}
+
+\end{defi}
+
+\begin{theo}{1.19 Theorem}
+	Let $\mu$ be a positive measure on a $\sigma$-algebra $\mathfrak{M}$. Then,
+	\begin{enumerate}
+  \item [(a)]
+  \hl{$\mu(\varnothing)=0$}
+  \item [(b)]
+  \hl{$\mu(A_1\cup \cdots\cup A_n)=\mu(A_1)+\cdots+\mu(A_n)$} if \hl{$A_i,\cdots,A_n$} are \hl{pairwise disjoint} members of $\mathfrak{M}$.
+  \item [(c)] 
+  \hl{$A\subset B$} implies \hl{$\mu(A)\le\mu(B)$} if $A\in\mathfrak{M}$, $B\in\mathfrak{M}$
+  \item [(d)]\hl{$\mu(A_n)\rightarrow\mu(A)$} as $n\rightarrow\infty$ if \hl{$A=\bigcup_{n=1}^\infty A_n, A_n\in\mathfrak{M}$}, and
+  \begin{displaymath}
+  A_1\subset A_2\subset A_3\cdots.
+\end{displaymath}
+  \item [(e)] \hl{$\mu(A_n)\rightarrow\mu(A)$} as $n\rightarrow\infty$ if \hl{$A=\cap^\infty_{n=1}A_n$, $A_n\in\mathfrak{M}$},
+  \begin{displaymath}
+  A_1\supset A_2\supset A_3\supset\cdots,
+\end{displaymath}
+
+and \hl{$\mu(A_1)$} is \hl{finite}.
+
+\end{enumerate}
+
+\end{theo}
+
+\section*{Arithmetic in $[0,\infty]$}
+
+\hl{Sums and products of measurable functions into $[0,\infty]$ are measurale.}
+
+\section*{Integration of Positive Functions}
+
+In this section, $\mathfrak{M}$ will be a $\sigma$-algebra in a set \textit{X} and $\mu$ will be a positive measure on $\mathfrak{M}$.
+
+\begin{defi}{1.23 Definition}
+If \hl{$s: X\rightarrow[0,\infty)$} is a \hl{measurable simple function}, of the form
+\begin{displaymath}
+  s=\sum^n_{i=1}\alpha_i\chi_{A_i},\eqno{(1)}
+\end{displaymath}
+
+where $\alpha_1,\cdots,\alpha_n$ are the distinct values of s (compare Definition 1.16), and if \hl{$E\in\mathfrak{M}$}, we define
+\begin{displaymath}
+  \int_E s d\mu=\sum^n_{i=1}\alpha_i\mu(A_i\cap E)\eqno{(2)}
+  \end{displaymath}
+  
+The convention $0\cdot\infty=0$ is used here; it may happen that $\alpha_i=0$ for some i and that $\mu(A_i\cap E)=\infty$.
+
+\vspace{0.2cm}
+
+If \hl{$f:X\rightarrow[0,\infty]$} is \hl{measurable}, and \hl{$E\in\mathfrak{M}$}, we define
+\begin{displaymath}
+  \int_E fd\mu=\sup\int_E sd\mu,\eqno{(3)}
+\end{displaymath}
+
+the supremum being taken over all simple measurable functions \textit{s} such that $0\le s\le f$.
+
+\vspace{0.2cm}
+
+The \hl{left member of (3)} is called the \hl{\textit{Lebesgue integral}} of \textit{f} over \textit{E}, \hl{with respect to the measure $\mu$}. It is \hl{a number in $[0,\infty]$}.
+	
+\end{defi}
+
+\begin{prop}{}
+The following propositions are immediate consequence of the definitions. The functions and sets occuring in them are assumed to be measurable:
+\begin{enumerate}
+  \item [(a)] If \hl{$0\le f\le g$}, then \hl{$\int_Efd\mu\le\int_E gd\mu$}.
+  \item [(b)] If \hl{$A\subset B$} and $f\ge 0$, then \hl{$\int_A fd\mu\le \int_B fd\mu$}.
+  \item [(c)] If $f\ge0$ and c is a constant, \hl{$0\le c<\infty$}, then
+  \begin{displaymath}
+  \int_E cfd\mu=c\int_E fd\mu.
+\end{displaymath}
+  \item [(d)] If \hl{$f(x)=0$} for \hl{all $x\in E$}, then \hl{$\int_E fd\mu=0$}, even if $\mu(E)=\infty$.
+  \item [(e)] If \hl{$\mu(E)=0$}, then \hl{$\int_E fd\mu=0$}, even if $f(x)=\infty$ for every $x\in E$.
+  \item [(f)] If $f\ge0$, then \hl{$\int_E fd\mu=\int_\chi \chi_E fd\mu$}.
+\end{enumerate}
+	
+\end{prop}
+
+\begin{prop}{1.25 Proposition}
+Let \hl{\textit{s}} and \hl{\textit{t}} be \hl{nonnegative measurable} \hl{simple functions} on \textit{X}. For $E\in\mathfrak{M}$, define
+\begin{displaymath}
+  \varphi(E)=\int_E sd\mu.\eqno{(1)}
+\end{displaymath}
+
+Then \hl{$\varphi$} is a \hl{measure on $\mathfrak{M}$}. Also
+\begin{displaymath}
+  \int_X(s+t)d\mu=\int_X sd\mu+\int_X td\mu.\eqno{(2)}
+\end{displaymath}
+	
+\end{prop}
+
+\begin{theo}{1.26 Lebesgue's Monotone Convergence Theorem}
+	Let \hl{$\{f_n\}$} be a sequence of \hl{measurable} functions on \textit{X}, and suppose that 
+	\begin{enumerate}
+  \item [(a)] \hl{$0\le f_1(x)\le f_2(x)\le\cdots\le\infty$} for every $x\in X$,
+  \item [(b)] \hl{$f_n(x)\rightarrow f(x)$} as $n\rightarrow\infty$, for every $x\in X$.
+\end{enumerate}
+
+Then \hl{\textit{f}} is \hl{measurable}, and
+\begin{displaymath}
+  \int_X f_n d\mu\rightarrow\int_X fd\mu\qquad as\enspace n\rightarrow\infty.
+\end{displaymath}
+
+
+\end{theo}
+
+\begin{theo}{1.27 Theorem}
+If \hl{$f_n:X\rightarrow[0,\infty]$} is \hl{measurable}, for $n=1,2,3,\cdots$, and 
+\begin{displaymath}
+  f(x)=\sum^\infty_{n=1}f_n(x)\qquad (x\in X),
+\end{displaymath}
+
+then
+
+\begin{displaymath}
+  \int_X fd\mu=\sum^n_{n=1}\int_X f_n d\mu.
+\end{displaymath}
+	
+\end{theo}
+
+\begin{theo}{Corollary}
+If $a_{ij}\ge 0$ for \textit{i} and $j=1,2,3,\cdots$, then
+\begin{displaymath}
+  \sum^\infty_{i=1}\sum^\infty_{j=1}a_{ij}=\sum^\infty_{j=1}\sum^\infty_{i=1}a_{ij}.
+\end{displaymath}
+	
+\end{theo}
+
+\begin{theo}{1.28 Fatou's Lemma}
+If \hl{$f_n:X\rightarrow[0,\infty]$} is measurable, for each positive integer n, then
+\begin{displaymath}
+  \int_X(\lim_{n\rightarrow\infty}\inf f_n)d\mu\le\lim_{n\rightarrow\infty}\inf\int_X f_nd\mu.
+\end{displaymath}
+	
+\end{theo}
+
+\begin{theo}{1.29 Theorem}
+Suppose \hl{$f: X\rightarrow[0,\infty]$} is \hl{measurable}, and
+\begin{displaymath}
+  \varphi(E)=\int_E fd\mu\qquad (E\in\mathfrak{M}).
+\end{displaymath}
+
+Then \hl{$\varphi$ is a measure} on $\mathfrak{M}$, and
+\begin{displaymath}
+  \int_X gd\varphi=\int_X gfd\mu
+\end{displaymath}
+
+\hl{for every measurable \textit{g} on \textit{X} with range in $[0,\infty]$}.
+
+\end{theo}
+
+\section*{Integration of Complex Functions}
+As before, $\mu$ will in this section be a positive measure on an arbitary measurable space \textit{X}.
+
+\begin{defi}{1.30 Definition}
+We define \hl{$L^1(\mu)$} to be the collection of \hl{all complex measurable functions} \textit{f} on \textit{X} for which
+\begin{displaymath}
+  \int_X|f|d\mu<\infty.
+\end{displaymath}
+	
+	The members of $L^1(\mu)$ are called \hl{\textit{Lebesgue integrable}} functions (with respect to $\mu$) or \hl{\textit{summable functions}}.
+\end{defi}
+
+\begin{defi}{1.31 Definition}
+If $f=u+iv$, where \textit{u} and \textit{v} are real measurable functions on \textit{X}, and if $f\in L^1(\mu)$, we define
+\begin{displaymath}
+  \int_E fd\mu=\int_E u^+d\mu-\int_E u^-d\mu+i\int_E v^+d\mu-i\int_E v^-d\mu
+\end{displaymath}
+	for every measurable set E.
+\end{defi}
+
+\begin{theo}{1.32 Theorem}
+Suppose \textit{f} and $g\in L^-1(\mu)$ and $\alpha$ and $\beta$ are complex numbers. Then \hl{$\alpha f+\beta g\in L^1(\mu)$}, and
+\begin{displaymath}
+  \int_X(\alpha f+\beta g)d\mu=\alpha\int_X fd\mu+\beta\int_X gd\mu.
+\end{displaymath}
+	
+\end{theo}
+
+\begin{theo}{1.33 Theorem}
+If $f\in L^1(\mu)$, then
+\begin{displaymath}
+  |\int_X fd\mu|\le\int_X|f|d\mu.
+\end{displaymath}
+	
+\end{theo}
+
+\begin{theo}{1.34 Lebesgue's Dominated Convergence Theorem}
+Suppose $\{f_n\}$ is a sequence of \hl{complex measurable} functions on \textit{X} such that
+\begin{displaymath}
+  f(x)=\lim_{n\rightarrow\infty}f_n(x)
+\end{displaymath}
+
+\hl{exists for every $x\in X$}. If there is a function \hl{$g\in L^1(\mu)$} such that
+\begin{displaymath}
+  |f_n(x)|\le g(x)\qquad (n=1,2,3,\cdots;x\in X),
+\end{displaymath}
+
+then \hl{$f\in L^1(\mu)$},
+\begin{displaymath}
+  \lim_{n\rightarrow\infty}\int_X|f_n-f|d\mu=0,
+\end{displaymath}
+
+and
+\begin{displaymath}
+  \lim_{n\rightarrow\infty}\int_X f_nd\mu=\int_X fd\mu
+\end{displaymath}
+
+
+\end{theo}
+
+\begin{defi}{1.35 Definition}
+If $\mu$ is a measure on a $\sigma$-algebra $\mathfrak{M}$ and if $E\in\mathfrak{M}$, the statement "\textit{P} holds almost everywhere on \textit{E}" (abbreviated to "\hl{\textit{P} holds a.e. on \textit{E}}")	\hl{means that there exists an $N\in\mathfrak{M}$ such that $\mu(N)=0, N\subset E$, and \textit{P} holds at every point of $E-N$}. This concept of a.e. depends of course very strongly on the given measure, and we shall write "a.e. [$\mu$]" whenever clarity requires that the measure be indicated.
+
+\vspace{0.2cm}
+
+The transitivity ($f\sim g$ and $g\sim h$ implies $f\sim h$) is a consequence of the fact that the union of two sets of measure 0 has measure 0.
+\end{defi}
+
+\begin{theo}{1.36 Theorem}
+Let $(X,\mathfrak{M},\mu)$ be a measure space, let \hl{$\mathfrak{M}^*$} be the collection of \hl{all $E\subset X$} for which there exist sets \hl{\textit{A} and $B\in\mathfrak{M}$} such that \hl{$A\subset E\subset B$ and $\mu(B-A)=0$}, and define \hl{$\mu(E)=\mu(A)$} in this situation. Then \hl{$\mathfrak{M}^*$} is a \hl{$\sigma$-algebra}, and \hl{$\mu$} is a \hl{measure on $\mathfrak{M}^*$}.
+\end{theo}
+
+\begin{theo}{1.38 Theorem}
+
+Suppose \hl{$\{f_n\}$} is a sequence of \hl{complex measurable} functions defined \hl{a.e. on \textit{X}} such that
+\begin{displaymath}
+  \sum^\infty_{n=1}\int_X|f_n|d\mu<\infty.
+\end{displaymath}
+
+Then the series
+\begin{displaymath}
+  f(x)=\sum^\infty_{n=1}f_n(x)
+\end{displaymath}
+
+converges for almost all x, $f\in L^1(\mu)$, and
+\begin{displaymath}
+  \int_X fd\mu=\sum^\infty_{n=1}\int_Xf_nd\mu
+\end{displaymath}
+
+
+\end{theo}
+
+\begin{theo}{1.39 Theorem}
+\begin{enumerate}
+  \item [(a)] Suppose \hl{$f: X \rightarrow [0,+\infty]$} is \hl{measurable}, $E\in\mathfrak{M}$, and \hl{$\int_E fd\mu=0$}. Then \hl{$f=0$ a.e. on \textit{E}}.
+  \item [(b)] Suppose \hl{$f\in L^1(\mu)$} and \hl{$\int_E fd\mu=0$} for \hl{every $E\in\mathfrak{M}$}. Then \hl{$f=0$ a.e. on \textit{X}}.
+  \item [(c)] Suppose \hl{$f\in L^1(\mu)$} and
+  \begin{displaymath}
+  |\int_X fd\mu|=\int_X|f|d\mu.
+\end{displaymath}
+
+Then there is \hl{a constant $\alpha$} such that \hl{$\alpha f=|f|$ a.e. on \textit{X}}.
+
+\end{enumerate}
+
+\end{theo}
+
+
+\begin{theo}{1.40 Theorem}
+
+Suppose \hl{$\mu(X)<\infty$}, \hl{$f\in L^1(\mu)$}, \hl{\textit{S}} is a \hl{closed set} in the complex plane, and the averages
+
+\begin{displaymath}
+  A_E(f)=\frac{1}{\mu(E)}\int_E fd\mu
+\end{displaymath}
+
+\hl{lie in \textit{S}} for\hl{ every $E\in\mathfrak{M}$ with $\mu(E)>0$.} Then \hl{$f(x)\in S$ for almost all $x \in X$}.
+\end{theo}
+
+\begin{theo}{1.41 Theorem}
+Let $\{E_k\}$ be a sequence of measurable sets in X, such that
+\begin{displaymath}
+  \sum^\infty_{k=1}\mu(E_k)<\infty.
+\end{displaymath}
+
+Then \hl{almost all $x \in X$ lie in at most finitely many of the sets $E_k$}.
+
+\end{theo}
+
+
+
+
+\end{document}

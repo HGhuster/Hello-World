@@ -1,0 +1,4307 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.15)  28 DEC 2020 12:42
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Blanchard_Ch.19.tex
+(./Blanchard_Ch.19.tex
+LaTeX2e <2018-12-01>
+(c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (c:/texlive/2019/texmf-dist/tex/latex/ctex/ctex.sty (c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2019-04-06 L3 programming layer (loader) 
+ (c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2019-04-06 L3 programming layer (code)
+\c_max_int=\count88
+\l_tmpa_int=\count89
+\l_tmpb_int=\count90
+\g_tmpa_int=\count91
+\g_tmpb_int=\count92
+\g__kernel_prg_map_int=\count93
+\c__ior_term_ior=\count94
+\c_log_iow=\count95
+\l_iow_line_count_int=\count96
+\l__iow_line_target_int=\count97
+\l__iow_one_indent_int=\count98
+\l__iow_indent_int=\count99
+\c_zero_dim=\dimen103
+\c_max_dim=\dimen104
+\l_tmpa_dim=\dimen105
+\l_tmpb_dim=\dimen106
+\g_tmpa_dim=\dimen107
+\g_tmpb_dim=\dimen108
+\c_zero_skip=\skip43
+\c_max_skip=\skip44
+\l_tmpa_skip=\skip45
+\l_tmpb_skip=\skip46
+\g_tmpa_skip=\skip47
+\g_tmpb_skip=\skip48
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+\l_keys_choice_int=\count100
+\l__intarray_loop_int=\count101
+\c__intarray_sp_dim=\dimen109
+\g__intarray_font_int=\count102
+\c__fp_leading_shift_int=\count103
+\c__fp_middle_shift_int=\count104
+\c__fp_trailing_shift_int=\count105
+\c__fp_big_leading_shift_int=\count106
+\c__fp_big_middle_shift_int=\count107
+\c__fp_big_trailing_shift_int=\count108
+\c__fp_Bigg_leading_shift_int=\count109
+\c__fp_Bigg_middle_shift_int=\count110
+\c__fp_Bigg_trailing_shift_int=\count111
+\c__kernel_randint_max_int=\count112
+\g__fp_array_int=\count113
+\l__fp_array_loop_int=\count114
+\l__sort_length_int=\count115
+\l__sort_min_int=\count116
+\l__sort_top_int=\count117
+\l__sort_max_int=\count118
+\l__sort_true_max_int=\count119
+\l__sort_block_int=\count120
+\l__sort_begin_int=\count121
+\l__sort_end_int=\count122
+\l__sort_A_int=\count123
+\l__sort_B_int=\count124
+\l__sort_C_int=\count125
+\l__tl_analysis_normal_int=\count126
+\l__tl_analysis_index_int=\count127
+\l__tl_analysis_nesting_int=\count128
+\l__tl_analysis_type_int=\count129
+\l__regex_internal_a_int=\count130
+\l__regex_internal_b_int=\count131
+\l__regex_internal_c_int=\count132
+\l__regex_balance_int=\count133
+\l__regex_group_level_int=\count134
+\l__regex_mode_int=\count135
+\c__regex_cs_in_class_mode_int=\count136
+\c__regex_cs_mode_int=\count137
+\l__regex_catcodes_int=\count138
+\l__regex_default_catcodes_int=\count139
+\c__regex_catcode_D_int=\count140
+\c__regex_catcode_S_int=\count141
+\c__regex_catcode_L_int=\count142
+\c__regex_catcode_O_int=\count143
+\c__regex_catcode_A_int=\count144
+\c__regex_all_catcodes_int=\count145
+\l__regex_show_lines_int=\count146
+\l__regex_min_state_int=\count147
+\l__regex_max_state_int=\count148
+\l__regex_left_state_int=\count149
+\l__regex_right_state_int=\count150
+\l__regex_capturing_group_int=\count151
+\l__regex_min_pos_int=\count152
+\l__regex_max_pos_int=\count153
+\l__regex_curr_pos_int=\count154
+\l__regex_start_pos_int=\count155
+\l__regex_success_pos_int=\count156
+\l__regex_curr_char_int=\count157
+\l__regex_curr_catcode_int=\count158
+\l__regex_last_char_int=\count159
+\l__regex_case_changed_char_int=\count160
+\l__regex_curr_state_int=\count161
+\l__regex_step_int=\count162
+\l__regex_min_active_int=\count163
+\l__regex_max_active_int=\count164
+\l__regex_replacement_csnames_int=\count165
+\l__regex_match_count_int=\count166
+\l__regex_min_submatch_int=\count167
+\l__regex_submatch_int=\count168
+\l__regex_zeroth_submatch_int=\count169
+\g__regex_trace_regex_int=\count170
+\c_empty_box=\box27
+\l_tmpa_box=\box28
+\l_tmpb_box=\box29
+\g_tmpa_box=\box30
+\g_tmpb_box=\box31
+\l__box_top_dim=\dimen110
+\l__box_bottom_dim=\dimen111
+\l__box_left_dim=\dimen112
+\l__box_right_dim=\dimen113
+\l__box_top_new_dim=\dimen114
+\l__box_bottom_new_dim=\dimen115
+\l__box_left_new_dim=\dimen116
+\l__box_right_new_dim=\dimen117
+\l__box_internal_box=\box32
+\l__coffin_internal_box=\box33
+\l__coffin_internal_dim=\dimen118
+\l__coffin_offset_x_dim=\dimen119
+\l__coffin_offset_y_dim=\dimen120
+\l__coffin_x_dim=\dimen121
+\l__coffin_y_dim=\dimen122
+\l__coffin_x_prime_dim=\dimen123
+\l__coffin_y_prime_dim=\dimen124
+\c_empty_coffin=\box34
+\l__coffin_aligned_coffin=\box35
+\l__coffin_aligned_internal_coffin=\box36
+\l_tmpa_coffin=\box37
+\l_tmpb_coffin=\box38
+\g_tmpa_coffin=\box39
+\g_tmpb_coffin=\box40
+\l__coffin_bounding_shift_dim=\dimen125
+\l__coffin_left_corner_dim=\dimen126
+\l__coffin_right_corner_dim=\dimen127
+\l__coffin_bottom_corner_dim=\dimen128
+\l__coffin_top_corner_dim=\dimen129
+\l__coffin_scaled_total_height_dim=\dimen130
+\l__coffin_scaled_width_dim=\dimen131
+\c__coffin_empty_coffin=\box41
+\l__coffin_display_coffin=\box42
+\l__coffin_display_coord_coffin=\box43
+\l__coffin_display_pole_coffin=\box44
+\l__coffin_display_offset_dim=\dimen132
+\l__coffin_display_x_dim=\dimen133
+\l__coffin_display_y_dim=\dimen134
+\g__file_internal_ior=\read1
+\l__seq_internal_a_int=\count171
+\l__seq_internal_b_int=\count172
+\c__deprecation_minus_one=\count173
+) (c:/texlive/2019/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2019-04-06 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count174
+))
+Package: ctex 2019/04/07 v2.4.15 Chinese adapter in LaTeX (CTEX)
+ (c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2019-03-05 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count175
+\g__xparse_grabber_int=\count176
+\l__xparse_m_args_int=\count177
+\l__xparse_v_nesting_int=\count178
+) (c:/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2019-03-05 LaTeX2e option processing using LaTeX3 keys
+) (c:/texlive/2019/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2019/04/07 v2.4.15 Document and package hooks (CTEX)
+) (c:/texlive/2019/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2019/04/07 v2.4.15 Patching commands (CTEX)
+) (c:/texlive/2019/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+ (c:/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+ (c:/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))) (c:/texlive/2019/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\l__ctex_tmp_int=\count179
+\l__ctex_tmp_box=\box45
+\l__ctex_tmp_dim=\dimen135
+\g__ctex_section_depth_int=\count180
+\g__ctex_font_size_int=\count181
+ (c:/texlive/2019/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+File: ctexopts.cfg 2019/04/07 v2.4.15 Option configuration file (CTEX)
+) (c:/texlive/2019/texmf-dist/tex/latex/ctex/engine/ctex-engine-pdftex.def
+File: ctex-engine-pdftex.def 2019/04/07 v2.4.15 (pdf)LaTeX adapter (CTEX)
+ (c:/texlive/2019/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2015/04/18 4.8.4
+
+(c:/texlive/2019/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+) (c:/texlive/2019/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box46
+) (c:/texlive/2019/texmf-dist/tex/latex/cjkpunct/CJKpunct.sty
+Package: CJKpunct 2016/05/14 4.8.4
+\CJKpunct@cnta=\count182
+\CJKpunct@cntb=\count183
+\CJKpunct@cntc=\count184
+\CJKpunct@cntd=\count185
+\CJKpunct@cnte=\count186
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2026 (decimal 8230)
+ (c:/texlive/2019/texmf-dist/tex/latex/cjkpunct/CJKpunct.spa)) (c:/texlive/2019/texmf-dist/tex/latex/cjk/texinput/CJKspace.sty
+Package: CJKspace 2015/04/18 3.8.0
+) (c:/texlive/2019/texmf-dist/tex/latex/cjk/texinput/standard.bdg
+File: standard.bdg 2015/04/18 4.8.4
+) (c:/texlive/2019/texmf-dist/tex/latex/ctex/ctexspa.def
+File: ctexspa.def 2019/04/07 v2.4.15 Space info for CJKpunct (CTEX)
+) (c:/texlive/2019/texmf-dist/tex/latex/cjk/texinput/CJKfntef.sty
+Package: CJKfntef 2015/04/18 4.8.4
+ (c:/texlive/2019/texmf-dist/tex/latex/cjk/texinput/CJKulem.sty
+Package: CJKulem 2015/04/18 4.8.4
+ (c:/texlive/2019/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box47
+\UL@hyphenbox=\box48
+\UL@skip=\skip49
+\UL@hook=\toks14
+\UL@height=\dimen136
+\UL@pe=\count187
+\UL@pixel=\dimen137
+\ULC@box=\box49
+Package: ulem 2012/05/18
+\ULdepth=\dimen138
+)
+\UL@lastkern=\dimen139
+\CJK@skip=\skip50
+)
+\CJK@fntefSkip=\skip51
+\CJK@nest=\count188
+\CJK@fntefDimen=\dimen140
+\CJK@underdotBox=\box50
+\CJK@ULbox=\box51
+\CJK@underanyskip=\dimen141
+)
+\ccwd=\dimen142
+\l__ctex_ccglue_skip=\skip52
+)
+\l__ctex_ziju_dim=\dimen143
+ (c:/texlive/2019/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+Package: zhnumber 2019/04/07 v2.7 Typesetting numbers with Chinese glyphs
+\l__zhnum_scale_int=\count189
+\l__zhnum_byte_min_int=\count190
+\l__zhnum_byte_max_int=\count191
+ (c:/texlive/2019/texmf-dist/tex/latex/zhnumber/zhnumber-gbk.cfg
+File: zhnumber-gbk.cfg 2019/04/07 v2.7 Chinese numerals with GBK encoding
+)) (c:/texlive/2019/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.def
+File: ctex-scheme-chinese.def 2019/04/07 v2.4.15 Chinese scheme for generic (CTEX)
+ (c:/texlive/2019/texmf-dist/tex/latex/ctex/config/ctex-name-gbk.cfg
+File: ctex-name-gbk.cfg 2019/04/07 v2.4.15 Caption with encoding GBK (CTEX)
+)) (c:/texlive/2019/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(c:/texlive/2019/texmf-dist/tex/latex/ctex/ctex-c5size.clo
+File: ctex-c5size.clo 2019/04/07 v2.4.15 c5size option (CTEX)
+) (c:/texlive/2019/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def
+File: ctex-fontset-windows.def 2019/04/07 v2.4.15 Windows fonts definition (CTEX)
+ (c:/texlive/2019/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windowsnew.def
+File: ctex-fontset-windowsnew.def 2019/04/07 v2.4.15 Windows fonts definition for Vista or later version (CTEX)
+ (c:/texlive/2019/texmf-dist/tex/generic/ctex/zhwindowsfonts.tex
+File: zhwindowsfonts.tex 2019/04/07 v2.4.15 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{UGBK.sfd}{Unicode.sfd})))) (c:/texlive/2019/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2019/04/07 v2.4.15 Configuration file (CTEX)
+) (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen144
+)) (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen145
+) (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count192
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count193
+\leftroot@=\count194
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count195
+\DOTSCASE@=\count196
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen146
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count197
+\c@MaxMatrixCols=\count198
+\dotsspace@=\muskip16
+\c@parentequation=\count199
+\dspbrk@lvl=\count266
+\tag@help=\toks16
+\row@=\count267
+\column@=\count268
+\maxfields@=\count269
+\andhelp@=\toks17
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
+\@envbody=\toks18
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+) (c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+) (c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count270
+\float@exts=\toks21
+\float@box=\box54
+\@float@everytoks=\toks22
+\@floatcapt=\box55
+) (c:/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip56
+\subfigcapskip=\skip57
+\subfigcaptopadj=\dimen155
+\subfigbottomskip=\skip58
+\subfigcapmargin=\dimen156
+\subfiglabelskip=\skip59
+\c@subfigure=\count271
+\c@lofdepth=\count272
+\c@subtable=\count273
+\c@lotdepth=\count274
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(c:/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip60
+\subfig@bottom=\skip61
+) (c:/texlive/2019/texmf-dist/tex/latex/cjk/texinput/extended.enc
+File: extended.enc 2015/04/18 4.8.4
+) (c:/texlive/2019/texmf-dist/tex/latex/cjk/texinput/extended.chr
+File: extended.chr 2015/04/18 4.8.4
+) (./Blanchard_Ch.19.aux)
+\openout1 = `Blanchard_Ch.19.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 11.
+ (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count275
+\scratchdimen=\dimen157
+\scratchbox=\box56
+\nofMPsegments=\count276
+\nofMParguments=\count277
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count278
+\MPscratchDim=\dimen158
+\MPnumerator=\count279
+\makeMPintoPDFobject=\count280
+\everyMPtoPDFconversion=\toks24
+) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+ (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+ (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+))) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+ (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)))) (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
+ (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 12.
+ (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 12.
+ (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for C19+rm on input line 12.
+ (c:/texlive/2019/texmf-dist/tex/latex/ctex/fd/c19rm.fd
+File: c19rm.fd 2019/04/07 v2.4.15 Chinese font definition (CTEX)
+)<<c1951.cmap>><<c1963.cmap>><<c1954.cmap>><<c1974.cmap>><<c1929.cmap>><<c1914.cmap>><<c1975.cmap>><<c1902.cmap>><<c1921.cmap>><<c1977.cmap>><<c1903.cmap>><<c1922.cmap>>
+./Blanchard_Ch.19.tex:14: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:14: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:14: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:14: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:14: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:14: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:14: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:14: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:14: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:14: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:14: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:14: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:14: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:14: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.14 \section{产品市场的均衡}
+                                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+<<c1925.cmap>>
+Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (quanjiao) on input line 14.
+
+./Blanchard_Ch.19.tex:14: Bad character code (-80).
+<argument> \@tempcnta 
+                      
+l.14 \section{产品市场的均衡}
+                                    
+A character number must be between 0 and 255.
+I changed this one to zero.
+
+<<c1906.cmap>><<c1983.cmap>><<c1920.cmap>><<c1943.cmap>>
+
+./Blanchard_Ch.19.tex:20: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 产品市场均衡(IS)：产出=
+                                     对国内产品的需求。
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+<<c1904.cmap>><<c1901.cmap>><<c1919.cmap>><<c1978.cmap>>
+
+./Blanchard_Ch.19.tex:20: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...�均衡(IS)：产出=对国内产品的需
+                                                  求。
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+<<c1976.cmap>>
+
+./Blanchard_Ch.19.tex:20: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...��(IS)：产出=对国内产品的需求�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:21: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.21 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<<c1942.cmap>><<c1973.cmap>><<c1905.cmap>><<c1911.cmap>>
+Runaway argument?
+./Blanchard_Ch.19.tex:23: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.23 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<<c1913.cmap>><<c1944.cmap>><<c1940.cmap>><<c1938.cmap>><<c1909.cmap>><<c1926.cmap>><<c1934.cmap>><<c1910.cmap>>
+
+./Blanchard_Ch.19.tex:28: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...从关于进口和出口的假设，即净
+                                                  出口取决于国内产�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+<<c1917.cmap>>
+
+./Blanchard_Ch.19.tex:28: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...��设，即净出口取决于国内产出$
+                                                   Y $、外国产出$ Y^* $...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+<<c1927.cmap>><<c1946.cmap>>
+
+./Blanchard_Ch.19.tex:28: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...取决于国内产出$ Y $、外国产出$
+                                                   Y^* $和实际汇率$\eps...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+<<c1936.cmap>>
+
+./Blanchard_Ch.19.tex:28: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ... Y $、外国产出$ Y^* $和实际汇率$
+                                                  \epsilon$：国内产出�...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+./Blanchard_Ch.19.tex:28: Missing $ inserted.
+<inserted text> 
+                $
+l.28 ...��国产出$ Y^* $和实际汇率$\epsilon
+                                                  $：国内产出增加，�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+<<c1924.cmap>><<c1945.cmap>><<c1923.cmap>><<c1908.cmap>>
+
+./Blanchard_Ch.19.tex:28: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...on$：国内产出增加，进口增加净
+                                                  出口减少，外国产�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+<<c1912.cmap>>
+
+./Blanchard_Ch.19.tex:28: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...�，外国产出增加将增加出口从�
+                                                  �增加净出口，实际�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:28: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...净出口，实际汇率的增加导致净
+                                                  出口的减少。(假设�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:28: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...�汇率的增加导致净出口的减少�
+                                                  �(假设马歇尔-勒纳�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:28: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...��率的增加导致净出口的减少。(
+                                                  假设马歇尔-勒纳条�...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+<<c1933.cmap>>
+
+./Blanchard_Ch.19.tex:28: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...�致净出口的减少。(假设马歇尔-
+                                                  勒纳条件始终成立)。
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+<<c1932.cmap>>
+Runaway argument?
+./Blanchard_Ch.19.tex:29: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.29 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<<c1931.cmap>><<c1915.cmap>>
+
+./Blanchard_Ch.19.tex:30: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 利用净
+              出口的定义，我们可以将这个均衡条件改写成：
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+<<c1907.cmap>><<c1935.cmap>><<c1947.cmap>>
+Runaway argument?
+./Blanchard_Ch.19.tex:31: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.31 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<<c1937.cmap>>
+
+./Blanchard_Ch.19.tex:36: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 实际利率和实际汇率都影响需
+                                            求，进而影响均衡产出。
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:36: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...�率和实际汇率都影响需求，进�
+                                                  �影响均衡产出。
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:36: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...�影响需求，进而影响均衡产出�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:37: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.37 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<<c1916.cmap>><<c1939.cmap>>
+
+./Blanchard_Ch.19.tex:38: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...�加将导致投资支出的下降，从�
+                                                  �对国内产品的需求�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:38: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...�，从而对国内产品的需求下降�
+                                                  �并通过乘数作用导�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+<<c1918.cmap>>
+Runaway argument?
+./Blanchard_Ch.19.tex:39: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.39 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:40: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...�高导致需求转向外国产品，从�
+                                                  �导致净出口下降。�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:40: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...�降低了对国内产品的需求，并�
+                                                  �过乘数效应导致产�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:40: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...�通过乘数效应导致产出的下降�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:41: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.41 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[1
+
+]
+
+./Blanchard_Ch.19.tex:44: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 根据定义：$
+                     \epsilon=EP/P^*$。在短期假定国内外水平价格...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+./Blanchard_Ch.19.tex:44: Missing $ inserted.
+<inserted text> 
+                $
+l.44 根据定义：$\epsilon
+                             =EP/P^*$。在短期假定国内外水平价格...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+<<c1928.cmap>><<c1930.cmap>>
+
+./Blanchard_Ch.19.tex:44: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...�名义汇率和实际汇率同步变动�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:45: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.45 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:46: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 令$
+          P/P^*=1 $，从而$ \epsilon=E $。
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+./Blanchard_Ch.19.tex:46: Missing $ inserted.
+<inserted text> 
+                $
+l.46 令$ P/P^
+              *=1 $，从而$ \epsilon=E $。
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Blanchard_Ch.19.tex:46: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 令$ P/P^*=1 $，从而$
+                              \epsilon=E $。
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+./Blanchard_Ch.19.tex:46: Missing $ inserted.
+<inserted text> 
+                $
+l.46 令$ P/P^*=1 $，从而$ \epsilon
+                                      =E $。
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Runaway argument?
+./Blanchard_Ch.19.tex:47: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.47 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<<c1941.cmap>>
+
+./Blanchard_Ch.19.tex:48: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...�是给定的，因此就不存在实际�
+                                                  �货膨胀和预期通货�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:48: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...�就不存在实际通货膨胀和预期�
+                                                  �货膨胀。所以名义�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:49: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.49 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:54: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ...�与名义利率和名义汇率负相关�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:55: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.55 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:58: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 考察金融市场开
+                          放的经济，必须将人们可以在国内债�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:58: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...�经济，必须将人们可以在国内�
+                                                  �券和国外债券之间�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:58: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...�将人们可以在国内债券和国外�
+                                                  �券之间选择的事实�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:58: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...�国外债券之间选择的事实一并�
+                                                  �虑进来。
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:59: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.59 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:60: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \subsection{国内债券和国外债券}
+                                             
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:62: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...还是国外的金融投资者都追求最
+                                                  高的预期回报率，�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:62: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...�差异。这就意味着，在均衡状�
+                                                  �下国内债券和国外�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:62: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...�在均衡状态下国内债券和国外�
+                                                  �券必须有同样的预�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:62: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...，否则投资者就会只愿意购买一
+                                                  种债券而不是两种�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:62: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...�则投资者就会只愿意购买一种�
+                                                  �券而不是两种都有�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:62: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...�一种债券而不是两种都有人买�
+                                                  �这样就不能达到均�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:63: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.63 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:64: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 这意味着下列套利条件一
+                                      定会成立：
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:65: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.65 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+./Blanchard_Ch.19.tex:73: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.73 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[2
+./Blanchard_Ch.19.tex:76: Undefined control sequence.
+\UseRawInputEncoding ...tencodingname \@undefined 
+                                                  \let \DeclareFontEncoding@...
+l.76 �
+       �了在下一期收回资金，将不得不将外币换回本币。
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Blanchard_Ch.19.tex:76: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.76 �
+       �了在下一期收回资金，将不得不将外币换回本币。
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:76: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.76 �
+       �了在下一期收回资金，将不得不将外币换回本币。
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:76: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.76 �
+       �了在下一期收回资金，将不得不将外币换回本币。
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:76: Undefined control sequence.
+<argument> \@undefined 
+                       
+l.76 �
+       �了在下一期收回资金，将不得不将外币换回本币。
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Blanchard_Ch.19.tex:76: Undefined control sequence.
+\UseRawInputEncoding ...tencodingname \@undefined 
+                                                  \let \DeclareFontEncoding@...
+l.76 �
+       �了在下一期收回资金，将不得不将外币换回本币。
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Blanchard_Ch.19.tex:76: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.76 �
+       �了在下一期收回资金，将不得不将外币换回本币。
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:76: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.76 �
+       �了在下一期收回资金，将不得不将外币换回本币。
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:76: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.76 �
+       �了在下一期收回资金，将不得不将外币换回本币。
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:76: Undefined control sequence.
+<argument> \@undefined 
+                       
+l.76 �
+       �了在下一期收回资金，将不得不将外币换回本币。
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+]
+
+./Blanchard_Ch.19.tex:76: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 为了在下一
+                    期收回资金，将不得不将外币换回本币。
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:76: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 ...�金，将不得不将外币换回本币�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:77: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.77 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:82: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 ...��汇率是给定的，并将其标注为$
+                                                   \overline{E}^e $。
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+./Blanchard_Ch.19.tex:82: Missing $ inserted.
+<inserted text> 
+                $
+l.82 ...�定的，并将其标注为$ \overline{E}
+                                                  ^e $。
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Runaway argument?
+./Blanchard_Ch.19.tex:83: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.83 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+./Blanchard_Ch.19.tex:93: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.93 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+./Blanchard_Ch.19.tex:95: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.95 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<19_1.png, id=151, 534.19576pt x 412.54124pt>
+File: 19_1.png Graphic file (type png)
+<use 19_1.png>
+Package pdftex.def Info: 19_1.png  used on input line 98.
+(pdftex.def)             Requested size: 345.0pt x 266.43013pt.
+<<c1957.cmap>>
+Runaway argument?
+./Blanchard_Ch.19.tex:109: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.109 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[3 <./19_1.png>]
+Runaway argument?
+./Blanchard_Ch.19.tex:115: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.115 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+./Blanchard_Ch.19.tex:121: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.121 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+./Blanchard_Ch.19.tex:127: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.127 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+./Blanchard_Ch.19.tex:137: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.137 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:138: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 ...，利率提高导致投资下降，从�
+                                                  �导致对国内产品的�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:138: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 ...致对国内产品的需求减少，进�
+                                                  �产出下降；
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:140: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...的提高使汇率升高，本币升值�
+                                                  �本币升值使本国产�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:141: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.141 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:142: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 利率的提高直接使需
+                                 求下降，也间接通过本币升值的�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:142: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ...提高直接使需求下降，也间接�
+                                                  �过本币升值的负面�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:142: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ...需求下降，也间接通过本币升�
+                                                  �的负面效应使需求�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:142: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ...币升值的负面效应使需求减少�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:143: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.143 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<19_2.png, id=159, 741.972pt x 407.121pt>
+File: 19_2.png Graphic file (type png)
+<use 19_2.png>
+Package pdftex.def Info: 19_2.png  used on input line 146.
+(pdftex.def)             Requested size: 345.0pt x 189.29688pt.
+[4]
+
+./Blanchard_Ch.19.tex:152: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 开
+         放经济中的LM关系和封闭经济中的完全一样。它是�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:152: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 ...关系和封闭经济中的完全一样�
+                                                  �它是一条位于中央�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:152: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 ...行设定的利率水平处的水平线�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:153: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.153 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+./Blanchard_Ch.19.tex:155: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.155 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:156: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \section{开放经济中的政策效应}
+                                              
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+./Blanchard_Ch.19.tex:156: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.156 \section{开放经济中的政策效应}
+                                              
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:156: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.156 \section{开放经济中的政策效应}
+                                              
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:156: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.156 \section{开放经济中的政策效应}
+                                              
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:156: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.156 \section{开放经济中的政策效应}
+                                              
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:156: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.156 \section{开放经济中的政策效应}
+                                              
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:156: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.156 \section{开放经济中的政策效应}
+                                              
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:156: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.156 \section{开放经济中的政策效应}
+                                              
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:156: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.156 \section{开放经济中的政策效应}
+                                              
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:156: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.156 \section{开放经济中的政策效应}
+                                              
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:156: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.156 \section{开放经济中的政策效应}
+                                              
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+./Blanchard_Ch.19.tex:158: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 ...ion{开放经济中的货币政策效应}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+./Blanchard_Ch.19.tex:158: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.158 ...ion{开放经济中的货币政策效应}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:158: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.158 ...ion{开放经济中的货币政策效应}
+                                                  
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:158: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.158 ...ion{开放经济中的货币政策效应}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:158: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.158 ...ion{开放经济中的货币政策效应}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:158: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.158 ...ion{开放经济中的货币政策效应}
+                                                  
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:158: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.158 ...ion{开放经济中的货币政策效应}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:158: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.158 ...ion{开放经济中的货币政策效应}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:158: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.158 ...ion{开放经济中的货币政策效应}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:158: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.158 ...ion{开放经济中的货币政策效应}
+                                                  
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:158: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.158 ...ion{开放经济中的货币政策效应}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+<19_3.png, id=169, 756.426pt x 411.33675pt>
+File: 19_3.png Graphic file (type png)
+<use 19_3.png>
+Package pdftex.def Info: 19_3.png  used on input line 162.
+(pdftex.def)             Requested size: 345.0pt x 187.61041pt.
+[5
+./Blanchard_Ch.19.tex:167: Undefined control sequence.
+\UseRawInputEncoding ...tencodingname \@undefined 
+                                                  \let \DeclareFontEncoding@...
+l.167 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Blanchard_Ch.19.tex:167: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.167 
+      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:167: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.167 
+      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:167: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.167 
+      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:167: Undefined control sequence.
+<argument> \@undefined 
+                       
+l.167 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+ <./19_2.png>]
+
+./Blanchard_Ch.19.tex:168: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.168 ...��平，利率提高，LM曲线上移到$
+                                                   LM' $。IS曲线没有移...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+
+./Blanchard_Ch.19.tex:168: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.168 ...$ A' $。利率提高将导致本币升�
+                                                  �。
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:168: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.168 ...' $。利率提高将导致本币升值�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:169: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.169 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+./Blanchard_Ch.19.tex:169: Missing $ inserted.
+<inserted text> 
+                $
+l.169 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+
+Overfull \hbox (24.50389pt too wide) in paragraph at lines 168--169
+\C19/rm/m/n/10.53937/75 ~ \C19/rm/m/n/10.53937/43 � \C19/rm/m/n/10.53937/36 U \C19/rm/m/n/10.53937/75 � \C19/rm/m/n/10.53937/38 � \C19/rm/m/n/10.53937/45 ^^U \C19/rm/m/n/10.53937/75 ^^? \C19/rm/m/n/10.53937/31 V \C19/rm/m/n/10.53937/10 � \C19/rm/m/n/10.53937/76 D \C19/rm/m/n/10.53937/12 � \C19/rm/m/n/10.53937/32 � \C19/rm/m/n/10.53937/83 ^^_ \C19/rm/m/n/10.53937/09 6\OT1/cmr/m/n/10.53937 M\C19/rm/m/n/10.53937/76 P \C19/rm/m/n/10.53937/38 ^^D \C19/rm/m/n/10.53937/43 � \C19/rm/m/n/10.53937/74 � \C19/rm/m/n/10.53937/08 T \C19/rm/m/n/10.53937/29 � \C19/rm/m/n/10.53937/75 ^^? \OT1/cmr/m/n/10.53937 LM' $[][]\OML/cmm/m/it/10.53937 S[][][][][][][][][]\OT1/cmr/m/n/10.53937 ([][][])[][][][][][]\OML/cmm/m/it/10.53937 A[][][][][][]$
+ []
+
+
+./Blanchard_Ch.19.tex:170: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 ...币紧缩下，利率提高和本币升�
+                                                  �都会导致需求和产�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:171: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.171 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:172: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 \subsection{开放经济中的财政效应}
+                                                 
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+./Blanchard_Ch.19.tex:172: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.172 \subsection{开放经济中的财政效应}
+                                                 
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:172: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.172 \subsection{开放经济中的财政效应}
+                                                 
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:172: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.172 \subsection{开放经济中的财政效应}
+                                                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:172: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.172 \subsection{开放经济中的财政效应}
+                                                 
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:172: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.172 \subsection{开放经济中的财政效应}
+                                                 
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:172: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.172 \subsection{开放经济中的财政效应}
+                                                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:172: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.172 \subsection{开放经济中的财政效应}
+                                                 
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:172: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.172 \subsection{开放经济中的财政效应}
+                                                 
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:172: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.172 \subsection{开放经济中的财政效应}
+                                                 
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:172: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.172 \subsection{开放经济中的财政效应}
+                                                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+<19_4.png, id=180, 744.381pt x 420.3705pt>
+File: 19_4.png Graphic file (type png)
+<use 19_4.png>
+Package pdftex.def Info: 19_4.png  used on input line 176.
+(pdftex.def)             Requested size: 345.0pt x 194.82883pt.
+[6
+./Blanchard_Ch.19.tex:183: Undefined control sequence.
+\UseRawInputEncoding ...tencodingname \@undefined 
+                                                  \let \DeclareFontEncoding@...
+l.183 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Blanchard_Ch.19.tex:183: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.183 
+      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:183: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.183 
+      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:183: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.183 
+      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:183: Undefined control sequence.
+<argument> \@undefined 
+                       
+l.183 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+ <./19_3.png>]
+
+./Blanchard_Ch.19.tex:184: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ...�利率，因此LM曲线并没有移动�
+                                                  �新的均衡点在$ A' $�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:184: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ...�线并没有移动。新的均衡点在$
+                                                   A' $点，对应一个更...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+
+./Blanchard_Ch.19.tex:184: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ...��新的均衡点在$ A' $点，对应一
+                                                  个更高的产出水平�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:184: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ...�，对应一个更高的产出水平和$
+                                                   Y' $。因为利率不变...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+
+./Blanchard_Ch.19.tex:184: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ...为利率不变，汇率也保持不变�
+                                                  �所以当中央银行保�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:184: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ...加会导致产出增加而汇率不变�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:185: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.185 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:188: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.188 需
+         求的各组成部分变化：
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:190: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 消费和政府支出双双上升�
+                                         �消费的增加是因为收入增�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:194: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 净
+         出口下降:$ NX=NX(U,Y^*,E) $。外国产出不变，汇率不变...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:195: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.195 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:198: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 现在假设政府支G的增加发生在一
+                                                 个产出等于潜在产出...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:198: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...�发生在一个产出等于潜在产出$
+                                                   Y_n $的经济体中。�...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+./Blanchard_Ch.19.tex:198: Missing $ inserted.
+<inserted text> 
+                $
+l.198 ...�生在一个产出等于潜在产出$ Y_
+                                                  n $的经济体中。这�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Blanchard_Ch.19.tex:198: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...��于潜在产出$ Y_n $的经济体中�
+                                                  �这种情况下政府担�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:198: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...经济超过潜在产出水平而推高�
+                                                  �货膨胀水平。为此�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:198: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...它会通过提高利率来做出应对�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:199: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.199 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[7
+./Blanchard_Ch.19.tex:199: Undefined control sequence.
+\UseRawInputEncoding ...tencodingname \@undefined 
+                                                  \let \DeclareFontEncoding@...
+l.199 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Blanchard_Ch.19.tex:199: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.199 
+      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:199: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.199 
+      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:199: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.199 
+      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:199: Undefined control sequence.
+<argument> \@undefined 
+                       
+l.199 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+ <./19_4.png>]
+<19_5.png, id=191, 744.98325pt x 415.5525pt>
+File: 19_5.png Graphic file (type png)
+<use 19_5.png>
+Package pdftex.def Info: 19_5.png  used on input line 202.
+(pdftex.def)             Requested size: 345.0pt x 192.44365pt.
+
+
+./Blanchard_Ch.19.tex:211: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ...�高，产出的增加将会减少，从$
+                                                   Y_n $增加到$ Y'' $，�...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+./Blanchard_Ch.19.tex:211: Missing $ inserted.
+<inserted text> 
+                $
+l.211 ...�，产出的增加将会减少，从$ Y_
+                                                  n $增加到$ Y'' $，汇�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Blanchard_Ch.19.tex:211: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ...增加将会减少，从$ Y_n $增加到$
+                                                   Y'' $，汇率将会从E�...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+
+./Blanchard_Ch.19.tex:211: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ...��到$ Y'' $，汇率将会从E提高到$
+                                                   E'' $。
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Runaway argument?
+./Blanchard_Ch.19.tex:212: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.212 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Overfull \hbox (47.48491pt too wide) in paragraph at lines 211--212
+\C19/rm/m/n/10.53937/77 ^^M \C19/rm/m/n/10.53937/03 � \C19/rm/m/n/10.53937/11 � \C19/rm/m/n/10.53937/78 � \C19/rm/m/n/10.53937/18 � \C19/rm/m/n/10.53937/45 ^^U \C19/rm/m/n/10.53937/74 � \C19/rm/m/n/10.53937/29 � \C19/rm/m/n/10.53937/05 � \C19/rm/m/n/10.53937/77 ^^M \C19/rm/m/n/10.53937/03 � \C19/rm/m/n/10.53937/25 � \C19/rm/m/n/10.53937/75 � \C19/rm/m/n/10.53937/24 � \C19/rm/m/n/10.53937/36 ' \C19/rm/m/n/10.53937/74 � \C19/rm/m/n/10.53937/20 2 \C19/rm/m/n/10.53937/05 � \C19/rm/m/n/10.53937/75 � \C19/rm/m/n/10.53937/13 � \C19/rm/m/n/10.53937/45 ^^U \C19/rm/m/n/10.53937/74 � \OT1/cmr/m/n/10.53937 Y$[]$\C19/rm/m/n/10.53937/75 � \C19/rm/m/n/10.53937/23 * \C19/rm/m/n/10.53937/08 ^^M \C19/rm/m/n/10.53937/75 ^^? \OT1/cmr/m/n/10.53937 Y'' $[][][][][][][][][]\OML/cmm/m/it/10.53937 E[][][][][]E[]$\C19/rm/m/n/10.53937/73 � 
+ []
+
+
+./Blanchard_Ch.19.tex:213: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 需
+         求的各个部分的变化：
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:216: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.216 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:219: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 净
+         出口下降：产出增加提高了进口，利率上升引起汇�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:219: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 ...值提高了进口同时降低了出口�
+                                                  �预算赤字导致贸易�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:219: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 ...�出口。预算赤字导致贸易赤字(
+                                                  但是贸易赤字是否�...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+
+./Blanchard_Ch.19.tex:219: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 ...利率保持不变时的情况不清楚�
+                                                  �汇率升值使情况恶�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:219: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 ...�小，因此进口的增幅也变小。)
+                                                  
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+./Blanchard_Ch.19.tex:222: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:222: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:222: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:222: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:222: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:222: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:222: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:222: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:222: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:222: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:222: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:222: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:222: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.222 \section{固定汇率制}
+                               
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[8 <./19_5.png>]
+./Blanchard_Ch.19.tex:222: Bad character code (-186).
+<argument> \@tempcnta 
+                      
+l.222 \section{固定汇率制}
+                               
+A character number must be between 0 and 255.
+I changed this one to zero.
+
+
+./Blanchard_Ch.19.tex:224: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 ...�状范围、欧洲货币体系和欧元}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:224: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 ...�状范围、欧洲货币体系和欧元}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:226: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 ...行完全浮动的汇率制度，如美�
+                                                  �英、日、加，这些�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:227: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.227 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:228: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.228 ...端是实行固定汇率制度的国家�
+                                                  �这些国家将汇率与�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:228: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.228 ...��国货币保持固定的比率。有一
+                                                  些国家采用本币钉�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:228: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.228 ...�率。有一些国家采用本币钉住(
+                                                  peg)美元。
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+Runaway argument?
+./Blanchard_Ch.19.tex:229: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.229 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:230: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 “固定�
+                 �并不是说实行固定汇率的国家的汇率从来不�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:230: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 ...率的国家的汇率从来不变动，�
+                                                  �是变动很少。把固�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:230: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 ...制度下汇率的下降叫作认为贬�
+                                                  �或低估而不是市场�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:230: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 ...为高估或高估而不是市场升值�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:231: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.231 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:232: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 ...�国家。例如一些执行爬行钉住(
+                                                  crawling peg)汇率制度�...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+
+./Blanchard_Ch.19.tex:232: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 ...汇率制度。这些国家的通胀率�
+                                                  �常要超过美国的通�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:232: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 ...胀率通常要超过美国的通胀率�
+                                                  �如果它们将本国名�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:232: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 ...而会导致持续的实际升值，从�
+                                                  �使它们的产品失去�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:232: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 ...了一个事先确定的对美元的贬�
+                                                  �率。它们选择相对�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:232: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 ...确定的对美元的贬值率。它们�
+                                                  �择相对于美元“爬�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:232: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 ...贬值率。它们选择相对于美元�
+                                                  �爬行”(缓慢地移动...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:232: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 ...。它们选择相对于美元“爬行�
+                                                  �(缓慢地移动)。
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:232: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 ...�它们选择相对于美元“爬行”(
+                                                  缓慢地移动)。
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+
+./Blanchard_Ch.19.tex:232: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 ...对于美元“爬行”(缓慢地移动)
+                                                  。
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+Runaway argument?
+./Blanchard_Ch.19.tex:233: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.233 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:234: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 另外一
+               种汇率安排是一些国家集团将彼此之间的双边�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:234: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 另外一种汇率安排是一
+                                    些国家集团将彼此之间的双边�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:234: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 ...��彼此之间的双边汇率保持在一
+                                                  定范围内。最显著�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:234: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 ...etary System，EMS)，该体系决定了1
+                                                  978~1998年欧盟内部汇...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+
+./Blanchard_Ch.19.tex:234: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 ...��个很小的范围之内，即围绕一
+                                                  个给定的中间平价(c...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:234: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 ...间平价(central parity)的带状范围(
+                                                  bands)。中间平价的�...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+
+./Blanchard_Ch.19.tex:234: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 ...变动以及特定货币的贬值和升�
+                                                  �也会发生，但是必�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:235: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.235 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[9
+./Blanchard_Ch.19.tex:236: Undefined control sequence.
+\UseRawInputEncoding ...tencodingname \@undefined 
+                                                  \let \DeclareFontEncoding@...
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Blanchard_Ch.19.tex:236: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:236: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:236: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:236: Undefined control sequence.
+<argument> \@undefined 
+                       
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Blanchard_Ch.19.tex:236: Undefined control sequence.
+\UseRawInputEncoding ...tencodingname \@undefined 
+                                                  \let \DeclareFontEncoding@...
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Blanchard_Ch.19.tex:236: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:236: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:236: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:236: Undefined control sequence.
+<argument> \@undefined 
+                       
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Blanchard_Ch.19.tex:236: Undefined control sequence.
+\UseRawInputEncoding ...tencodingname \@undefined 
+                                                  \let \DeclareFontEncoding@...
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Blanchard_Ch.19.tex:236: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:236: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:236: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Blanchard_Ch.19.tex:236: Undefined control sequence.
+<argument> \@undefined 
+                       
+l.236 \subsection
+                 {固定汇率制度下的货币政策}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+]
+Runaway argument?
+./Blanchard_Ch.19.tex:239: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.239 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:244: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 现在假设一
+                     个国家把汇率钉在一个选定的值$ \overline{E...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:244: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 现在假设一个国家把汇率钉在一
+                                                个选定的值$ \overline{E...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:244: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 ...假设一个国家把汇率钉在一个�
+                                                  �定的值$ \overline{E} $...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:244: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 ...个国家把汇率钉在一个选定的�
+                                                  �$ \overline{E} $，所以...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:244: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 ...�国家把汇率钉在一个选定的值$
+                                                   \overline{E} $，所以�...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+./Blanchard_Ch.19.tex:244: Missing $ inserted.
+<inserted text> 
+                $
+l.244 ...率钉在一个选定的值$ \overline{E}
+                                                   $，所以即期汇率为...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Blanchard_Ch.19.tex:244: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 ...市场均相信汇率将保持在钉住�
+                                                  �，那么预期远期汇�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:244: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 ...预期远期汇率$ E^e_{t+1} $也等于$
+                                                   \overline{E} $，利率�...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+./Blanchard_Ch.19.tex:244: Missing $ inserted.
+<inserted text> 
+                $
+l.244 ...��率$ E^e_{t+1} $也等于$ \overline{E}
+                                                   $，利率平价条件变...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Blanchard_Ch.19.tex:250: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.250 ...下国内利率必须等于国外利率�
+                                                  �(这些结果在很大程...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:250: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.250 ...�国内利率必须等于国外利率。(
+                                                  这些结果在很大程�...
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+
+./Blanchard_Ch.19.tex:250: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.250 ...投资者追求最高的预期回报率�
+                                                  �)
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:250: Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.250 ...�资者追求最高的预期回报率。)
+                                                  
+The second byte of the CJK code is out of range.
+Do you use the right encoding scheme?
+
+./Blanchard_Ch.19.tex:252: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:252: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:252: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:252: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:252: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:252: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:252: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:252: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:252: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:252: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:252: Improper alphabetic constant.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+./Blanchard_Ch.19.tex:252: Missing = inserted for \ifnum.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+I was expecting to see `<', `=', or `>'. Didn't.
+
+./Blanchard_Ch.19.tex:252: Missing number, treated as zero.
+<to be read again> 
+                   \@@par 
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./Blanchard_Ch.19.tex:252: Bad character code (-122).
+<argument> \@tempcnta 
+                      
+l.252 ...ection{固定汇率制下地财政政策}
+                                                  
+A character number must be between 0 and 255.
+I changed this one to zero.
+
+
+./Blanchard_Ch.19.tex:254: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.254 ...全浮动汇率制度下的情况一样�
+                                                  �因为如果支出增加�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:254: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.254 ...率变动，那么汇率就不会变动�
+                                                  �所以当政府支出增�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:254: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.254 ...区别在于中央银行的应对能力�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:255: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.255 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:258: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.258 通过把汇率固定下来，一
+                                       个国家就放弃了一个纠正贸�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+./Blanchard_Ch.19.tex:258: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.258 ...放弃了一个纠正贸易不平衡或�
+                                                  �改变经济活动水平�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:259: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.259 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./Blanchard_Ch.19.tex:260: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.260 通过承诺一
+                     个特定的汇率，也使国家放弃了对利率的�...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:261: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.261 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[10]
+
+./Blanchard_Ch.19.tex:262: Package inputenc Error: Invalid UTF-8 byte "80.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.262 ...单一的政策工具是远远不够的�
+                                                  �
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Runaway argument?
+./Blanchard_Ch.19.tex:263: Paragraph ended before \CJK@XX was complete.
+<to be read again> 
+                   \par 
+l.263 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[11] (./Blanchard_Ch.19.aux) ) 
+Here is how much of TeX's memory you used:
+ 16737 strings out of 494560
+ 306297 string characters out of 6177583
+ 310286 words of memory out of 5000000
+ 19960 multiletter control sequences out of 15000+600000
+ 574110 words of font info for 181 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 41i,6n,63p,5639b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simhei.ttf): subfont gbkhei33: wrong mapping: character 80 --> 0xFFFE --> .notdef
+><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong30: wrong mapping: character 160 --> 0xFFFE --> .notdef
+><c:/Windows/Fonts/simsun.ttc
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong28: wrong mapping: character 17 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong28: wrong mapping: character 182 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong28: wrong mapping: character 183 --> 0xFFFE --> .notdef
+><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong35: wrong mapping: character 10 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong35: wrong mapping: character 11 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong35: wrong mapping: character 12 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong35: wrong mapping: character 14 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong35: wrong mapping: character 136 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong35: wrong mapping: character 156 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong35: wrong mapping: character 157 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong35: wrong mapping: character 159 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong35: wrong mapping: character 199 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong35: wrong mapping: character 200 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong35: wrong mapping: character 201 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong35: wrong mapping: character 202 --> 0xFFFE --> .notdef
+><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong32: wrong mapping: character 17 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong32: wrong mapping: character 18 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong32: wrong mapping: character 19 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong32: wrong mapping: character 20 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong32: wrong mapping: character 21 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong32: wrong mapping: character 22 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong32: wrong mapping: character 154 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong32: wrong mapping: character 207 --> 0xFFFE --> .notdef
+><c:/Windows/Fonts/simsun.ttc
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong33: wrong mapping: character 80 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong33: wrong mapping: character 141 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong33: wrong mapping: character 142 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong33: wrong mapping: character 143 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong33: wrong mapping: character 144 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong33: wrong mapping: character 146 --> 0xFFFE --> .notdef
+><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong27: wrong mapping: character 6 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong27: wrong mapping: character 79 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong27: wrong mapping: character 88 --> 0xFFFE --> .notdef
+><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong34: wrong mapping: character 10 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong34: wrong mapping: character 11 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong34: wrong mapping: character 74 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong34: wrong mapping: character 75 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong34: wrong mapping: character 76 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong34: wrong mapping: character 77 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong34: wrong mapping: character 78 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong34: wrong mapping: character 80 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong34: wrong mapping: character 198 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong34: wrong mapping: character 219 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong34: wrong mapping: character 223 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong34: wrong mapping: character 227 --> 0xFFFE --> .notdef
+><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong25: wrong mapping: character 11 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong25: wrong mapping: character 193 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong25: wrong mapping: character 219 --> 0xFFFE --> .notdef
+><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong29: wrong mapping: character 119 --> 0xFFFE --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont gbksong29: wrong mapping: character 121 --> 0xFFFE --> .notdef
+><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simhei.ttf): subfont gbkhei25: wrong mapping: character 0 --> 0xFFFE --> .notdef
+><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Blanchard_Ch.19.pdf (11 pages, 866421 bytes).
+PDF statistics:
+ 544 PDF objects out of 1000 (max. 8388607)
+ 351 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+

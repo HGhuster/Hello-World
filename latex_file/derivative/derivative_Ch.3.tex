@@ -1,0 +1,192 @@
+\documentclass{article}
+\title{Hedging strategies using futures}
+\author{Dawei Wang}
+\date{\today}
+%\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+	\maketitle
+	%	\tabletents
+\section{Basic principles}
+\subsection{Short hedges}
+\hspace*{\fill}
+
+A short hedge is a hedge that involves a short position in futures contracts. 
+
+A short hedge is appropriate when the hedger already owns an asset and expect to sell it at some time in the future.
+
+A short hedge can also be used when an asset is not owned right now but will be owned at some time in the future.
+
+\subsection{Long hedges}
+\hspace*{\fill}
+
+Hedge that involve taking a long position in a futures contract are known as long hedges.
+
+A long hedge is appropriate when a company knows it will have to purchase a certain asset in the future and wants to lock in a price now.
+
+\section{Arguments for and against hedging}
+\subsection{Hedging and shareholders}
+\hspace*{\fill}
+
+One argument sometimes put forward is that shareholders can do the hedging themselves. This argument assumes that shareholders have as much information as the company. It also ignore commissions and other transaction costs.
+
+One thing that shareholders can do far more easily than a corporation is diversify risk.
+
+\subsection{Hedging and competitors}
+\hspace*{\fill}
+
+If hedging is not the norm in a certain industry, it may make no sense for on particular company to choose to be different from all others. A company that does not hedge can expect its profit margins to be roughly constant. However a company that does hedge can expect its profit margins to fluctuate.
+
+All the implications of price changes on a company's profitability should be taken into account in the design of a hedging strategy to protect against the price changes.
+
+\subsection{Hedging can lead to worse outcome}
+
+\section{Basis risk}
+\hspace*{\fill}
+
+1. The asset whose price is to be hedged may not be exactly the same as the asset underlying the futures contract.
+
+2. The hedger may be uncertain as to the exact date when the asset will be bought or sold.
+
+3. The hedge may require the futures contract to be closed out before its delivery month.
+
+These problems give rise to what is termed basis risk.
+
+\subsection{The basis}
+\hspace*{\fill}
+
+Basis = spot price of asset to be hedged- future price of contract used
+
+If the asset to be hedged and the asset underlying the futures contract are the same, the basis should be zero at the expiration of the futures contract.
+
+S1=spot price at time t1;
+
+S2=spot price at time t2;
+
+F1=futures price at time t1;
+
+F2=futures price at time t2;
+
+b1=basis at time t1;
+
+B2=basis at time t2;
+
+\subsection{Choice of contract}
+1. The choice of the asset underlying the futures contract
+\\
+2. The choice of the delivery month
+\\ \hspace*{\fill}
+
+The choice of the delivery month is likely to be influenced by several factors.
+In fact, a contract with a later delivery month than the expiration of the hedge is usually chosen.
+
+Moreover, a long hedger runs the risk of having to take delivery of the physical asset if the contract is held during the delivery month.
+
+In general, basis risk increase as the time of expiration and the delivery month increase. A good rule of thumb is therefore to choose a delivery month that is as close as possible to, but later than, the expiration of the hedge.
+
+This rule of thumb assumes that there is sufficient liquidity in all contracts to meet the hedger's requirements.
+
+
+\section{Cross hedging }
+\hspace*{\fill}
+
+Cross hedging occurs when the asset underlying the futures contracts and the asset whose price is being hedged are different.
+
+The hedge ratio is the ratio of the size of the position taken in futures contracts to the size of the exposure. When the asset underlying the futures contracts is the same as the asset being hedged, it is natural to use a hedge ratio of 1.0.
+
+When cross hedging is used, setting the hedge ratio equal to 1.0 is not always optimal. The hedger should choose a value for the hedge ratio that minimizes the variance of the value of the hedged position.
+\\ \hspace*{\fill}
+\\
+Define:
+
+ΔS: change in the spot price, S, during a period of time equal to the life of the hedge;
+
+ΔF: change in futures price, F, during a period of time equal to the life of the hedge.
+
+We will denote the minimum variance hedge ratio by h*. It can be shown that h* is the slope of the best-fit line from a linear regression of ΔS against ΔF. We would expect h* to be the ratio of average change in S for a particular change in F.
+
+The formula for h* is:
+\[
+h^*=\rho\frac{\sigma_S}{\sigma_F}
+\]
+
+The hedge effectiveness can be defined as the proportion of the variance that is eliminated by hedging. This is the R2 from the regression of ΔS against ΔF and equals ρ2.
+
+\subsection{Optimal number of contracts}
+Define:
+
+$ Q_A $: size of position being hedged(units)
+
+$ Q_F $: size of one futures contract(units)
+
+$ N^* $: optimal number of futures contracts for hedging
+
+The future contracts should be on $ h^*Q_A $ units of the asset. The number of futures contracts required is therefore given by:
+\begin{equation}
+	N^*=\frac{h^*Q_A}{Q_F}
+\end{equation}
+
+\subsection{Tailing the hedge}
+\hspace*{\fill}
+
+When futures are used for hedging, a small adjustment, known as tailing the hedge, can be made to allow for the impact of daily settlement. In practice, this means that:
+\begin{equation}
+N^*=\frac{h^*V_A}{V_F}
+\end{equation}
+
+		
+Where VA is the dollar value of the position being hedged and VF is the dollar value of one futures contract(the futures price times QF)
+
+The effect of tailing the hedge is to multiply the hedge ratio in equation(1) by the ratio of the spot price to the futures price.
+
+If forward contracts rather than futures contracts are used, there is no daily settlement and equation(1) should be used.
+
+\section{Stock index futures}
+\subsection{Stock indices}
+\hspace*{\fill}
+
+The Dow Jones Industrial Average is based on a portfolio consisting of 30 blue-chip stocks in the United States. The weights given to the stocks are proportional to their prices.
+
+The Standard \& Poor's 500(S\&P 500) Index is based on a portfolio of 500 different stocks: 400 industrials, 40 utilities, 20 transportations companies, and 40 financial institutions. The weights of the stocks in the portfolio at any given time are proportional to their market capitalizations.
+
+The Nasdaq-100 is based on 100 stocks using the National Association of Securities Dealers Automatic Quotations Service.
+
+The Russell 1000 Index is an index of the prices of the 1000 largest capitalization stocks in the United States.
+
+The US Dollar Index is a trade-weighted index of the values of six foreign currencies(the euro, yen, pound, Canadian dollar, Swedish Krona, and Swiss franc)
+
+\subsection{Hedging an equity portfolio}
+Define:
+
+VA: current value of the portfolio
+
+VF: current value of one futures contract(the futures price times the contract size)
+
+When the portfolio does not exactly mirror the index, we can use the capital asset pricing model(CAPM). 
+
+The parameter beta(β) from the CAPM is the slope of the best-fit line obtained when excess return on the portfolio over the risk-free rate is regressed against the excess return of the index over the risk-free rate.
+\\
+In general:
+\begin{equation}
+	N^*=\beta\frac{V_A}{V_F}
+\end{equation}
+
+	
+This formula assumes that the maturity of the futures contract is close to the maturity of the hedge.
+
+\subsection{Changing the beta of a portfolio}
+In general, to change the beta of the portfolio from $ \beta $ to $ \beta^* $, a short position in
+\[
+(\beta-\beta^*)\frac{V_A}{V_F}
+\]
+contracts is required.
+
+\subsection{Locking in the benefits of stock picking}
+
+\section{Stack and roll}
+Sometimes the expiration date of the hedge is later than the delivery dates of all the futures contacts that can be used. The hedger must then roll the hedge forward by closing out on futures contract and taking the same position in a futures contract with a later delivery date.
+
+
+
+\end{document}

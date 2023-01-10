@@ -1,0 +1,209 @@
+\documentclass{article}
+\title{Properties of Stock Options}
+\author{Dawei Wang}
+\date{\today}
+%\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+	\maketitle
+\section{FACTORS AFFECTING OPTION PRICES}
+There are six factors affecting the price of a stock option:
+
+1. The current stock price, $ S_0 $
+
+2. The strike price, K
+
+3. The time to expiration, T
+
+4. The volatility of the stock price, $ \sigma $
+
+5. The risk-free interest rate, r
+
+6. The dividends that are expected to be paid.
+
+\hspace*{\fill}
+
+In this section, we consider what happens to option prices when there is a change to one of these factors, with all the other factors remaining fixed.
+
+\subsection{Stock Price and Strike Price}
+If a call option is exercised at some future time, the payoff will be the amount by which the stock price exceeds the strike price. Call options therefore become more valuable as the  stock price increase and less valuable ass the strike price increase. For a put option, the payoff on exercise is the amount by which the strike price exceeds the stock price. Put options therefore behave in the opposite way from call options.
+
+\subsection{Time to Expiration}
+Both put and call American options become more valuable as the time to expiration increases. Consider two American options differ only as far as the expiration date is concerned. The owner of the long-life option has all the exercise oppotunities open to the owner of the short-life option-and more. The long-life option must therefore always be worth at least as much as the short-life option.
+
+Although European put and call options usually become more valuable as the time to expiration increases, this is not always the case. Consider two European call options on a stock: one with an expiration date in 1 month, the other with an expiraion date in 2 months. Suppose that a very large dividend is expected in 6 weeks. The dividend will cause the stock price to decline, so that the short-life option could be worth more than the long-life option.
+
+\subsection{Volatility}
+Roughly speaking, the volatility of a stock price is a measure of how uncertain we are about future stock price movements. As volatility increases, the chance that the stock will do very well or vety poorly increases. The value of both calls and puts therefore increase as volatility increases.
+
+\subsection{Risk-Free Interest Rate}
+As interest rates in the economy increase, the expected return required by investors from the stock tends to increase. In addition, the present value of any future cash flow received by the holder of the option decreases. The combined impact of these two effects is to increase the value of call options and decrease the value of put options.
+
+It is important to emphasize that we are assuming that interest rates change while all other variables stay the same. In practice, when interest rates rise (fall), stock prices tend to fall (rise). The combined effect of an interest rate increase and the accompanying stock price decrease can be to decreae the value of a call option and increase the value of a put option.
+
+\subsection{Amount of Future Dividends}
+Dividends have the effect of reducing the stock price on the ex-dividend date. This is bad news for the value of call options and good news for the value of put options.
+
+The value of the option is negatively related to the size of dividend if the option is a call and positively related to the size of the dividend if the option is a put.
+
+\section{ASSUMPTIONS AND NOTATION}
+We assume that there are some market participants, such as large investment banks, for which the following statements are true:
+
+\hspace*{\fill}
+
+1. There are no transactions costs.
+
+2. All trading profits are subject to the same tax rate.
+
+3. Borrowing and lending are possible at the risk-free rate.
+
+\hspace*{\fill}
+
+We assume that these market participants are prepared to take advantage oppotunities as they arise. For the purposes of our analysis, it is therefore reasonable to assume that there are no arbitrage oppotunities.
+
+We will use the following notation:
+
+$ S_0 $: Current stock price
+
+K: Strike price of option
+
+T: Time to expiration of option
+
+$ S_T $: Stock price on the expiration date
+
+r: Continuously compounded risk-free rate of interest for an investment maturing in time T
+
+C: Value of American call option to buy one share
+
+P: Value of American put option to sell on share
+
+c: Value of European call option to buy one share
+
+p: Value of European put option to sell one share
+
+\hspace*{\fill}
+
+We can assume that r>0. Otherwise, a risk-free investment would provide no advantages over cash.
+
+\section{UPPER AND LOWER BOUNDS FOR OPTION PRICES}
+The upper bound and lower bounds for option prices do not depend on any particular assumptions about the factors mentioned in Section 1. If any option price is above the upper bound or below the lower bound, then there are profitable oppotunities for arbitrageurs.
+
+\subsection{Upper Bounds}
+An American or European call option gives the hodler the right to buy one share of a stock for a certain price. No matter what happens, the option can never be worth more than the stock. Hence, the stock price is an upper bound to the option price:
+\begin{equation}
+	c\le S_0\qquad and\qquad C\le S_0
+\end{equation}
+
+An American put option gives the holder the right to sell one share of stock for K. No matter how low the stock price becomes, the option can never be worth more than K. Hence,
+\begin{equation}
+	P\le K
+\end{equation}
+For European options, we know that at maturity the option cannot be worth more than K. It follows that it cannot be worth more than the present value of K today:
+\begin{equation}
+	P\le Ke^{-rT}
+\end{equation}
+
+\subsection{Lower Bound for Calls on Non-Dividend-Paying Stocks}
+A lower bound for the price of a European call option on a non-dividend-paying stock is
+\[
+S_0-Ke^{-rT}
+\]
+\begin{equation}
+	c\ge max(S_0-Ke^{-rT},0)
+\end{equation}
+\subsection{Lower Bound for European Puts on Non-Dividend-Paying Stocks}
+For a European put option on a non-dividend-paying stock, a lower bound for the price is
+\[
+Ke^{-rT}-S_0
+\]
+\begin{equation}
+	p\ge max(Ke^{-rT}-S_0,0)
+\end{equation}
+\section{PUT-CALL PARITY}
+We now derive an important relationship between prices of European put and call options that have the same strike price and time to maturity.
+\begin{equation}
+	c+Ke^{-rT}=p+S_0
+\end{equation}
+
+\subsection{American Options}
+Put-call parity holds only for European options. However, it is possible to derive some results for American option prices. It can be shown that, when there are no dividends,
+\begin{equation}
+	S_0-K\le C-P\le S_0-Ke^{-rT}
+\end{equation}
+
+\section{CALLS ON A NON-DIVIDEND-PAYING STOCK}
+In this section, we first show that it is never optimal to exercise an American call option on a non-dividend-paying stock before the expiration date.
+
+Consider an American call option on a non-dividend-paying stock with one month to expiration when the stock price is \$70 and the stike price is \$40. The option is deep in the money, and the investor who owns the option might well be tempted to exercise it immediately. However, if the investor plans to hold the stock obtained by exercising the option for more than one month, this is not the best strategy. A better course of action is to keep the option and exercise it at the end of the month. The \$40 strike price is paid out one month later than it would be if the option were exercised immediately, so that interest is earned on the \$40 for one month. Because the stock pays no dividends, no income from the stock is sacirficed. A futher advantage of waiting rather than exercising immediately is that there is some chance that the stock price will fall below \$40 in one month.
+
+If the investor thinks the stock is currently overpriced and is wondering whether to exercise the option and sell the stock. In this case, the investor is better off selling the option than exercising it. The option will be bought by another investor who does want to hold the stock. Such investor must exist. Otherwise the stock price would not be \$70. The price obtained for the option will be greater than its intrinsic value of \$30, for the reasons mentioned earlier.
+
+For a more formal argument, we can use equation (4):
+\[
+c\ge S_0-Ke^{-rT}
+\]
+
+Because the owner of an American call has all the exercise oppotunities open to the owner of the corresponding European call, we must have $ C\ge c $.Hence,
+\[
+C\ge S_0-Ke^{-rT}
+\]
+
+Given r>0, it follows that $ C>S_0-K $ when T>0. This means that C is always greater than the option's intrinsic value prior to maturity. If it were optimal to exercise at a particular time prior to maturity, C would equal the option's intrinsic value at that time. It follows that it can never be optimal to exercise early.
+
+\subsection{Bounds}
+Because American call options are never exercised early when there are no dividends, they are equivalent to European call options, so that C=c. From equations (1) and (4), it follows that upper and lower bounds are given by
+\[
+max(S_0-Ke^{-rT},0)\le c,C\le S_0
+\]
+
+\section{PUTS ON A NON-DIVIDEND-PAYING STOCK}
+It can be optimal to exercise an American put option on a non-dividend-paying stock early. Indeed, at any given time during its life, a put option should always be exercised early if it is sufficiently deep in the money.
+
+In general, the early exercise of a put option becomes more attractive as $ S_0 $ decreases, as r increases, and as the volatility decreases.
+
+\subsection{Bounds}
+From equations (3) and (5), upper and lower bounds for a European put option when there are no dividends are given by
+\[
+max(Ke^{-rT}-S_0,0)\le p\le Ke^{-rT}
+\]
+For an American put option on a non-dividend-paying stock, the condition
+\[
+P\ge max(K-S_0,0)
+\]
+must apply because the option can be exercised at any time. This is a stronger condition than the one for a European put option in equation (5). Using the result in equation (2), bounds for an American put option on a non-dividend-paying stock are
+\[
+max(K-S_0,0)\le P\le K
+\]
+
+As we argued earlier, provided that r>0, it is always optimal to exercise an American put immediately when the stock price is sufficiently low. When early exercise is optimal, the value of the option is $ K-S_0 $.
+
+Because there are some circumstances when it is desirable to exercise an American put option early, it follows that an American put option is always worth more than the corresponding European put option. Furthermore, because an American put is sometimes worth its intrinsic value, it follows that a European put option must sometimes be worth less than its intrinsic value. This means that the curve representing the relationship between the put price and the stock price for a European option must be below the corresponding curve for an American option.
+
+\section{EFFECT OF DIVIDENDS}
+We assume that the dividends that will be paid during the life of the option are known. Most exchange-traded stock options have a life of less than one year, so this assumption is not too unreasonable in many situations. We will use D to denote the present value of the dividends during the life of the option. In the calculation of D, a dividend is assumed to occur at the time of its ex-dividend date.
+
+\subsection{Lower Bound for Calls and Puts}
+A similar argument to the one used to derive equation (4) shows that
+\begin{equation}
+	c\ge max(S_0-D-Ke^{-rT},0)
+\end{equation}
+A similar argument to the one used to derive equation (5) shows that
+\begin{equation}
+	p\ge max(D+Ke^{-rT}-S_0,0)
+\end{equation}
+
+\subsection{Early Exercise}
+When dividends are expected, we can no longer assert that an American call option will not be exercised early. Sometimes it is optimal to exercise an American call immediately prior to an ex-dividend date. It is never optimal to exercise a call at other times.
+
+\subsection{Put-Call Parity}
+With dividends, the put-call parity result in equation (6) becomes
+\begin{equation}
+	c+D+Ke^{-rT}=p+S_0
+\end{equation}
+Dividends cause equation (7) to be modified to
+\begin{equation}
+	S_0-D-K\le C-P\le S_0-Ke^{-rT}
+\end{equation}
+
+\end{document}

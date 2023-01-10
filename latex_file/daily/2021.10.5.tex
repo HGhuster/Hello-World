@@ -1,0 +1,533 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{diagbox}
+\usepackage{graphicx}
+\begin{document}
+	\section*{1}
+	
+	\subsection*{A}
+	
+	To get our first success on the xth toss means we have failed in all x-1 times before. 
+	
+	Since the results of every toss are independent, the probability that we have failed in all x-1 times before is : 
+	
+	$(1-P)^{x-1}$
+	
+	And given that we have failed in all x-1 times before, the probability that we success in the xth toss is $P$.
+	
+	So the probability of getting our first success on the xth toss of is given by:
+	
+	$(1-P)^{x-1}\times P=(1-P)^{x-1}P$
+	
+	\subsection*{B}
+	
+	If I toss a fair die, the probability that I get a 6 in a single toss is $\frac{1}{6}$.
+	
+	If X equals the toss on which you first throw a 6, the probability distribution of X is:
+	
+	$P(X=n)=(1-\frac{1}{6})^{n-1}\times \frac{1}{6}=(\frac{5}{6})^{n-1}\times\frac{1}{6}$
+	
+	\subsection*{C}
+	
+	If the die was unfair and had a 25\% chance of landing on 6 but only a 15\% chance of landing onall the other values, the probability that I get a 6 in a single toss is $0.25$.
+	
+	The probability distribution of X is:
+	
+	$P(X=n)=(1-0.25)^{n-1}\times 0.25=0.75^{n-1}\times 0.25$
+	
+	\subsection*{D}
+	
+	If the die is fair as in (B), the probability of getting the first success on the second trial is :
+	
+	$P(X=2)=(1-\frac{1}{6})^{2-1}\times \frac{1}{6}=\frac{5}{36}$
+	
+	If the die is unfair as in (C), the probability of getting the first success on the second trial is :
+	
+	$P(X=2)=(1-0.25)^{2-1}\times 0.25=\frac{3}{16}$
+	
+	\subsection*{D}
+	
+	Because the probability of getting a 6 in a single toss is different in my answer to (D), so I got different probabilities.
+	
+	\section*{2}
+	
+	\subsection*{A}
+	
+	The joint probability distribution of X and Y:
+	
+		\begin{tabular}{c|c|c}
+   \diagbox{Y}{X} & 0 & 1 \\
+  	\hline
+  	0 & $\frac{3\times 2\times 1}{10\times 9\times 8}$ & 0 \\
+  	\hline
+  	1 & $2\times \frac{3\times 2\times 7}{10\times 9\times 8}$ & $\frac{7\times 3\times 2}{10\times 9\times 8}$\\
+  	\hline
+  	2 & $\frac{3\times 7\times 6}{10\times 9\times 8}$ &  $2\times \frac{7\times 6\times 3}{10\times 9\times 8}$\\
+  	\hline
+  	3 & 0 &  $\frac{7\times 6\times 5}{10\times 9\times 8}$\\
+	\end{tabular}
+	
+	\begin{tabular}{c|c|c|c}
+   \diagbox{Y}{X} & -2 & 9 & 13\\
+  	\hline
+  	0 & $\frac{6}{720}$ & 0 \\
+  	\hline
+  	1 & $\frac{84}{720}$ & $\frac{42}{720}$\\
+  	\hline
+  	2 & $\frac{126}{720}$ &  $\frac{252}{720}$\\
+  	\hline
+  	3 & 0 &  $\frac{210}{720}$\\
+	\end{tabular}
+	
+	\subsection*{B}
+	
+	$P(X=0)=\frac{6}{720}+\frac{84}{720}+\frac{126}{720}+0=0.3$
+	
+	$P(Y=3)=\frac{7}{24}$
+	
+	$P(X=0\cap Y=3)=0\ne P(X=0)\times P(Y=3)$
+	
+	So X and Y are not independent.
+	
+	\section*{3}
+	
+	\subsection*{A}
+	
+	The joint probably distribution of X and Y:
+	
+		\begin{tabular}{c|c|c}
+   \diagbox{Y}{X} & 1 & 0 \\
+  	\hline
+  	1 & $0.18\times 0.2$ & $0.08\times(1-0.2)$ \\
+  	\hline
+  	0 & $(1-0.18)\times0.2$ & $(1-0.08)\times(1-0.2)$\\
+  	\hline
+  		\end{tabular}
+	
+			\begin{tabular}{c|c|c}
+   \diagbox{Y}{X} & 1 & 0 \\
+  	\hline
+  	1 & $0.036$ & $0.064$ \\
+  	\hline
+  	0 & $0.164$ & $0.736$\\
+  	\hline
+  		\end{tabular}
+	
+	
+	\hspace*{\fill}
+	
+	$0.036+0.064+0.164+0.736=1$
+	
+	\newpage
+	
+	\subsection*{B}
+	
+	Given Y=1, the conditional distribution of X is:
+
+	\begin{tabular}{c|c|c}
+   X & 1 & 0 \\
+  	\hline
+  	P & $\frac{0.036}{0.036+0.064}$ & $\frac{0.064}{0.036+0.064}$ \\
+  		\end{tabular}
+	
+	\begin{tabular}{c|c|c}
+   X & 1 & 0 \\
+  	\hline
+  	P & $0.36$ & $0.64$ \\
+  	
+  		\end{tabular}
+	
+	\subsection*{C}
+	
+	The marginal distribution of X is:
+	
+	\begin{tabular}{c|c|c}
+   X & 1 & 0 \\
+  	\hline
+  	P & $0.2$ & $0.8$ \\
+  	
+  		\end{tabular}
+
+	The marginal distribution of Y is:
+	
+	\begin{tabular}{c|c|c}
+   Y & 1 & 0 \\
+  	\hline
+  	P & $0.1$ & $0.9$ \\
+  	
+  		\end{tabular}
+
+	\subsection*{D}
+	
+	The variance of X is $0.2\times 0.8=0.16$
+	
+	The variance of Y is $0.1\times 0.9=0.09$
+	
+	The covariance of X,Y is $Cov(X,Y)=E(XY)-E(X)E(Y)$
+	
+	$P(XY=1)=P(X=1\cap Y=1)=0.036\Rightarrow E(XY)=0.036$
+	
+	$E(X)=0.2,E(Y)=0.1$
+	
+	$Var(X)=0.2\times 0.8=0.16,Var(Y)=0.1\times 0.9=0.09$
+	
+	$Cov(X,Y)=0.036-0.02=0.016$
+	
+	The correlation coefficient is:
+	
+	$\frac{0.016}{\sqrt{0.16\times 0.09}}=\frac{2}{15}$
+	
+	\section*{4}
+	
+	\subsection*{A}
+	
+	\begin{equation*}
+		\begin{split}
+			Var(2X-3Y)=&E((2X-3Y)^2))-E^2(2X-3Y)\\
+			 =&E(4X^2-12XY+9Y^2)-(4E^2(X)-12E(X)E(Y)+9E^2(Y))\\
+			 =&4(E(X^2)-E^2(X)))+9(E(Y^2)-E^2(Y)))-12(E(XY)-E(X)E(Y))\\
+			 =&4*Var(X)+9*Var(Y)-12*Cov(X,Y)
+		\end{split}
+	\end{equation*}
+	
+	\subsection*{B}
+	
+	\begin{equation*}
+		\begin{split}
+			Cov(X+3Y,Z)&=E((X+3Y)*Z)-E(X+3Y)E(Z)\\
+						&=E(XZ+3YZ)-(E(X)E(Z)+3E(Y)E(Z))\\
+						&=E(XZ)+3E(YZ)-E(X)E(Z)-3E(Y)E(Z)\\
+						&=Cov(X,Z)+3Cov(Y,Z)
+		\end{split}
+	\end{equation*}
+	
+	\subsection*{C}
+	
+	W=a+bX+cY
+	
+	\begin{equation*}
+		\begin{split}
+			E(W)&=E(a+bX+cY)\\
+			&=E(a)+E(bX)+E(cY)\\
+			&=a+bE(X)+cE(Y)\\
+			&=a+b\mu_X+c\mu_Y
+		\end{split}
+	\end{equation*}
+	
+	\begin{equation*}
+		\begin{split}
+			Var(W)&=Var(a+bX+cY)\\
+					&=Var(a)+Var(bX)+Var(cY)+2Cov(a,bX)+2Cov(a,cY)+2Cov(bX,cY)\\
+					&=0+b^2Var(X)+c^2Var(Y)+0+0+2bcCov(X,Y)\\
+					&=b^2\sigma^2_X+c^2\sigma^2_Y+2bcCov(X,Y)
+		\end{split}
+	\end{equation*}
+
+	\section*{5}
+	
+	\subsection*{A}
+	Joint distribution:
+	
+	\begin{tabular}{c|c|c|c}
+   \diagbox{Y}{X} &  -2&  9& 13 \\
+  	\hline
+  	 3& $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{3}$ \\
+  	 \hline
+  	 5& $\frac{1}{12}$ & $\frac{1}{12}$& $\frac{1}{6}$
+  		\end{tabular}
+	
+	Marginal distribution:
+	
+	\begin{tabular}{c|c|c|c}
+		X& -2&  9& 13 \\
+		\hline
+		P& $\frac{1}{4}$ &$\frac{1}{4}$&$\frac{1}{2}$
+	\end{tabular}
+	
+	\begin{tabular}{c|c|c}
+		Y& 3&  5\\
+		\hline
+		P&$\frac{2}{3}$&$\frac{1}{3}$
+	\end{tabular}
+
+	
+	\subsection*{B}
+	
+   We can exam that for all given value a and b, $P(X=a\cap Y=b)=P(X=a)\times P(Y=b)$.
+	
+	So X and Y are independent.
+		
+	
+	\subsection*{C}
+	
+	To get the conditional probability of X given Y, we can find in the answer to (A) that:
+	
+	$P(X=-2|Y=3)=\frac{\frac{1}{6}}{\frac{1}{6}+\frac{1}{6}+\frac{1}{3}}=\frac{1}{4}$
+	
+	$P(X=9|Y=3)=\frac{\frac{1}{6}}{\frac{1}{6}+\frac{1}{6}+\frac{1}{3}}=\frac{1}{4}$
+	
+	$P(X=13|Y=3)=\frac{\frac{1}{3}}{\frac{1}{6}+\frac{1}{6}+\frac{1}{3}}=\frac{1}{2}$
+	
+	\subsection*{D}
+	
+	$E(X)=P(X=-2)\times(-2)+P(X=9)\times 9+P(X=13)\times 13=8.25$
+	
+	\hspace*{\fill}
+	
+	$P(X=-2|Y=5)=\frac{\frac{1}{12}}{\frac{1}{12}+\frac{1}{12}+\frac{1}{6}}=\frac{1}{4}$
+	
+	$P(X=9|Y=5)=\frac{\frac{1}{12}}{\frac{1}{12}+\frac{1}{12}+\frac{1}{6}}=\frac{1}{4}$
+
+	$P(X=13|Y=5)=\frac{\frac{1}{6}}{\frac{1}{12}+\frac{1}{12}+\frac{1}{6}}=\frac{1}{2}$
+
+	$E(X|Y=5)=P(X=-2|Y=5)\times (-2)+P(X=9|Y=5)\times 9+P(X=13|Y=5)\times 13=8.25$
+	
+	\subsection*{E}
+	
+	$E(Y)=3\times\frac{2}{3}+5\times\frac{1}{3}=\frac{11}{3}$
+	
+	$P(XY=-6)=\frac{1}{6}$
+	
+	$P(XY=-10)=\frac{1}{12}$
+	
+	$P(XY=27)=\frac{1}{6}$
+	
+	$P(XY=39)=\frac{1}{3}$
+	
+	$P(XY=45)=\frac{1}{12}$
+	
+	$P(XY=65)=\frac{1}{6}$
+	
+	$E(XY)=\frac{1}{6}\times(-6)+\frac{1}{12}\times(-10)+\frac{1}{6}\times 27+\frac{1}{3}\times 39+\frac{1}{12}\times 45+\frac{1}{6}\times 65=\frac{121}{4}$
+	
+	$E(X)\times E(Y)=\frac{33}{4}\times \frac{11}{3}=\frac{121}{4}=E(XY)$
+	
+	$Cov(X,Y)=0$
+	
+	\section*{6}
+	
+	\subsection*{A}
+	
+	$P_1=P(0\enspace ace\cap 0\enspace ten)=\frac{C_{44}^{13}}{C_{52}^{13}}=0.08175499$
+	
+	$P_2=P(1\enspace ace\cap 1\enspace ten)=\frac{C_4^1\times C_4^1\times C_{44}^{11}}{C_{52}^{13}}=0.1932391$
+	
+	$P_3=P(2\enspace ace\cap 2\enspace ten)=\frac{ C_4^2\times C_4^2\times C_{44}^{9}}{C_{52}^{13}}=0.04019048$
+
+	$P_4=P(3\enspace ace\cap 3\enspace ten)=\frac{C_4^3\times C_4^3\times  C_{44}^{7}}{C_{52}^{13}}=0.000965537$
+	
+	$P_5=P(4\enspace ace\cap 4\enspace ten)=\frac{ C_4^4\times C_4^4\times C_{44}^{5}}{C_{52}^{13}}=1.710212\times 10^{-6}$
+
+	The probability I you get exactly the same number of aces and tensin the cards that I pick:
+
+	$P_1+P_2+P_3+P_4+P_5= 0.3161518$
+	
+	\subsection*{B}
+	
+	Assume $\alpha$ = the amount of ace I will pick, $\alpha$ = the amount of ten I will pick.
+	
+	$P(\alpha=\beta)=0.3161518$
+	
+	Since $P(\alpha>\beta)=P(\alpha<\beta),P(\alpha>\beta)+P(\alpha<\beta)+P(\alpha=\beta)=1$
+	$P(\alpha>\beta)=\frac{1-P(\alpha=\beta)}{2}=0.3419241$
+	
+	\section*{7}
+	
+	\subsection*{A}	
+	
+	$X\sim N(68,2^2)$
+	
+	$P(X>71.5)\Rightarrow P(\frac{X-68}{2}>1.75)=1-\Phi(1.75)=0.04005916$
+	
+	\subsection*{B}	
+	
+	The probability that two randomly selected people will have a heightthat exceeds 71.5 inches:
+
+	$P^2(X>71.5)=0.001604736$
+	
+		
+	\subsection*{C}	
+	
+	$\frac{X-68}{2}=2.4\Rightarrow X=72.8$
+	
+	
+	\subsection*{D}	
+	
+	$\Phi(0.8416212)=0.8\Rightarrow \frac{X-68}{2}=0.8416212\Rightarrow X=69.68324$
+	
+	\subsection*{E}
+	
+	10th percentile: $\Phi(-1.281552)=0.1$
+	
+	60th percentile: $\Phi(0.2533471)=0.6$
+	
+	$P(\frac{X-68}{2}>0.2533471|\frac{X-68}{2}>-1.281552)=\frac{\frac{X-68}{2}>0.2533471}{\frac{X-68}{2}>-1.281552}=\frac{1-0.6}{1-0.1}=\frac{4}{9}$
+	
+	\section*{8}
+	
+	\begin{tabular}{c|c|c}
+   X & 1 & 0 \\
+  	\hline
+  	P & $0.5$ & $0.5$ \\
+  	
+  		\end{tabular}
+	
+	\begin{tabular}{c|c|c}
+   Y & 1 & 0 \\
+  	\hline
+  	P & $0.5$ & $0.5$ \\
+  	
+  		\end{tabular}
+
+	\begin{tabular}{c|c|c}
+   Z & 1 & 0 \\
+  	\hline
+  	P & $0.5$ & $0.5$ \\
+  	
+  		\end{tabular}
+
+	\begin{tabular}{c|c|c|c}
+   Y+Z & -2 & 0 &2 \\
+  	\hline
+  	P & $\frac{1}{4}$ &$\frac{1}{2}$ &$\frac{1}{4}$ \\
+  	
+  		\end{tabular}
+	
+	\begin{tabular}{c|c|c}
+   \diagbox{X}{Z} &  1&  -1 \\
+  	\hline
+  	 1& $\frac{1}{4}$ & $\frac{1}{4}$  \\
+  	 \hline
+  	 -1& $\frac{1}{4}$ & $\frac{1}{4}$
+  		\end{tabular}
+  		
+  	\begin{tabular}{c|c|c}
+   \diagbox{X}{Y} &  1&  -1 \\
+  	\hline
+  	 1& $\frac{1}{4}$ & $\frac{1}{4}$  \\
+  	 \hline
+  	 -1& $\frac{1}{4}$ & $\frac{1}{4}$
+  		\end{tabular}
+	
+	\begin{tabular}{c|c|c|c}
+   \diagbox{X}{Y+Z} &  -2&  0&2 \\
+  	\hline
+  	 1& $\frac{1}{4}$ & 0&$\frac{1}{4}$  \\
+  	 \hline
+  	 -1& 0 & $\frac{1}{2}$ &0
+  		\end{tabular}
+	
+	For all $Y=\alpha,Z=\beta,X=\gamma$:
+	
+	$P(X=\gamma\cap Y=\alpha)=P(X=\gamma)\times P(Y=\alpha)$
+	
+	$P(X=\gamma\cap Z=\beta)=P(X=\gamma)\times P(Z=\beta)$
+	
+	So X is independent of both Y and Z.
+	
+	$P(X=1\cap Y+Z=0)=0\ne P(X=1)\times P(Y+Z=0)$
+	
+	So X is not independent of Y+Z.
+	
+	\section*{9}
+	
+	\subsection*{A}
+	
+	$P(X=1|pick\enspace fair)=0.5$
+	
+	$P(X=1|pick\enspace unfair)=0.6$
+	
+	$P(X=1\cap pick\enspace fair)=0.5\times 0.5=0.25$
+	
+	$P(X=1\cap pick\enspace unfair)=0.6\times 0.5=0.3$
+
+	$P(X=1)=P(X=1\cap pick\enspace unfair)+P(X=1\cap pick\enspace fair)=0.55$
+	
+	$P(X=0)=1-P(X=1)=0.45$
+	
+	\begin{tabular}{c|c|c}
+   X & 1 & 0 \\
+  	\hline
+  	P & $0.55$ & $0.45$ \\
+  	
+  		\end{tabular}
+	
+	\subsection*{B}
+	
+	$P(X=1\cap Y=2|pick\enspace fair\enspace2\enspace times)=0.5\times 0.5=0.25$
+	
+	$P(X=1\cap Y=2|pick\enspace unfair\enspace2\enspace times)=0.6\times 0.6=0.36$
+	
+	$P(X=1\cap Y=2|pick\enspace fair\enspace then\enspace pick\enspace unfair)=0.5\times 0.6=0.3$
+	
+	$P(X=1\cap Y=2|pick\enspace unfair\enspace then\enspace pick\enspace fair)=0.6\times 0.5=0.3$
+	
+	
+
+	
+	$P(X=1\cap Y=2)=(P(X=1\cap Y=2\cap pick\enspace fair\enspace2\enspace times)+P(X=1\cap Y=2\cap pick\enspace unfair\enspace2\enspace times)+P(X=1\cap Y=2|pick\enspace fair\enspace then\enspace pick\enspace unfair)+P(X=1\cap Y=2|pick\enspace unfair\enspace then\enspace pick\enspace fair))\times (0.5\times 0.5)=0.3025$
+	
+	$P(X=1\cap Y=1)=P(X=1)-P(X=1\cap Y=2)-P(X=1\cap Y=0)=0.2475$
+	
+	$P(X=0\cap Y=0|pick\enspace fair\enspace2\enspace times)=0.5\times 0.5=0.25$
+	
+	$P(X=0\cap Y=0|pick\enspace unfair\enspace2\enspace times)=0.4\times 0.4=0.16$
+	
+	$P(X=0\cap Y=0|pick\enspace fair\enspace then\enspace pick\enspace unfair)=0.5\times 0.4=0.2$
+	
+	$P(X=0\cap Y=0|pick\enspace fair\enspace then\enspace pick\enspace unfair)=0.4\times 0.5=0.2$
+	
+	$P(X=0\cap Y=0)=0.5\times 0.5\times(0.25+0.16+0.2+0.2)=0.2025$
+	
+	$P(X=0\cap Y=1)=P(X=0)-P(X=0\cap Y=0)-P(X=0\cap Y=2)=0.2475$
+	
+	 	\begin{tabular}{c|c|c|c}
+   \diagbox{X}{Y} &  0&  1&2 \\
+  	\hline
+  	 0& 0.2025 & 0.2475 & 0\\
+  	 \hline
+  	 1& 0 & 0.2475 & 0.3025
+  		\end{tabular}
+	
+	\subsection*{C}
+	
+	$P(X=1)=0.55,P(Y=0)=0.2025$
+	
+	$P(X=1\cap Y=0)=0\ne P(X=1)\times P(Y=0)$
+	
+	So X and Y are not independent.
+	
+	\subsection*{D}
+	
+	$P(7\enspace heads|pick\enspace fair)=C_8^7\times 0.5^7\times 0.5^1=0.03125$
+	
+	$P(7\enspace heads|pick\enspace unfair)=C_8^7\times 0.6^7\times 0.4^1=0.08957952$
+	
+	$P(7\enspace heads)=P(7\enspace heads\cap pick\enspace fair)+P(7\enspace heads\cap pick\enspace unfair)=\frac{0.03125+0.08957952}{2}=0.06041475$
+		
+	\section*{10}	
+	
+	A=a student enrolls in postsecondaryeducation within three months of finishing high school
+	
+	$\alpha=$the student did not have a parent who attended college
+	
+	$\beta=$the student had a parent who attended some college
+	
+	$\gamma=$the student have at least one parent who completed college
+	
+	$P(A|\alpha)=0.58$
+
+	$P(A|\beta)=0.63$
+	
+	$P(A|\gamma)=0.78$
+	
+	$P(\alpha)=0.35$
+	
+	$P(\beta)=0.3$
+	
+	$P(\gamma)=0.35$
+	
+	$P(A)=P(A|\alpha)\times P(\alpha)+P(A|\beta)\times P(\beta)+P(A|\gamma)\times P(\gamma)=0.35\times 0.58+0.3\times 0.63+0.35\times 0.78=0.665$
+	
+\end{document}

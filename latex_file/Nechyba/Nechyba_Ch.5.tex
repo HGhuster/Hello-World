@@ -1,0 +1,139 @@
+\documentclass{article}
+\title{Nechyba Ch.5 不同类型的偏好}
+\author{Dawei Wang}
+\date{\today}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+	\maketitle
+\section{不同类型的无差异曲线图}
+\subsection{沿着无差异曲线的替代性}
+两种商品在多大程度上可以替代是由我们所讨论的商品的本质属性以及个人的偏好类型共同决定的。
+
+\hspace*{\fill}
+
+完全替代
+
+\hspace*{\fill}
+
+完全互补
+
+\subsubsection{一些通常的无差异曲线图}
+
+位似偏好：特定商品组合处的边际替代率仅与该商品组合中的一种商品较之另一种商品的相对持有量有关时，就说这种偏好是位似(homothetic)的。只要确定了某个特定商品组合处的MRS，就知道了所有位于原点出发通过该商品组合的射线上的所有商品组合的MRS。
+
+对高档商品的偏好往往可以用位似偏好来描述，因为对它们的消费通常与我们的收入大致成比例。
+
+\hspace*{\fill}
+
+拟线性偏好：不管正在消费多少“其他商品”，在边际上对商品的评价都是相同的偏好称为拟线性(quasilinear)偏好。
+
+可以很好地使用拟线性偏好建模的商品通常是那些代表我们收入相对小的份额的商品。
+
+\subsection{位似versus拟线性偏好}
+一种特定的商品，如果其与"另一种"商品的边际替代率仅取决于这种商品的绝对数量，该商品的偏好就是拟线性的。在图示上，这意味着边际替代率在与我们对“拟线性”商品建模的轴垂直的直线上是相同的。
+
+在任何一个束，边际替代率仅取决于一种商品相对于另一种商品的数量，则偏好是位似的。在图示上，这意味着跨无差异曲线的边际替代率在从图中的原点出发的射线上是相同的。
+
+\subsection{“必要的”商品}
+若无差异曲线与$ x_2 $轴相交，则可以实现在$ x_1 $为零的情况下比原点更好的商品束，在这种意义上，$ x_1 $是不必要的，反之若不能与$ x_2 $轴相交，则$ x_1 $是必要的。
+
+\section{不同类型的效用函数}
+\subsection{可替代程度与“替代弹性”}
+令替代弹性=$ \sigma $
+\[
+\sigma=\left|\frac{\%\Delta(x_2/x_1)}{\%\Delta MRS}\right|
+\]
+
+替代弹性的计算需在无差异曲线上进行。
+
+\hspace*{\fill}
+
+完全替代($ \sigma=\infty $)
+\[
+u(x_1,x_2)=x_1+x_2
+\]
+
+\hspace*{\fill}
+
+完全互补(替代弹性0)
+\[
+u(x_1,x_2)=min\{x_1,x_2\}
+\]
+
+完全互补偏好并不是唯一一个不会发生替代效应的偏好，若相对价格变化幅度不大，一个钝角扭结点的偏好也可以不发生替代效应。
+
+\hspace*{\fill}
+
+柯布道格拉斯($ \sigma=1 $)
+\[
+u(x_1,x_2)=x_1^\gamma x_2^\delta,\qquad \gamma>0,\delta>0
+\]
+
+保序变换
+\[
+(u(x_1,x_2))^{1/\gamma+\delta}=x_1^\alpha x_2^{1-\alpha}
+\]
+
+其中$ \alpha=\gamma/(\gamma+\delta) $
+
+n种商品的柯布道格拉斯效用函数
+
+\[
+u(x_1,x_2,\cdots,x_n)=x_1^{\alpha_1}x_2^{\alpha_2}\cdots x_n^{\alpha_n},\qquad \alpha_1+\alpha_2+\cdots\alpha_n=1
+\]
+
+\hspace*{\fill}
+
+不变替代弹性(CES，$ \sigma=const $)
+\[
+u(x_1,x_2)=(\alpha x_1^{-\rho}+(1-\alpha)x_2^{-\rho})^{-1/\rho}
+\]
+
+其中$ 0<\alpha<1 $且，$ -1\le\rho\le\infty $
+
+\[
+\sigma=1/(1+\rho)
+\]
+
+位似偏好可以由任何有齐次数学性质的效用函数表述。一个函数$ f(x_1,x_2) $被定义为k阶齐次当且仅当
+\[
+f(tx_1,tx_2)=t^kf(x_1,x_2)
+\]
+
+\begin{equation*}
+	\begin{split}
+		MRS(tx_1,tx_2)&=\frac{\partial u(tx_1,tx_2)/\partial x_1}{\partial u(tx_1,tx_2)/\partial x_2}\\
+		&=\frac{\partial (t^ku(x_1,x_2))/\partial x_1}{\partial (t^ku(x_1,x_2))/\partial x_2}\\
+		&=\frac{\partial u(x_1,x_2)/\partial x_1}{\partial u(x_1,x_2)/\partial x_2}\\
+		&=MRS(x_1,x_2 ) 
+	\end{split}
+\end{equation*}
+
+齐次函数一定表示位似偏好，位似偏好不一定表现为齐次函数(例：可以加一个常数项)
+
+\hspace*{\fill}
+
+考虑如下类型效用函数
+\[
+u(x_1,x_2)=v(x_1)+x_2
+\]
+
+其中$ v:\mathbb{R}_+\leftarrow\mathbb{R} $仅是商品$ x_1 $消费水平的函数。
+
+\[
+MRS=\frac{\partial u/\partial x_1}{\partial u/\partial x_2}=\frac{dv}{x_1}
+\]
+
+称商品$ x_1 $为拟线性商品。
+
+\hspace*{\fill}
+
+完全替代表示唯一的既是位似的又是拟线性的偏好。
+
+\subsection{“必要的”商品}
+如果一个商品的一些消费被要求使得一个个体能获得比其什么都不消费时更高的效用，我们就定义该商品是“必要的”。
+
+
+\end{document}

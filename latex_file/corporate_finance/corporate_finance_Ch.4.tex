@@ -1,0 +1,80 @@
+\documentclass{article}
+\title{折现现金流量估价}
+\author{Dawei Wang}
+\date{\today}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+	\maketitle
+投资的净现值：
+
+NPV=-成本+PV
+
+\hspace*{\fill}
+
+投资的终值：
+
+$ FV=C_0\times (1+r)^T $
+
+\hspace*{\fill}
+
+投资的现值：
+
+$ PV=\frac{C_T}{(1+r)^T} $
+
+\hspace*{\fill}
+
+一笔在T期后产生效益的投资项目的净现值：
+
+$ NPV=-C_0+\frac{C_1}{1+r}+\frac{C_2}{(1+r)^2}+\cdots+\frac{C_T}{(1+r)^T}=-C_0+\sum_{i=1}^{T}\frac{C_i}{(1+r)^i} $
+
+\hspace*{\fill}
+
+名义年利率（annual percentage rate，APR）和实际年利率（effective annual rate，EAR）之间的关系：
+$ EAR=(1+\frac{APR}{m})^m-1 $
+
+m为每年计息次数
+
+\hspace*{\fill}
+
+连续复利
+
+$ C_0\times e^{rT} $
+
+\hspace*{\fill}
+
+年金：
+
+$ PV=C[\frac{1-\frac{1}{(1+r)^T}}{r}] $
+
+\hspace*{\fill}
+
+注：
+
+1.递延年金：某人在第六年后的四年内每年都会收到500美元。如果利率为10\%，那么他的年金的现值为多少？
+
+先计算第五年年初时年金的现值，再将其贴现到现在（5年期）。
+
+\hspace*{\fill}
+
+2.若年金的第一次支付发生在第0期，其价值如何计算？
+
+分别计算第0期和其他期的和。
+
+\hspace*{\fill}
+
+3.不定期年金，支付频率超过1年。
+
+计算每期间隔的实际利率。
+
+\hspace*{\fill}
+
+4.设两笔年金现值相等。写出现金流的时间点并分析。
+
+\hspace*{\fill}
+
+\section{增长年金}
+增长年金现值的计算公式
+$ PV=C[\frac{1}{r-g}-\frac{1}{r-g}\times(\frac{1+g}{1+r})^T]=C[\frac{1-(\frac{1+g}{1+r})^T}{r-g}] $
+\end{document}

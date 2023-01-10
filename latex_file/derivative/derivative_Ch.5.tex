@@ -1,0 +1,267 @@
+\documentclass{article}
+\title{Determination of forward and futures prices}
+\author{Dawei Wang}
+\date{\today}
+%\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+	\maketitle
+\section{Investment assets vs. consumption assets}
+\hspace{\fill}
+
+An investment asset is an asset that is held for investment purpose by significant numbers of investors.(stocks, bonds, gold, and silver.)
+
+A consumption asset is an asset that is held primarily for consumption.(copper, oil, and pork bellies.)
+
+We can use arbitrage arguments to determine the forward and futures prices of an investment asset from its spot price and other observable market variables. We cannot do this for consumption asssets.
+
+\section{Short selling}
+If any time while the contract is open the broker is no able to borrow shares, the investor is forced to close out the position, even if not ready to do so. Sometimes a fee is charged for lending shares or other secutities to the party doing shorting.
+
+An investor with a short position must pay to the broker any income, such as dividends or interest, that would normally be received on the securities that have been shorted. The broker will transfer this income to the account of the client from whom the securities have been borrowed.
+
+The investor is required to maintain a margin account with the broker. The margin account consists of cash or marketable securities deposited by the investor with the broker. An initial margin is required and if there are adverse movements in the price of the asset that is being shorted, additional margin may be required.
+
+\section{Assumptions and notation}
+In this chapter we assume that  the following are all ture for some market participants:
+
+1. The market participants are subject to no transaction cost when they trade.
+
+2. The market participants are subject to the same tax rate on all net trading profits.
+
+3. The market participants can borrow money at the same risk-free rate of interest as they can lend money.
+
+4. The market participants take advantage of arbitrage oppotunities as they occur.
+\\ \hspace*{\fill}
+
+Note that we do not require these assumptions to be true for all market participants. All that we require is that they be true-or at least approximately true-for a few key market paticipants and their eagerness to take advantage of arbitrage oppotunities as they occur that determine the relationship between forward and spot prices.
+\\ \hspace*{\fill}
+
+The following notation will be used throughout  this chapter:
+
+T: Time until delivery date in a forward or futures contract (in years)
+
+$S_0$: Price of the asset underlying the forward or futures contract today
+
+$F_0$: Forward of futures price today
+
+r: Zero-coupon risk-free rate of interest per annum, expressed with continuous compounding, for an investment maturing at the delivery date(i.e. in T years).
+
+\section{Forward price for an investment asset}
+The easiest forward contract to value is one written on an investment asset that provides the holder with no income. Non-dividend-paying stocks and zero-coupon bonds are examples of such investment assets.
+
+\subsection{A generalization}
+Consider a forward contract on an investment asset with price $ S_0 $ that provides no income. The relationship between $ F_0 $ an $ S_0 $ is
+\begin{equation}
+	F_0=S_0e^{rT}
+\end{equation}
+If $ F_0>S_0e^{rT} $, arbitrageurs can buy the asset and short forward contracts on the asset. If $ F_0<S_0e^{rT} $, they can short the asset and enter into long forward contracts on it.
+
+\subsection{What if short sales are not possible}
+Short sales are not possible for all investment assets and sometimes a fee is charged for borrowing assets. As it happens, this does not matter. To derive equation (1), we do not need to be able to short the asset. All that we require is that there be a significant number of people who hold the asset purely for investment.
+
+Suppose that the underlying asset has no storage costs or income.
+
+If $ F_0>S_0e^{rT} $, an investor can adopt the following strategy:
+
+1. Borrow $ S_0 $ dollars at an interest rate r for T years.
+
+2. Buy 1 unit of the asset.
+
+3. Short a forward contract on 1 unit of the asset.
+\\ \hspace*{\fill}
+
+If $ F_0>S_0e^{rT} $, an investor can adopt the following strategy:
+
+1. Sells the asset for $ S_0 $.
+
+2. Invest the proceeds at interest rate r for time T.
+
+3. Take a long position in a forward contract on 1 unit of the asset.
+
+\section{Konwn income}
+In this section we consider a forward contract on an investment asset that will provide a perfectly predictable cash income to the holder.
+
+\subsection{A generalization}
+We can generalize from this example to argue that, when an investment asset will provide income with a present value of I during the life of a forward conract, we have
+\begin{equation}
+	F_0=(S_0-I)e^{rT}
+\end{equation}
+
+\section{Known yield}
+We now consider the situation where the asset underlying a forward contract  provides a known yield rather than a known cash income.
+
+Define q as the average yield per annum on an asset during the life of a forward contract with continuous compounding. It can be shown that
+\begin{equation}
+	F_0=S_0e^{(r-q)T}
+\end{equation}
+
+\section{Valuing forward contracts}
+The value of a forward contract at the time it is entered into is zero. At a later stage, it may prove to have a positive or negative value. We suppose K is the delivery price for a contract that was negotiated some time ago, the delivery date is T years from today, and r is the T-year risk-free interest. The variable $ F_0 $ is the forward price that would be applicable if we negotiated the contract today. In addition, we define f to be the value of forward contract today.
+
+A general result, applicable to all long forward contracts is
+\begin{equation}
+	f=(F_0-K)e^{-rT}
+\end{equation}
+\\ \hspace*{\fill}
+
+Using equation (4) conjunction with equation(1) gives the following expression for the value of a forward contract on an investment asset that provides no income.
+\begin{equation}
+	f=S_0-Ke^{-rT}
+\end{equation}
+
+Similarly, using equation (4) in conjunction with equation (2) gives the following expression for the value of a long forward contract on an investment asset that provides a known income with present value I:
+\begin{equation}
+	f=S_0-I-Ke^{rT}
+\end{equation}
+
+Finally, using equation (4) in conjunction with equation (3) gives the following expression for the value of a long forward contract on an investment asset that provide a konwn yield at rate q:
+\begin{equation}
+	f=S_0e^{-qT}-Ke^{-rT}
+\end{equation}
+
+\section{Are forward prices and futures prices equal}
+When the short-term risk-free interest rate is constant, the forward price for a contract with a certain delivery date is theory the same as the futures price for a contract with that delivery date.
+
+When interest rates vary unpredictably, forward and futures prices are in theory no longer the same.
+
+Consider that the price of the underlying asset, S, is positively correlated with interest rates. When S increases, an invesetor who holds a long futures position makes an immediate gain because of the daily settlement procedure. An investor holding a forward contract rather than a futures contract is not a affected in this way by interest rate movements.
+
+The theoretical differences between forward and futures prices for contracts that last only a few months are in most circumstances sufficiently small to be ignored. In practice, there are a number of  factors not reflected in theoretical models that may cause forward and futures prices to be different. These include taxes, transactions costs, and the treatment of margins The risk that the counterparty will default may be less in the case of a futures contract. Also, in some instances, futures contracts are more liquid and easier to trade than forward contracts.
+
+\section{Futures prices of stock indices}
+A stock index can usually be regarded as the price of an investment asset that pays dividends. The investment asset is the portfolio of stocks underlying the index, and the dividends paid by the investment asset are the dividends that would be received by the holder of this portfolio. It is usually assumed that the dividends provide a known yield rather than a known cash income. If q is the dividend yield rate, equation (3) gives the futures price, $ F_0 $, as
+\begin{equation}
+	F_0=S_0e^{(r-q)T}
+\end{equation}
+
+In practice, the dividend yield on the portfolio underlying an index varies week by week throughout the year. The choosen value of q should represent the average annualized dividend yield during the life of the contract.
+
+\subsection{Index arbitrage}
+If $ F_0>S_0e^{(r-q)T} $, profits can be made by buying the stocks underlying the index at the spot price and shorting futures contracts. If $ F_0<S_0e^{(r-q)T} $, profits can be made by doing the reverse.
+
+When $ F_0<S_0e^{(r-q)T} $, index arbitrage is often done by pension fund that owns an indexed portfolio of stocks. When $ F_0>S_0e^{(r-q)T} $, it might be done by a corporation holding short-term money market investments.
+
+\section{Forward and futures contacts on currencies}
+We now move on to consider forward and futures foregin currency contracts from the perspective of a US investor. The underlying assetis one unit of the foregin currency. We will therefore define the variable $ S_0 $ as the current spot price in US dollars of one unit of foregin currency and $ F_0 $ as the forward or futures price in US dollars of one unit of foregin currency.
+
+We define $ r_f $ as the value of the foreign risk-free interest rate when money is invested for time T. The variable r is the US dollar risk-free rate when money is invested for this period of time.
+
+The relationship between $ F_0 $ and $ S_0 $ is
+\begin{equation}
+	F_0=S_0e^{(r-r_f)T}
+\end{equation}
+
+\subsection{A foreign currency as an asset providing a known yield}
+Equation (9) is identical to equation (3) with q replaced by $ r_f $. This is not a coincidence. A foreign currency can be regarded as an investment asset paying a known yield. The yield is the risk-free rate of interest in the foreign currency. To understand this, we note that the value of interest paid in a foreign currency depends on the value of the foreign currency.
+
+\section{Futures on commodities}
+\subsection{Income and storage costs}
+Storage costs can be treated as negative income. If U is the present value of all the storage costs, net of income, during the life of a forward contract, it follows form equation (2) that
+\begin{equation}
+	F_0=(S_0+U)e^{rT}
+\end{equation}
+
+If the storage costs (net of income) incurred at any time are proportional to the price of the commodity, they can be treated as negative yield. In this case, frome equation (3),
+\begin{equation}
+	F_0=S_0e^{(r+u)T}
+\end{equation}
+
+where u denotes the storage costs per annum as a proportion of the spot price net of any yield earned on the asset.
+
+\subsection{Consumption commodities}
+Commodities that are consumption assets rather than investment assets usually provide no income, but can be subject to significant storage costs. 
+
+The arbitrage stategies cannot be used for a commodity that is a consumption asset rather than an investment asset. Individuals and companies who own a consumption commodity usually plan to use it in some way. They are reluctant to sell the commodity in the spot market and buy forward or futures contracts, becasue forward and futures contracts cannot be used in manufacturing process or consumed in some other way. There is therefore nothing to stop equation
+\begin{equation}
+	F_0<(S_0+U)e^{rT}
+\end{equation}
+from holding, and all we can assert for a comsumption commodity is 
+\begin{equation}
+	F_0\le (S_0+U)e^{rT}
+\end{equation}
+If storage costs are expressed as a proportion u of the spot price, the equivalent result is
+\begin{equation}
+	F_0\le S_0e^{(r+u)T}
+\end{equation}
+
+\subsection{Convenience yields}
+We do not necessarily have equality in equation (13) and (14) because users of a consumption commodity may feel that owenership of the physical commodity provides benefits that are not obtained by holders of futures contracts.
+
+
+In general, ownership of the physical asset enables a manufacturer to keep a production process running and perhaps profit from temporary local shortages. A futures contract does not do the same. The benifits from holding the physical asset are sometimes referred to as the convenience yield provided by the commodity. If the dollar amount of storage costs is known and has a present value U, then the convenience yield y is defined such that
+\[
+F_0e^{yT}=(S_0+U)e^{rT}
+\]
+If the storage costs per unit are a constant proportion, u, of the spot pricem then y is defined so that
+\[
+F_0e^{yT}=S_0e^{(r+u)T}
+\]
+or
+\begin{equation}
+	F_0=S_0e^{(r+u-y)T}
+\end{equation}
+The convenience yield simply measures the extent to which the left-hand side is less than the right-hand side in equation (14). For investment asset the convenienve yield must be zero; otherwise, there are arbitrage oppotunities.
+
+The convenience yield reflects the market's expectations concerning the futures availability of the commodity. The greater the possibility that the shortages will occur, the higher the convenience yield.
+
+\section{The cost of carry}
+The relationship between futures prices and spot prices can be summarized in terms of the cost of carry. This measures the storage cost plus the interest that is paid to finance the asset less the income earned on the asset.
+
+For a non-dividend-paying stock, the cost of carry is r, because there are no sotrage costs and no income is earned; for a stock index, it is r-q, because income is earned at rate q on the asset. For a currency, it is $ r-r_f $; for a commodity that provides income at rate q and requires storage costs at rate u, it is r-q+u; and so on.
+
+Define the cost of carry as c. For an investment asset, the futures price is
+\begin{equation}
+	F_0=S_0e^{cT}
+\end{equation}
+For a consumption asset, it is
+\begin{equation}
+	F_0=S_0e^{(c-y)T}
+\end{equation}
+where y is the convenience yield.
+
+\section{Delivery options}
+If the futures price is an increasing function of the time to maturity, It is usually optimal in such a case for the party with the short position to deliver as early as possible, because the interest earned on the cash received outweights the benefits of holding the asset. As a rule, futures prices in these circumstances should be calculated on the basis that delivery will take place at the beginning of the delivery period. If futures prices are decreasing as time to maturity increases (c<y) ,the reverse is true.
+
+\section{Futures prices and expected future spot prices}
+We refer to the market's average opinion about what the spot price of an asset will be at a certain future time as the expected spot price of the asset at that time.
+
+\subsection{Risk and return}
+The modern approach to explaining the relationship between futures prices and expected spot prices is based on the relationship between risk and expected return in the economy.
+In general, the higher the risk of an investment, the higher the expected return demanded by an investor. The capital asset pricing model, shows that there are two types of risk in the economy: systematic and nosystematic.
+
+\subsection{The risk in a futures position}
+We suppose that the speculator puts the present value of the futures price into a risk-free investment while simultaneously taking a long futures position. The proceeds of the risk-free investment are used to buy the asset on the delivery date. The asset is then immediately sold for its market price. The cash flows to the speculator are as follows:
+
+Today:$ -F_0e^{rT} $
+
+End of futures contract:$ S_T $
+
+The discount rate we should use for the expected cash flow at time T equals an investor's required return on the investment. Suppose that k is an investor's required return for this investment. The present value of this investment is 
+\[
+—F_0e^{-rT}+E(S_T)e^{-kT}
+\]
+
+where E denotes expected value. We can assume that all investments in securities markets are priced so that they have zero net present value. This means that
+\begin{equation}
+	F_0=E(S_T)e^{(r-k)T}
+\end{equation}
+
+If the returns from this asset are uncorrelated with the stock market, the correct discount rate to use is the risk-free rate r. Equation (18) then gives
+\[
+F_0=E(S_T)
+\]
+This shows that the futures price is an unbiased estimate of the expected future spot price when the return from the underlying asset is uncorrelated with the stock market.
+
+If the return from the asset is positively correlated with the stock market, k>r and equation (18) leads to $ F_0<E(S_T) $. This shows that, when the asset underlying the futures contract has positive systematic risk, we should expect the futures price to understate the expected future spot price.
+
+If the return from the asset is negatively correlated with the stock market, k<r and equation (18) leads to $ F_0>E(S_T) $. This shows that, when the asset underlying the futures contract has negative systematic risk, we should expect the futures price to overstate the expected future spot price.
+
+\section{Normal Backwardation and contango}
+When the futures price is below the expected futures spot price, the situation is known as normal backwardation; and when the futures price is above the expected future spot price, the situation is known as contango. However, it should be noted that sometimes these terms are used to  refer to whether the futures price is below or above the current spot price, rather than expected future spot price.
+
+
+
+
+\end{document}

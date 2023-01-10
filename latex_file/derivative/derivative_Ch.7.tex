@@ -1,0 +1,170 @@
+\documentclass{article}
+\title{Swaps}
+\author{Dawei Wang}
+\date{\today}
+%\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+	\maketitle
+A swap is an over-the-counter agreement between two companies to exchange cash flows in the future. The agreement defines the dates when the cash flows are to be paid and the way in which they are to be calculated. Usually the calculation of the cash flows involves the future value of an interest rate, an exchange rate, or other market variable.
+
+Whereas a forward contract is equivalent to the exchange of cash flows on just one future date, swaps typically lead to cash flow exchanges on several future dates.
+
+\section{Mechanics of interest rate swaps}	
+The most common type of swap is a "plain vanilla" interest swap. In this swap a company agrees to pay cash flows equal to interest at a predetermined fixed rate on a notional principal for a predetermined number of years. In return, it receives interest at a floating rate on the same notional principal for the same period of time.
+
+\subsection{LIBOR}
+It is the rate at which a bank is prepared to deposit money with other banks that have a AA credit rating. One-month, three-month, six-month, and 12-month LIBOR are quoted in all major currencies. LIBOR is a reference rate of interest for loans in international financial markets.
+
+\subsection{Market makers}
+In practice, it is unlikely that two companies will contact a financial institution at the same time and want to take opposite positions in exactly the same swap. For this reason, many large financial institutions act as market makers for swaps. This means that they are prepared to enter into a swap without having an offsetting swap with another counterparty. Market makers must carefully quantify and hedge the risks they are taking. Bonds, forward rate agreements, and interest rate futures are examples of the instruments that can be used for hedging by swap market makers. The average of the bid and offer fixed rates is known as the swap rate.
+
+Consider a new swap where the fixed rate equals the current swap rate. We can reasonably assume that the value of this swap is zero. A swap can be characterized as the difference between a fixed-rate bond and a floating-rate bond.
+
+Define:
+
+$ B_{fix} $: Value of fixed-rate bond underlying the swap we are considering
+
+$ B_{fl} $ :value of floating-rate bond underlying the swap we are considering
+
+Since the swap is worth zero, it follows that
+\begin{equation}
+	B_{fix}=B_{fl}
+\end{equation}
+
+\section{Day count issues}
+The day count conventions affect payments on a swap.
+
+The 6-month LIBOR rate of 4.2\% is quoted on an actual/360 basis. In general, a LIBOR-based floating-rate cash flow on a swap payment date is calculated as LRn/360, where L is the principal, R is the relevant LIBOR rate, and n is the number of days since the last payment date.
+
+The fixed rate that is paid in a swap transaction is similarly quoted with a particular day count basis being specified. As a result, the fixed payments may not be exactly equal on each payment date. The fixed rate is usually quoted as actual/365 or 30/360. It is not therefore directly comparable with LIBOR because it applies to a full year. To make the rates approximately comparable, either the 6-month LIBOR rate must be multiplied by 365/360 or the fixed rate must multiplied by 360/365.
+
+\section{Confirmations}
+A confirmation is the legal agreement underlying a swap and is signed by representatives of the two parties. The drafting of confirmations has been facilitated by the work of the International Swaps and Derivatives Association (ISDA) in New York. This organization has produced a number of Master Agreements that consist of clauses defining in some detail the terminology used in swap agreements, what happens in the event of default by either side, and so on. Master Agreements cover all outstanding transactions between two parties.
+
+\section{The comparative-advantage argument}
+An explanation commonly put forward to explain the popularity of swaps concerns comparative advantage.Consider the use of interest rate swap to transform a liability. Some companies, it is argued, have a comparative advantage when borrowing in fixed-rate market, whereas other companies have a comparative advantage in floating-rate markets. To obtain a new loan, it makes sense for a company to go to the market where it has a comparative advantage.
+
+\subsection{Criticism of the argument}
+The reason that spread differential appear to exist is due to the nature of the contracts available to companies in fixed and floating markets. In the floating-rate market, the lender usually has the oppotunity to review the floating rates every 6 months. If the creditworthiness of AAACorp or BBBCorp has declined, the lender has the option of increasing the spread over LIBOR that is charged. In extreme circumstances, the lender can refuse to roll over the loan at all. The providers of fixed-rate financing do not have the option to change the terms of the loan in this way.
+
+The spread between the rates offered to AAACorp and BBBCorp are a reflection of the extent to which BBBCorp is more likely than AAACorp to default. During the next 6 months, there is very little chance that either AAACorp or BBBCorp will default. As we look further ahead, the probability of a default by a company with a relatively low credit rating is liable to increase faster than the probability of a default by a company with a relatively high credit rating. This is why the spread between the 5-year rates is greater than the spread between the 6-month rates.
+
+\section{The nature of swap rates}
+LIBOR is the rate of interest at which AA-rated banks borrow for periods between 1 and 12 months from other banks. A swap rate is the average of (a) the fixed rate that a swap market maker is prepared to pay in exchange for receiving LIBOR and (b) the fixed rate that it is prepared to received in return for paying LIBOR.
+
+Like LIBOR rates, swap rates are not risk-free lending rates. However, they are close to risk-free. A financial institution can earn the 5-year swap rate on a certain principal by doing the following:
+
+1. Lend the principal for the first 6 months to a AA borrower and then relend it for successive 6-month periods to other AA borrowers; and
+
+2. Enter into a swap to exchange the LIBOR income for the 5-year swap rate.
+
+This shows that the 5-year swap rate is an interest rate with a credit risk corresponding to the situation where 10 consecutive 6-month LIBOR loan to AA companies are made.
+
+Note that 5-year swap rate are less than 5-year AA borrowing rates. It is much more attractive to lend money for successive 6-month periods to borrowers who are always AA at the beginning of the period than to lend it to one borrower for the whole 5 years when all we can be sure is that the borrower is AA at the beginning of the 5 years.
+
+\section{Determining LIBOR/swap zero rates}
+One problem with LIBOR rates is that direct observations are possible only for maturities out to 12 months. One way of extending the LIBOR zero curve beyond 12 months is to use Eurodollar futures. Typically Eurodollar futures are used to produce a LIBOR zero curve out to 2 years-and sometimes out to as far as 5 years. Traders then use swap rates to extend the LIBOR zero curve further. The resulting zero curve is sometimes reffered to as the LIBOR zero curve and sometimes as the swap zero curve.
+
+The first point to note is that the value of a newly issued floating-rate bond that pays 6-month LIBOR is always equal to its principal value when the LIBOR/swap zero curve is used for discounting. The reason is that the bond provides a rate of interest of LIBOR, and LIBOR is the discount rate.
+
+In equation (1) we showed that for a newly issued swap where the fixed rate equals the swap rate, $ B_{fix}=B_{fl} $. We have just argued that $ B_{fl} $ equals the notional principal. It follows that $ B_{fix} $ also equals the swap's notional principal. Swap rates therefore define a set of par yield bonds.
+
+\section{Valuation of interest rate swaps}
+An interest rate swap is worth close to zero when it is first initiated. After it has been in existence for some time, its value may be positive or negative.
+
+\subsection{Valuation in terms of bond prices}
+From the point of view of the floating-rate payer, a swap can be regarded as a long position in a fixed-rate bond and a short-position in a floating-rate bond, so that
+\[
+V_{swap}=B_{fix}-B_{fl}
+\]
+Similarly, from the point of view of the fixed-rate payer, a swap is a long position in a floating-rate bond and a short position in a fixed-rate bond, so that the value of the swap is
+\[
+V_{swap}=B_{fl}-B_{fix}
+\]
+
+\subsection{Valuation in terms of FRAs}
+A swap can be characterized as a portfolio of forward rate agreements.	
+
+\section{Overnight indexed swaps}
+Since overnight indexed swaps' introduction in the 1990s, they have become popular in all the major currencies. Their use arises from the fact that banks satisfy their liquidity needs at the end of each day by borrowing from and lending at an overnight rate. This rate is often a rate targetd by the central bank to influence monetary policy.
+
+An overnight indexed swap (OIS)  is a swap where a fixed rate for a period is exchanged for the geometric average of the overnight rates during the period. An OIS allows overnight borrowing or lending to be swapped for borrowing or lending at a fixed rate. The fixed rate in an OIS is referred to as the overnight indexed swap rate. The OIS rate is generally lower than the LIBOR rate.
+
+The excess  of the LIBOR rate over the OIS rate is known as the LIBOR-OIS spread. It is used a measure of stress in financial markets. In normal market conditions, it is about 10 basis points. However it rose sharply during the 2007-2009 credit crisis because banks became less willing to lend money to each other.
+
+The OIS rate is increasingly being regarded as a better proxy for the risk-free rate than LIBOR.
+
+\section{Currency swaps}
+Another popular type of swap is known as a currency swap. In its simplest form, this involves exchanging principal and interest payments in one currency for principal and interest payments in another.
+
+A currency swap agreement requires the principal to be specified in each of the two currencies. The principal amounts are usually exchanged at the beginning and at the end of the life of the swap. Usually the principal amounts are chosen to be approximately equivalent using the exchange rate at the swap's initiation. 
+
+\subsection{Illustration}
+Consider a hypothetical 5-year currency swap agreement between IBM and British Pertroleum entered into on February 1, 2011. We suppose that IBM pays a fixed rate of 5\% in sterling and recieves a fixed rate of interest of 6\% in dollars from British Petroleum. This is termed a fixed-for-fixed currency swap because the interest rate in each currency is at a fixed rate.
+
+\subsection{Use of a currency swap to transform liabilities and assets}
+A swap such as the one just considered can be used to transform borrowing in one currency to borrowing in another.
+
+The swap can also be used to transform the nature of assets.
+
+\subsection{Comparative advantage}
+When we consider a plain vanilla interest rate swap, we argued that comparative advantages are largely illusory. Here we are comparing the rates offered in two different currencies, and it is more likely that the comparative advantages are genuine. One possible source of comparative advantage is tax.
+
+\section{Valuation of currency swaps}
+Like interest rates swaps, fixed-for-fixed currency swaps can be decomposed into either the difference between two bonds or a portfolio of forward contracts.
+
+\subsection{Valuation in terms of bond prices}
+If we define $ V_{swap} $ as the value in US dollar of an outstanding swap where dollars are received and a foreign currency is paid, then
+\[
+V_{swap}=B_D-S_0B_F
+\]
+where $ B_F $ is the value, measured in the foreign currency, of the bond defined by the foreign cash flow on the swap and $ B_D $ is the value of the bond defined by the domestic cash flows on the swap, and $ S_0 $ is the spot exchange rate.
+
+Similarly, the value of a swap where the foreign currency is received and dollars are paid is 
+\[
+V_{swap}=S_0B_F-B_D
+\]
+
+\subsection{Valuation as portfolio of forward contracts}
+Each exchange of payments in a fixed-for-fixed currency swap is a forward foreign exchange contract. Forward foreign exchange contracts were valued by assuming that forward exchange rates are realized. The same assumption can therefore be made for a currency swap.
+
+The value of a currency swap is normally close to zero initially. If the two principals are worth the same at the start of the swap, the value of the swap is also close to zero immediately after the initial exchange of principal. It can be shown that, when interest rates in two currencies are significantly different, the payer of the currency with the high interest rate is in the position where the forward contracts corresponding to the early exchanges of cash flows have negative values, and the forward contract corresponding to final exchange of principals has a positive value. The payer of the currency with the low interest rate is in the opposite position.
+
+\section{Credit risk}
+Contracts such as swaps that are private arrangements between two companies entail credit risks.
+
+The most realistic assumption for the financial institution is as follows. If the counterparty goes bankrupt, there will be a loss if the value of the swap to the financial institution is positive, and there will be no effect on the financial institution's position if the value of the swap to be financial institution is negative.
+
+Potential losses from defaults on a swap are much less than the potential losses from defaults on a loan with the same principal. This is because the value of the swap is usually only a small fraction of the value of the loan. Potential losses from defaults on a currency swap are greater than on an interest rate swap. The reason is that, because principal amounts in two different currencies are exchanged at the end of the life of a currency swap, a currency swap is liable to have a greater value at the time of a default than a interest rate swap.
+
+It is important to distinguish between the credit risk and market risk to a financial institution in any contract. As discussed earlier, the credit risk arises from the possibility of a default by the counterparty when the value of the contract to the financial institution is positive. The market risk arises from the possibility that market variables such as interest rates and exchange rates will move in such a way that the value of a contract to the financial becomes negative. Market risks can be hedged relatively easily by entering into offsetting contracts; credit risks are less easy to hedge.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

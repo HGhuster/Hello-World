@@ -1,0 +1,235 @@
+\documentclass{article}
+\title{Mechanics of Futures Markets}
+\author{Dawei Wang}
+\date{\today}
+%\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+	\maketitle
+	%	\tabletents
+\section{Specification of a future contract}
+The exchange specify the asset, the contract size, where delivery will be made, and when delivery will be made.
+
+Sometimes alternatives are specified for the grade of the asset that will be delivered or for the delivery location.
+\\ \hspace*{\fill}
+\subsection{The exchange specify:}
+1.The Asset
+
+2.The Contract Size
+
+3.Delivery Arrangements
+
+4.Delivery Months
+
+5.Price Quotes
+
+6.Price Limits and Position Limits
+\\ \hspace*{\fill}
+
+For most contracts, daily movement limits are specified by the exchange. 
+
+Normally, trading ceases for the day once the contract is limit up or limit down. However, in some instance the exchange  has the authority to step in and change the limits.
+
+Position limits are the maximum number of contracts that a speculator may hold.
+
+\section{Convergence of future price to spot price}
+As the delivery period for a futures contract is approached, the futures price converge to the spot price of the underlying asset. When the delivery period is reached, the futures price equals-or is very close to-the spot price.
+
+\section{The operation of margin}
+\subsection{Daily settlement}
+Margin account:
+
+The account that must be deposited at the time the contract is entered into is known as initial margin. 
+
+A trade is first settled at the close of the day on which it take place. It is then settled at the close of trading on each subsequent day.
+\\ \hspace*{\fill}
+
+Maintenance margin:
+
+The investor is entitled to withdraw any balance in the margin account in excess of the initial margin. Maintenance is somewhat lower than initial margin.
+
+If the balance in the margin account falls below the maintenance margin, the investor receives a margin call and is expected to top up the margin account to the initial margin level by the end of next day.
+
+The extra funds deposited are known as a variation margin. If the investor does not provide the variation margin, the broker closes out the position. 
+
+\subsection{Further details}
+Most brokers pay investors interest on the balance in margin account. 
+
+To satisfy the initial margin requirements, but not subsequent margin calls, an investor can usually deposit securities with the broker.
+
+Whereas a forward contract is settled at the end of its life, a futures contract is, as we have seen, settled daily.
+
+Minimum levels for initial and maintenance margin are set by the exchange.
+
+Margin levels are determined by the variability of the price of the underlying asset. The maintenance margin is usually about 75\% of the initial margin.
+
+Margin requirements may depends on the objectives of the trader.
+
+\subsection{The clearing house and the clearing margin}
+The clearing house has a number of members, who must post fund with the clearing house. Brokers who are not members themselves must channel their business through a member.
+
+Just as investor is required to maintain a margin account with a broker, the broker is required to maintain a margin account with the a clearing house member and the clearing house member is required to maintain a margin account with the clearing house. The latter is known as clearing margin.
+
+However in the case of the clearing house member, there is an original margin, but no maintenance margin. Every day the  account balance for each contract must be maintained at an amount equal to the original margin times the number of contracts outstanding. 
+
+In determining clearing margins, the exchange clearing house calculates the number of contracts outstanding on either a gross or a net basis. Most exchange currently use net margining.
+
+\section{OTC market}
+Credit risk has traditionally been a feature of the over-the-counter markets. 
+\subsection{Collateralization }
+Collateralization has been used in OTC markets for some times and is similar to the practice of posting margin in futures markets.
+
+A collateralization agreement applying to the transaction might involve the transaction being valued each day.
+\subsection{The using of clearing house in OTC markets}
+Since the 2007-2009 crisis, governments in the US and elsewhere have passed legislation requiring clearing houses to be used for some transactions.(the legislation applies only to "standardized" OTC transactions.)
+
+\section{Market quotes}
+\subsection{Settlement price}
+This price is used for calculating daily gains and losses and margin requirements. It is usually calculated as the price at which the contract traded immediately before the end of a day's trading session.
+
+The number called "change" is the change in the settlement price from the previous day.
+\subsection{Trading value and open interest}
+The trading value is the number of contracts traded.
+
+The open interest is the number of contracts outstanding, that is, the number of long positions or, equivalently, the number or short positions.
+
+Markets where the futures price is an increasing function of the time to maturity are known as normal markets. (contango)
+
+Markets where the futures price decrease with the maturity of the futures contract are known as inverted markets.(backwardation)
+
+Sometimes futures prices, perhaps because of seasonality, show a mixture of normal and inverted markets. 
+
+\section{Delivery}
+It is the possibility of eventual delivery that determines the futures price.
+The period during which delivery can be made is defined by the exchange and varies from contract to contract. The decision on when to deliver is made by the party with the short position.
+
+The usual rule chosen by the exchange is to pass the notice of intention to deliver on to the party with the oldest outstanding long position. Parties with long position must accept delivery notices. However, if the notice are transferable, long investors have a short period of time, usually half an hour, to find another party with a long position that is prepared to accept the notice from them.
+\\ \hspace*{\fill}
+
+In the case of a commodity, taking delivery usually means accepting a warehouse receipt in return for immediate payment. The party taking delivery is then responsible for all warehouse costs.
+
+In the case of financial futures, delivery is usually made by wire transfer.
+For all contract the price is paid is usually the most recent settlement price. If specified by the exchange, this price is adjusted for grade, location of delivery, and so on.
+\\ \hspace*{\fill}
+
+There are three critical days for a contract. These are the first notice day, the last notice day, and the last trading day. The last trading day is generally a few days before the last notice day.
+
+To avoid the risk of having to take delivery, an investor with a long position should close out his or her contract prior to the first notice day.
+
+\subsection{Cash settlement}
+Some financial futures are settled in cash because it is inconvenient or impossible to deliver the underlying asset.
+
+When a contract is settled in cash, all outstanding contracts are declared closed on a predetermined day. The final settlement price is set equal to the spot price of the underlying asset at either the opening or close of trading on that day.
+
+\section{Type of traders and type of orders}
+Type of traders:
+
+Future commission merchants(FCMs);
+
+Locals.
+
+FCMs are following the instructions of the clients and charge a commission for doing so; locals are trading on their own accounts.
+
+Speculators can be classified as scalpers, day traders, or position traders.
+Scalpers are watching for very short-term trends and attempt to profit from minutes.
+
+Day traders hold their positions for less than  one trading day. 
+\\
+Position traders hold their positions for much longer periods of time.
+
+\subsection{Orders}
+Market order
+
+It is a request that a trade be carried out immediately at the best price available in the market.
+\\ \hspace*{\fill}
+
+Limit order
+A limit order specified a particular price. The order can be executed only at this price or at one more favorable price to the investor.
+\\ \hspace*{\fill}
+
+Stop order
+
+A stop order or stop-loss order also specifies a particular price. The order is executed at the best available price once a bid or offer is made at that particular price or a less-favorable price. In effect, a stop order becomes a market order as soon as the specified price has been hit.
+\\ \hspace*{\fill}
+
+Stop-limit order
+
+A stop-limit order is a combination of a stop order and a limit order. The order becomes a limit order as soon as a bid or offer is made at a price equal to or less favorable than the stop price. Two prices must be specified in a stop-limit order: the stop price and the limit price. If the stop price is the same to the limit price, the order is sometimes called a stop-and-limit order.
+\\ \hspace*{\fill}
+
+Market-if-touched order
+
+A market-if-touched(MIT) order is executed at the best available price after a trade occurs at a specified price or at a price more favorable than the specified price. In effect, an MIT becomes a market order once the specified price has been hit. An MIT order is also known as a board order.
+\\ \hspace*{\fill}
+
+Discretionary/market-not-held order
+
+A discretionary or market-not-held order is traded as a market order except that execution maybe delayed at the broker's discretion in an attempt to get a better price.
+\\ \hspace*{\fill}
+
+A time-of-day order specifies a particular period of time during the day when the order can be executed.
+
+An open order or a good-till-canceled order is effect until the end of trading in the particular contract.
+
+A fill-or-kill order must be executed immediately on receipt or not at all.
+
+\section{Regulation}
+Future markets in the United States are currently regulated federally by the Commodity Futures Trading Commission(CFTC). All new contracts and changes to existing contracts must be approved by the CFTC. 
+
+With the formation of the National Futures Association(NFA) in 1982, some of responsibilities of the CFTC were shifted to the futures industry itself. The NFA is an organization of individuals who participate in the futures industry. Its objective is to prevent fraud and to ensure that the market operates in the best interests of the general public. The agency has set up an efficient system for arbitrating disputes between individuals and its members.
+
+The SEC currently has an effective veto over the approval of new stock or bond index futures contracts. However the basic responsibility for all futures and options on futures rests with the CFTC.
+
+\subsection{Trading irregularities}
+One type of trading irregularity occurs when an investor group tries to "corner the market." The investor group takes a huge long futures position and also tries to exercise control over the supply of the underlying commodity.
+
+Other types of trading irregularity can involve the traders on the floor of the exchange.
+
+\section{Accounting and tax}
+\subsection{Accounting }
+Accounting standards require changes in the market value of a futures contract to be recognized when they occur unless the contract qualifies as a hedge. If the contract does qualify as a hedge, gains and losses are generally recognized for accounting purposes in the same period in which the gains or losses from the item being hedged are recognized. The latter treatment is referred to as hedge accounting.
+
+\subsection{tax}
+Gains or losses are either classified as capital gains or losses or alternatively as part of ordinary income.
+
+For a corporate taxpayer, capital gains are taxed at the same rate as ordinary income, and the ability to deduct losses is restricted. Capital losses are deductible only to the extent of capital gains. 
+
+For a noncorporate taxpayer, short-term capital gains are taxed at the same as ordinary income, but long-term capital gains are subject to a maximum capital gains tax rate of 15\%. For a noncorporate taxpayer, capital losses are deductible to the extent of capital gains plus ordinary income up to \$3,000 and can be carried forward indefinitely.
+
+Generally, position in futures contracts are treated as if they are closed out on the last day of the tax year. For the noncorporate taxpayer, this gives rise to capital gains and losses that are treated as if they were 60\% long term and 40\% short term without regard to the holding period.
+
+Hedging transaction are exempt from this rule. Gains and losses from hedging transaction are treated as ordinary income.
+
+\section{Forward vs. futures contracts}
+Forward 
+
+Private contract between two parties 
+
+Not standardized
+
+Usually one specified delivery date 
+
+Settled at the end of contract
+
+Delivery or final cash settlement usually takes place
+Some credit risk
+\\ \hspace*{\fill}
+\\
+Futures
+
+Traded on an exchange 
+
+Standardized contract
+
+Range of delivery dates
+
+Settled daily
+
+Contract is usually closed out prior to maturity 
+
+Virtually no credit risk
+
+
+
+\end{document}

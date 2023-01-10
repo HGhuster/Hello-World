@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 2.0 (September 17, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors: Fanchao Chen
+% (chenfc@fudan.edu.cn)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+%hust.pic.jpg
+\documentclass{article}
+
+\usepackage{charter} % Use the Charter font
+\usepackage{background}
+\backgroundsetup{scale=1,angle=0,opacity=0.01,contents={\includegraphics[width=0.5\paperwidth, height=0.5\paperwidth, keepaspectratio]{hust.pic-removebg-preview.png}}}
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=\textwidth]{head.pic-removebg.png} % Logo
+
+\vspace{-1em} % Pull the rule closer to the logo
+
+\rule{\linewidth}{1pt} % Horizontal rule
+
+\bigskip\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\hfill
+\begin{tabular}{l @{}}
+	\today \bigskip\\ % Date
+	Chujin Li \\
+	Department of Probability and Statistics\\
+	Luoyu Road 1037 \\ % Address
+	Wuhan, China \\
+	Phone: +86-27-87543231 \\
+	Email: lichujin@hust.edu.cn
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING
+%----------------------------------------------------------------------------------------
+
+%\begin{tabular}{@{} l}
+%	Department of Applied Mathematics and Statistics\\
+%	Johns Hopkins University \\
+%	Baltimore, Maryland \\
+%	United States
+%\end{tabular}
+
+\bigskip % Vertical whitespace
+
+To Whom It May Concern:
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+It is my pleasure to recommend Dawei Wang for admission to your program. I am an associate professor of Statistics at Huazhong University of Science and Technology. I came to know Dawei while teaching him in \textit{Probability Theory and Mathematical Statistics}. The course introduced students to the basic concepts and logic of statistical reasoning and gave the students introductory-level practical ability to choose, generate, and properly interpret appropriate descriptive and inferential methods. Dawei distinguished himself by achieving an outstanding grade (96/100). He is one of the very best students that I have taught in their class in respect of his persistence and problem-solving skills.
+
+	He had an excellent grasp of the very challenging and interdisciplinary material which draws from
+statistics, nuclear engineering, and economy. His final thesis demonstrated his ability to do research with interdisciplinary knowledge:
+
+\begin{itemize}
+	\item Collect data using the sampling method he learned in class
+	\item Creatively combines economic concepts and the knowledge of nuclear to design questionnaire.
+	\item Use Chi-square test of independence to determine whether two categorical variables are likely to be related or not.
+\end{itemize}
+
+	At a personal level, Dawei is a well-disciplined, industrious student with a pleasant personality. Throughout the course, Dawei demonstrated great passion and initiative. Not only was he interested in and motivated to learn the material, but he also put great work into assimilating it to his own experience and developing his ideas about each topic that we discussed. So I feel confident Dawei will continue to succeed in his studies, and I would highly recommend Dawei Wang for admission to your program without reservation.
+	
+	If you have any questions, don't hesitate to contact me at lichujin@hust.edu.cn.
+
+
+Sincerely yours,
+
+\includegraphics[width=0.2\textwidth]{Li_English.pic.jpg}
+\includegraphics[width=0.2\textwidth]{Li_Chinese.png}
+
+
+%\vspace{50pt} % Vertical whitespace
+
+%Chujin Li
+
+\end{document}

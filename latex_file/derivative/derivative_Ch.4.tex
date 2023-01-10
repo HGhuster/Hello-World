@@ -1,0 +1,198 @@
+\documentclass{article}
+\title{Hedging strategies using futures}
+\author{Dawei Wang}
+\date{\today}
+%\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+	\maketitle
+	%	\tabletents
+\section{Types of rates}
+\subsection{Treasury rates}
+Treasury rates are the rates an investor earns on Treasury bills or Treasury bonds. These are the instruments used by government to borrow in its own currency. It is usually assumed that there is no chance that a government will default on an obligation denominated in its own currency. Treasury rates are therefore totally risk-free rates in the sense that an investor who buys a Treasury bill or Treasury bond is certain that interest and principal payments will be made as promised.
+
+\subsection{LIBOR}
+LIBOR is short for London Interbank Offered Rate. It is a reference interest rate, produced once a day by the British Bankers' Association, and is designed to reflect the rate of interest at which banks are prepared to make large wholesale deposits with other banks. LIBOR is quoted in all major currencies for maturities up to 12 months.
+
+A rate closely related to LIBOR is LIBID. This is the London Interbank Bid Rate and is the rate at which banks will accept deposits from other banks. At any specified time , there is a small spread between LIBID and LIBOR rates (with LIBOR higher than LIBID). 
+
+The rates themselves are determined by active trading between banks and adjust so that the supply of funds in the interbank market equals the demand for funds in that market. This interbank market is known as the Eurocurrency market. It is outside the control of any one government.
+
+A deposit with a bank can be regarded as a loan to that bank. A bank must therefore satisfy certain creditworthiness criteria in order to be able to receive deposits from another bank at LIBOR. Typically it must have a AA credit rating.
+
+\subsection{Repo rate}
+Sometimes trading activities are funded with a repurchase agreement, repo. This is a contract where an investment dealer who owns securities agree to sell them to another company now and buy them back later at a slightly higher price. The other company is providing a loan to the investment dealer. The difference between the price at which the securities are sold and the price at which they are repurchased is the interest it earns. The interest rate is referred to as the repo rate.
+
+\subsection{The risk-free rate}
+The risk-free rate is used extensively in the evaluation of derivatives. 
+
+Derivatives dealers argue that the interest rates implied by Treasury bills and Treasury bonds are artificially low because:
+
+1. Treasury bills and Treasury bonds must be purchased by financial institutions to fulfill a variety  a variety of regulatory requirements. This increase demand for these Treasury driving the price up and the yield down.
+
+2. The amount of capital a bank is required to hold to support an investment in Treasury bills and bonds is substantially smaller than the capital required to support a similar investment in other instruments with very low risk.
+
+3. In the United States, Treasury instruments are given a favorable tax treatment compared with most other fixed-income investments because they are not taxed at the state level.
+\\ \hspace*{\fill}
+
+Traditionally derivatives dealers have assumed LIBOR rates are risk-free. 
+
+But LIBOR rates are not totally risk-free. Following the credit crisis that started in 2007, many dealers switches to using overnight indexed swap rates(OIS) as risk-free rates. It is closer to risk-free than LIBOR. During the crisis, banks became very reluctant to lend to each other and LIBOR rates soared.
+
+LIBOR rates have maturities up to 1 year. Traders have traditionally used Eurodollar futures and interest rate swaps to extend the risk-free LIBOR yield curve beyond 1 year.
+
+\section{Measuring interest rates}
+Suppose that an amount A is invested for n years at an interest rate of R per annum. If the rate is compounded m times per annum, the terminal value of the investment is :
+\[
+A(1+\frac{R}{m})^{mn}
+\]
+
+\subsection{Continuous compounding}
+The limit as the compounding frequency, m, tends to be infinity is known as continuous compounding. With continuous compounding, it can be shown that an amount A invested for n years at rate R grows to:
+\[
+Ae^{Rn}
+\]
+
+For most practical purposes, continuous compounding can be thought of as being equivalent to daily compounding.
+
+Suppose that RC is a rate of interest with continuous compounding and Rm is the equivalent rate with compounding m times per annum. From the above equations, we have:
+\[
+Ae^{R_Cn}=A(1+\frac{R_m}{m})^{mn}
+\]
+this means that
+\[
+R_C=m\ln(1+\frac{R_m}{m})
+\]
+\[
+R_m=m(e^{R_C/m}-1)
+\]
+
+\section{Zero rates}
+The n-year zero-coupon interest rate is the rate of interest earned on an investment that starts today and last for n years. All the interest and principal is realized at the end of n years. There are no intermediate payments. 
+
+\section{Bond pricing}
+\subsection{Bond yield}
+A bond's yield is the single discount rate that, when applied to all cash flows, gives a bond price equal to its market price.
+
+\subsection{Par yield}
+The par yield for a certain bond maturity is the coupon rate causes the bond price to equal to its par value.(The par value is the same as the principal value.)
+
+\section{Forward rates}
+Forward interest rates are the rates of interest implied by current zero rates for periods of time in the future.
+
+In general, if R1 and R2 are the zero rates for maturities T1 and T2, respectively, and RF is the forward interest rate for the period of time between T1 and T2, then:
+\[
+R_F=\frac{R_2T_2-R_1T_1}{T_2-T_1}
+\]
+
+The above equation can be written as
+\[
+R_F=R_2+(R_2-R_1)\frac{T_1}{T_2-T_1}
+\]
+
+Taking limits as T2 approaches T1, and letting the common value of the two be T, we obtain
+\[
+R_F=R+T\frac{\partial R}{\partial T}
+\]
+
+Where R is the zero rate for a maturity of T. The value of $ R_F $ obtained in this way is known as the instantaneous forward rate for a maturity of T. This is the forward rate that is applicable to a very short future time period that begins at time T.
+
+\section{Forward rate agreements}
+A forward rate agreement(FRA) is an over-the-counter agreement desighed to ensure that a certain interest rate will apply to either borrowing or lending a certain principal during a specified future period of time.
+
+\section{Duration}
+The duration of a bond is a measure of how long on average the holder of the bond has to wait before receiving cash payment. A zero-coupon bond that lasts n years has a duration of n years. However, a coupon-bearing bond lasting n years has a duration less than n years.
+
+Suppose that a bond provides the holder with cash flows $ c_i $ at time $ t_i(1\le i\le n) $. The bond price B and bond yield y (continuously compounded) are related by
+\begin{equation}
+	B=\sum_{i=1}^{n}c_ie^{-yt_i}
+\end{equation}
+The duration of the bond, D, is defined as
+\begin{equation}
+	D=\frac{\sum_{i=1}^{n}t_ic_ie^{-yt_i}}{B}
+\end{equation}
+This can be written 
+\begin{equation}
+	D=\sum_{i=1}^{n}t_i[\frac{c_ie^{-yt_i}}{B}]
+\end{equation}
+The duration is therefore a weighted average of the times when payments are made, with the weight applied to time $ t_i $ being equal to proportion of the bond's total present value provided by the cash flow at time $ t_i $.
+
+When a small change $ \Delta y $ in the yield is considered, it is approximately true that 
+\begin{equation}
+	\Delta B=\frac{dB}{dy}\Delta y
+\end{equation}
+
+From equation (1), this becomes
+\begin{equation}
+	\Delta B=-\Delta y\sum_{i=1}^{n}c_it_ie^{-yt_i}
+\end{equation}
+This can be written 
+\begin{equation}
+	\frac{\Delta B}{B}=-D\Delta y
+\end{equation}
+
+The equation (6) is an approximate relationship between percentage changes in a bond price and changes in its yield.
+
+\section{Modified duration}
+The preceding analysis is based on the assumption that y is expressed with continuous compounding. If y is expressed with annual compounding, it can be shown that the approximate relationship in equation (6) becomes
+\[
+\Delta B=-\frac{BD\Delta y}{1+y}
+\]
+More generally, if y is expressed with a compounding frequency of m times per year, then
+\[
+\Delta B=-\frac{BD\Delta y}{1+y/m}
+\]
+A variable $ D^* $, defined by 
+\[
+D^*=\frac{D}{1+y/m}
+\]
+is sometimes reffered to as the bond's modified duration. It allows the duration relationship to be simplified to
+\begin{equation}
+	\Delta B=-BD^*\Delta y
+\end{equation}
+when y is expressed with a compounding frequency of m times per year.
+
+\subsection{Bond portofolios}
+The duration, D, of a bond portofolio can be defined as a weighted average of the duration of the individual bonds in the portofolio, with the weights being proportional to the bond prices.
+
+It is important to realize that, when duration is used for bond portfolios, there is an implicit assumption that the yields of all bonds will change by approximately the same amount.
+
+\section{Convexity}
+The duration relationship applies only to small changes in yields.
+For large yield changes, the portofolios behave differently.
+
+A factor known as convexity measures this curvature and can be used to improve the relationship in equation (6).
+
+A measure of convexity is 
+\[
+C=\frac{1}{B}\frac{d^2B}{dy^2}=\frac{\sum_{i=1}^{n}c_it_i^2e^{-yt_i}}{B}
+\]
+
+From Taylor series expansions, we obtain a more accurate expression than equation (4), given by
+\[
+\Delta B=\frac{dB}{dy}\Delta y+\frac{1}{2}\frac{d^2B}{dy^2}\Delta y^2
+\]
+
+This lead to
+\[
+\frac{\Delta B}{B}=-D\Delta y+\frac{1}{2}C(\Delta y)^2
+\]
+
+For a potofolio with a particular durationm the convexity of a bond portfolio tends to be greatest when the portofolio provides payments evenly over a long period of time. It is least when the payments are concentrated around one particular point in time.
+
+\section{Theories of the term structure of interest rates}
+\subsection{expectations theory}
+Expectations theory conjectures that long-term interest rates should reflect expectd future short-term interest rates.
+
+\subsection{market segmentation theory}
+Maket segmentation theory conjectures that there need be no relationship between short-, medium-, and long-term interest rates. The short-term interest rate is determined by supply and demand in the short-term bond market; The medium-term interest rate is determined by supply and demand in the medium-term bond market; and so on.
+
+\subsection{liquidity preference theory}
+The basic assumption underlying the theory is that investors prefer to preserve their liquidity and invest funds for short periods of time. Borrows, on the other hand, usually prefer to borrow at fixed rates for long periods of time. This leads to a situation in which forward rates are greater than expected future zero rates.
+
+
+
+
+
+\end{document}

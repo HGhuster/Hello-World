@@ -1,0 +1,193 @@
+\documentclass{article}
+\title{Nechyba Ch.4 偏好与无差异曲线}
+\author{Dawei Wang}
+\date{\today}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+	\maketitle
+偏好存在一些我们可以合理地假定是人们所共有的规律性，这些规律性使我们能够对独立于个人确切偏好的行为作出预测。
+\section{A 偏好的经济模型}
+偏好不仅定义在那些落入我们选择集中商品的消费束上，也可以定义在那些我们可能永远也不能得到的消费束上。
+
+\subsection{关于偏好的两个基本的理性假设}
+完备的偏好：个体能够把任意两个消费束相互进行比较(对偏好最本质二点假设)。
+
+\hspace*{\fill}
+
+可传递的偏好：偏好存在内在的一致性，这使得选择最好的消费束是可能的。
+
+\hspace*{\fill}
+
+“理性”的偏好：满足完备性与传递性的偏好被称为是理性的。
+
+\hspace*{\fill}
+
+理性偏好的无差异曲线不会相交。
+
+\subsection{另外三个假设}
+单调性：越多越好，或至少不更差。——无差异曲线向下倾斜(广义上)
+
+如果A中一些商品有更大的数量而其他商品有相同的数量，那么对A该人至少和B一样好。这样的偏好通常被称为弱单调的。
+
+只要A中有一些商品比B中要多而其他的可以为相等的数量，第二个人就严格偏好A于B，这样的偏好被称为强单调的。
+
+\hspace*{\fill}
+
+凸性：平均优于极端，或者至少不差。(表现出人们对消费多样性的追求)——严格凸会导出递减的边际替代率。
+
+平均要取同一无差异曲线上的点来平均！！！
+
+偏好被称为强凸的，如果当一个有该偏好的人在A和B之间无差异时，此人严格偏好A和B的平均(较与A和B)。
+
+偏好被称为弱凸的，如果当一个有该偏好的人在A与B之间无差异时，对此人A与B的平均至少与A和B一样好。
+
+\hspace*{\fill}
+
+连续性：无突然跳跃。如果消费者消费的商品只是出现轻微的变化，则其幸福感不会出现显著变化。
+
+\hspace*{\fill}
+
+局部非餍足性：
+
+对每个商品束A，总存在一个离A非常近的商品束B严格好于A。
+
+\section{B 偏好与效用函数}
+n中不同的商品篮子记作：
+\[
+(x_1,x_2,\cdots,x_n)\in \mathbb{R}^n_+
+\]
+
+篮子$ (x_1^A,x_2^A,\cdots,x_n^A) $至少与$ (x_1^B,x_2^B,\cdots,x_n^B) $一样好记作：
+\[
+(x_1^A,x_2^A,\cdots,x_n^A)\succeq(x_1^B,x_2^B,\cdots,x_n^B)
+\]
+
+篮子$ (x_1^A,x_2^A,\cdots,x_n^A) $严格优于$ (x_1^B,x_2^B,\cdots,x_n^B) $记作：
+\[
+(x_1^A,x_2^A,\cdots,x_n^A)\succ(x_1^B,x_2^B,\cdots,x_n^B)
+\]
+
+篮子$ (x_1^A,x_2^A,\cdots,x_n^A) $与$ (x_1^B,x_2^B,\cdots,x_n^B) $无差异记作：
+\[
+(x_1^A,x_2^A,\cdots,x_n^A)\sim(x_1^B,x_2^B,\cdots,x_n^B)
+\]
+\subsection{两个基本的理性假设}
+\subsubsection{完备的偏好}
+一个人对有n种商品的篮子的偏好是完备的当且仅当对于所有的$ (x_1^A,x_2^A,\cdots,x_n^A)\in \mathbb{R}^n_+ $与所有的$ (x_1^B,x_2^B,\cdots,x_n^B)\in \mathbb{R}^n_+ $有：
+\[
+(x_1^A,x_2^A,\cdots,x_n^A)\succeq(x_1^B,x_2^B,\cdots,x_n^B)
+\]
+或
+\[
+(x_1^B,x_2^B,\cdots,x_n^B)\succeq(x_1^A,x_2^A,\cdots,x_n^A)
+\]
+或二者皆满足：$ (x_1^A,x_2^A,\cdots,x_n^A)\sim(x_1^B,x_2^B,\cdots,x_n^B)
+ $
+
+\subsubsection{传递的偏好}
+称一个人的偏好是传递的，当且仅当$ (x_1^A,x_2^A,\cdots,x_n^A)\succeq(x_1^B,x_2^B,\cdots,x_n^B) $且$ (x_1^B,x_2^B,\cdots,x_n^B)\succeq(x_1^C,x_2^C,\cdots,x_n^C) $时有
+\[
+(x_1^A,x_2^A,\cdots,x_n^A)\succeq(x_1^C,x_2^C,\cdots,x_n^C)
+\]
+
+\subsubsection{理性的偏好}
+理性=完备性+传递性
+
+\subsection{另外三个假设}
+单调性偏好：
+
+一个消费者的偏好是单调的当且仅当
+\[
+(x_1^A,x_2^A,\cdots,x_n^A)\succeq(x_1^B,x_2^B,\cdots,x_n^B), to\enspace all\enspace i=1,2,\cdots,n,x_i^A\ge x_i^B
+\]
+\[
+(x_1^A,x_2^A,\cdots,x_n^A)\succ(x_1^B,x_2^B,\cdots,x_n^B), to\enspace all\enspace i=1,2,\cdots,n,x_i^A>x_i^B
+\]
+
+\hspace*{\fill}
+
+凸性("平均优于极端(或者至少一样好)")
+\[
+(x_1^A,x_2^A,\cdots,x_n^A)\sim(x_1^B,x_2^B,\cdots,x_n^B)
+\]
+
+意味着
+\[
+\alpha(x_1^A,x_2^A,\cdots,x_n^A)+(1-\alpha){1}{2}(x_1^B,x_2^B,\cdots,x_n^B)\succeq(x_1^A,x_2^A,\cdots,x_n^A)
+\]
+
+其中$ 0\le\alpha\le 1 $
+
+\hspace*{\fill}
+
+拟凹函数和凹函数($ 0\le\alpha\le1 $)：
+
+一个函数f：$ \mathbb{R}^2_+\rightarrow\mathbb{R}^1 $ 被定义为拟凹的当且仅当如下成立：
+
+只要$ f(x^A_1,x^A_2)\le f(x^B_1,x^B_2) $，那么$ f(X^A_1,x^A_2)\le f(\alpha x^A_1+(1-\alpha)x^B_1,\alpha x^A_2+(1-\alpha)x^B_2) $。
+
+一个函数被定义为凹的当且仅当：
+\[
+\alpha f(x^A_1,x^A_2)+(1-\alpha)f(x^B_1,x^B_2)\le f(\alpha x^A_1+(1-\alpha)x^B_1,\alpha x^A_2+(1-\alpha)x^B_2)
+\] 
+
+\hspace*{\fill}
+
+连续性("无突然跳跃")
+
+现在假定有两个无限点序列：一个记为$ \{B^1,B^2,B^3\,\cdots\} $，另一个记为$ \{C^1,C^2,C^3\,\cdots\} $，并且第一个序列收敛到点A，第二个序列收敛到点D。如果对所有的i，$ B^i\succ C^i $，那么连续性假设要求$ A\succ D $
+
+\subsection{用效用函数表示偏好}
+效用函数仅是对商品束进行配数的数学规则，要求对更加偏好的商品束分配较高的数。
+
+偏好可以用效用函数表示的充分条件：理性+连续性！！！
+
+理性不是偏好可以用效用函数表示的充分条件！！！
+
+\hspace*{\fill}
+
+对于关于n种不同商品的商品束的偏好的情形，可以定义效用函数：$ u:\mathbb{R}^n_+\rightarrow \mathbb{R}^1$表示关于n种商品的商品束的偏好$ \succeq $当且仅当，对于任意$ \mathbb{R}^n_+ $中的$ (x_1^A,x_2^A,\cdots,x_n^A) $与$ (x_1^B,x_2^B,\cdots,x_n^B) $，
+\[
+(x_1^A,x_2^A,\cdots,x_n^A) \succ (x_1^B,x_2^B,\cdots,x_n^B)\enspace means\enspace u(x_1^A,x_2^A,\cdots,x_n^A) >u(x_1^B,x_2^B,\cdots,x_n^B)
+\]
+\[
+(x_1^A,x_2^A,\cdots,x_n^A) \sim (x_1^B,x_2^B,\cdots,x_n^B)\enspace means\enspace u(x_1^A,x_2^A,\cdots,x_n^A) = u(x_1^B,x_2^B,\cdots,x_n^B)
+\]
+
+当且仅当偏好是理性时，偏好才能用效用函数来表示
+
+\subsubsection{边际替代率}
+\[
+du=\frac{\partial u}{\partial x_1}dx_1+\frac{\partial u}{\partial x_2}dx_2
+\]
+令$ du=0 $
+\[
+\frac{dx_2}{dx_1}=-\frac{\partial u/\partial x_1}{\partial u/\partial x_2}
+\]
+
+!!!!!!!!!$ x_1 $对$ x_2 $的边际替代率(MRS of $ x_1 $ for $ x_2 $)：$ \frac{\partial u/\partial x_1}{\partial u/\partial x_2} $ !!!!!!!!!
+
+
+
+\subsubsection{解释由效用函数分配给无差异曲线的值}
+只要无差异曲线的形状与伴随这些曲线的数字的序在两个图之间不变化，这两个图中的无差异曲线图就代表了相同的偏好。
+
+\hspace*{\fill}
+
+如果无差异曲线在所有点的斜率都是一样的，该无差异曲线的形状一定相同(边际替代率的概念与我们用来度量效用的标尺无关)：
+
+对于效用函数$ u(x_1,x_2) $，考虑函数$ f:\mathbb{R}^1\rightarrow\mathbb{R}^1 $，构造新的效用函数$ v(x_1,x_2)=f(u(x_1,x_2)) $，则：
+\[
+\frac{\partial v}{\partial x_1}=\frac{\partial f}{\partial u}\frac{\partial u}{\partial x_1}\enspace and\enspace \frac{\partial v}{\partial x_2}=\frac{\partial f}{\partial u}\frac{\partial u}{\partial x_2}
+\]
+因此：
+\[
+\frac{\partial v/\partial x_1}{\partial v/\partial x_2}=\frac{\partial u/\partial x_1}{\partial u/\partial x_2}
+\]
+
+因此，把变化f应用到效用函数u不会改变无差异曲线的形状，因为它不改变它们的边际替代率；它只是简单地把无差异曲线标上不同的数字。只要分配给这些无差异曲线数字的排序保持不变，变换的效用函数就表示相同的偏好，这样的变换被称为保序变换。
+
+
+\end{document}

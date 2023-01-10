@@ -1,0 +1,267 @@
+\documentclass{article}
+\title{The Rules of the Game}
+\author{Dawei Wang}
+\date{\today}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{graphicx} %插入图片的宏包
+%\usepackage{float} %设置图片浮动位置的宏包
+%\usepackage{subfigure} %插入多图时用子图显示的宏包
+\begin{document}
+	\maketitle
+
+The paradigm of game theory: the modeller assigns payoff functions and strategy sets to his players and sees what happens when they pick strategies to maximize their payoffs.
+
+\section{Definitions}
+ Game theory is concerned with the actions of decision makers who are conscious that their actions affect each other.
+ 
+\subsection{Describing a Game}
+
+The essential elements of a game are \textbf{\textit{players}}, \textbf{\textit{actions}}, \textbf{\textit{payoffs}}, and \textbf{\textit{information}}— PAPI,
+for short. These are collectively known as the \textbf{\textit{rules of the game}}, and the modeller’s
+objective is to describe a situation in terms of the rules of a game so as to explain what will
+happen in that situation. Trying to maximize their payoffs, the players will devise plans
+known as \textbf{\textit{strategies}} that pick actions depending on the information that has arrived
+at each moment. The combination of strategies chosen by each player is known as the
+\textbf{\textit{equilibrium}}. Given an equilibrium, the modeller can see what actions come out of the
+conjunction of all the players’ plans, and this tells him the \textbf{\textit{outcome}} of the game.
+
+\hspace*{\fill}
+
+\textbf{\textit{Players}} are the individuals who make decisions. Each player’s goal is to maximize his
+utility by choice of actions.
+
+Sometimes it is useful to explicitly include individuals in the model called \textbf{\textit{pseudo-players}}
+whose actions are taken in a purely mechanical way.
+
+\textbf{\textit{Nature}} is a pseudo-player who takes random actions at specified points in the game with
+specified probabilities.We say
+that there are different \textbf{\textit{realizations}} of a game depending on the results of random moves.
+
+\hspace*{\fill}
+
+An action or move by player i, denoted $ a_i $, is a choice he can make.
+
+Player i’s action set, $ A_i=\{a_i\} $, is the entire set of actions available to him.
+
+
+An action combination is an ordered set $ a={a_i}，(i=1,\cdots,n) $ of one action for each
+of the n players in the game.
+
+\hspace*{\fill}
+
+By player i’s payoff $ \pi_i(s_1,\cdots,s_n) $, we mean either:
+
+(1) The utility player i receives after all players and Nature have picked their strategies and
+the game has been played out; or
+
+(2) The expected utility he receives as a function of the strategies chosen by himself and the
+other players.
+
+\hspace*{\fill}
+
+The outcome of the game is a set of interesting elements that the modeller picks from the
+values of actions, payoffs, and other variables after the game is played out.
+
+The definition of the outcome for any particular model depends on what variables
+the modeller finds interesting.
+
+\hspace*{\fill}
+
+Player i’s strategy $ s_i $ is a rule that tells him which action to choose at each instant of the
+game, given his information set.
+
+Player i’s strategy set or strategy space $ S_i={s_i} $
+is the set of strategies available to him.
+
+
+A strategy profile $ S=s(s_1,s_2,\cdots,s_n) $ is an ordered set consisting of one strategy for each of
+the n players in the game.
+
+
+
+Since the information set includes whatever the player knows about the previous actions
+of other players, the strategy tells him how to react to their actions.
+
+Only rarely can we predict
+a player’s actions unconditionally, but often we can predict how he will respond to the
+outside world.
+
+strategy is a complete set of instructions for him, which
+tells him what actions to pick in every conceivable situation, even if he does not expect to
+reach that situation.The
+completeness of the description also means that strategies, unlike actions, are unobservable.
+An action is physical, but a strategy is only mental.
+
+\subsection{Equilibrium}
+
+The distinction between strategy profiles, which are sets of strategies, and outcomes, which
+are sets of values of whichever variables are important.
+
+An equilibrium $ s^*=(s^*_1,\cdots,s^*_n) $ is a strategy profile consisting of a best strategy for each
+of the n players in the game.
+
+
+The equilibrium strategies are the strategies players pick in trying to maximize
+their individual payoffs, as distinct from the many possible strategy profiles obtainable
+by arbitrarily choosing one strategy per player.
+
+An equilibrium concept or solution concept $ F:\{S_1,\cdots,S_n,\pi_1,\cdots\pi_n\}\rightarrow s^* $ is a rule
+that defines an equilibrium based on the possible strategy profiles and the payoff functions.
+Only a few
+equilibrium concepts are generally accepted
+
+
+\subsection{Uniqueness}
+
+Accepted solution concepts do not guarantee uniqueness, and lack of a unique equilibrium
+is a major problem in game theory.
+
+Often the solution concept employed leads us to believe
+that the players will pick one of the two strategy profiles A or B, not C or D, but we cannot
+say whether A or B is more likely. Sometimes we have the opposite problem and the game
+has no equilibrium at all.
+
+A model with no equilibrium or multiple equilibria is underspecified.
+
+\section{Dominated and Dominant Strategies: The Prisoner’s Dilemma}
+
+For any vector$ y=(y_1,\cdots,y_n) $, denote by $ y_{-i}  $,  the vector 
+
+\[
+  (y_1,\cdots,y_{i-1},y_{i+1},\cdots,y_n) 
+\]
+
+which is the portion of y not associated with player i.
+
+\hspace*{\fill}
+
+Player i’s best response or best reply to the strategies $ s_{−i} $ chosen by the other players
+is the strategy $ s_i^* $ that yields him the greatest payoff; that is,
+
+\[
+\pi_i(s_i^*,s_{-i}) \ge \pi_i(s_i' ,s_{-i}),\forall s_i'\ne s_i^*
+\]
+
+The best response is strongly best if no other strategies are equally good, and weakly best
+otherwise.
+
+\hspace*{\fill}
+
+$ s^d_i $ is dominated if there exists a single $ s'_i $ such that
+\[
+\pi_i(s^d_i,s_{-i})<\pi_i(s'_i,s_{-i}),\enspace \forall s_{-i}
+\]
+
+Note that $ s^d_i $
+is not a dominated strategy if there is no $ s_{−i} $ to which it is the best response,
+but sometimes the better strategy is $ s'_i $ and sometimes it is $ s''_i $. A dominated strategy is unambiguously inferior to some single other strategy.
+
+\hspace*{\fill}
+
+The strategy $ s^∗_i $ is a dominant strategy if it is a player’s strictly best response to any
+strategies the other players might pick, in the sense that whatever strategies they pick, his
+payoff is highest with $ s^∗_i $ . Mathematically,
+
+\[
+\pi_i(s_i^*,s_{-i}) > \pi_i(s_i' ,s_{-i}),\enspace \forall s_{-i},\forall s_i'\ne s_i^*
+\]
+
+A dominant strategy equilibrium is a strategy profile consisting of each player’s dominant
+strategy. Most games do not have dominant strategies.
+
+\subsection{Cooperative and Noncooperative Games}
+
+A cooperative game is a game in which the players can make binding commitments, as
+opposed to a noncooperative game, in which they cannot.
+
+\section{Iterated Dominance}
+
+Strategy $ s'_i $ is weakly dominated if there exists some other strategy $ s''_i $ for player i which is
+possibly better and never worse, yielding a higher payoff in some strategy profile and never
+yielding a lower payoff. Mathematically, $ s'_i $ is weakly dominated if there exists $ s''_i $ such that
+
+\[
+\pi_i(s''_i,s_{-i})\ge\pi_i(s'_i,s_{-i})\forall s_{-i}
+\]
+
+and
+
+\[
+\pi_i(s''_i,s_{-i})>\pi_i(s'_i,s_{-i})\enspace for\enspace some\enspace s_{-i}
+\]
+
+One might define a weak dominance equilibrium as the strategy profile found by
+deleting all the weakly dominated strategies of each player.
+
+An iterated dominance equilibrium is a strategy profile found by deleting a weakly
+dominated strategy from the strategy set of one of the players, recalculating to find which
+remaining strategies are weakly dominated, deleting one of them, and continuing the process
+until only one strategy remains for each player.
+
+\subsection{zero-sum game}
+
+A zero-sum game is a game in which the sum of the payoffs of all the players is zero
+whatever strategies they choose. A game which is not zero-sum is nonzero-sum game or
+variable- sum.
+
+Often modellers will refer
+to a game as zero-sum even when the payoffs do not add up to zero, so long as the payoffs
+add up to some constant amount. The difference is a trivial normalization.
+
+\section{Nash Equilibrium}
+
+The strategy profile s∗ is a Nash equilibrium if no player has incentive to deviate from
+his strategy given that the other players do not deviate. Formally,
+
+\[
+\forall i\enspace \pi_i(s^*_i,s^*_{-i})\ge\pi_i(s'_i,s^*_{-i}),\enspace \forall s'_i
+\]
+
+A Nash strategy need only be a best response to the other Nash strategies,
+not to all possible strategies.
+
+Like a dominant strategy equilibrium, a Nash equilibrium can be either weak or strong.
+The definition above is for a weak Nash equilibrium. To define strong Nash equilibrium,
+make the inequality strict; that is, require that no player be indifferent between his equilibrium
+strategy and some other strategy.
+
+Every dominant strategy equilibrium is a Nash equilibrium, but not every Nash equilibrium
+is a dominant strategy equilibrium.If a strategy is dominant it is a best response to
+any strategies the other players pick, including their equilibrium strategies. If a strategy is
+part of a Nash equilibrium, it need only be a best response to the other players’ equilibrium
+strategies.
+
+\subsection{Coordination Games}
+
+Ranked Coordination is one of a large class of games called coordination games,
+which share the common feature that the players need to coordinate on one of multiple
+Nash equilibria.
+
+\subsection{Focal points}
+
+Certain of the strategy profiles are
+focal points: 
+
+Nash equilibria which for psychological reasons are particularly compelling.
+
+Formalizing what makes a strategy profile a focal point is hard and depends on the
+context.
+
+\hspace*{\fill}
+
+The boundary is a particular kind of focal point.
+
+Once the boundary is established it takes on additional significance because behavior
+with respect to the boundary conveys information.
+
+Boundaries must be sharp and well known if they are not to be violated, and
+a large part of both law and diplomacy is devoted to clarifying them.
+
+\hspace*{\fill}
+
+Mediation and communication are both important in the absence of a clear focal
+point.
+
+\end{document}

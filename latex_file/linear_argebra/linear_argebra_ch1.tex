@@ -1,0 +1,270 @@
+\documentclass{article}%report,letter,book
+
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%newcommand
+
+\title{Linear algebra Ch.1}
+\author{Dawei Wang}
+\date{\today}
+
+
+\begin{document}
+	\maketitle
+%\tableofcontents
+%\[
+%\begin{bmatrix}
+% 0&1\\
+% 1&0
+%\end{bmatrix}_{n \times n}
+%\]
+
+%\begin{gather}
+	
+%\end{gather}
+\section{数域}
+关于数的加、减、乘、除等运算的性质通常称为数的代数性质；
+\subsection{定义}
+设P是由一些复数组成的集合，其中包括0和1，如果P中任意两个数的和、差、积、商仍是P中的数，那么P就称为一个数域。
+\\ \hspace*{\fill} 
+
+如果说数的集合P中任意两个数做某一运算的结果仍在P中，则称数集P对这个运算是封闭的。因此数域的定义也可以说成，如果一个包含0，1在内的数集P对于加法、减法、乘法、除法（除数不为0）是封闭的，则P就称为一个数域。
+\\ \hspace*{\fill} 
+
+所有的数域都包含有理数作为它的一部分。
+
+\section{一元多项式}
+\subsection{定义：一元多项式}
+设n是一非负整数，则表达式：
+\begin{equation*}
+	a_nx^n+a_{n-1}x^{n-1}+\cdots+a_0
+\end{equation*}
+其中\(a_0,a_1,\cdots,a_n\)全属于数域P，称为系数在数域P中的一个一元多项式，或者简称为数域P上的一元多项式。
+
+\subsection{定义：多项式相等}
+如果多项式$f(x)$与$g(x)$中，除去系数为零的项外，同次项的系数全相等，那么$f(x)$和$g(x)$就称为相等，记为：
+\begin{equation*}
+	f(x)=g(x)
+\end{equation*}
+在（1）中，如果$a_n\ne 0$，那么$a_nx^n$称为多项式（1）的首项，$a_n$称为首项系数，n称为多项式（1）的次数。零多项式不定义其多项式次数，多项式次数记为：
+\[
+\partial(f(x))
+\]
+数域P上的两个多项式经过加、减、乘等运算后，所得的结果仍然是数域P上的多项式：
+\begin{gather*}
+	f(x)=\sum_{i=0}^{n}a_ix^i\\
+	g(x)=\sum_{j=0}^{m}b_jx^j
+\end{gather*}
+\begin{equation*}
+	\begin{split}
+	f(x)+g(x)&=(a_n+b_n)x^n+(a_{n-1}+b_{n-1})x^{n-1}+\cdots+(a_1+b_1)x+(a_0+b_0)\\
+	&=\sum_{i=0}^n(a_i+b_i)x^i
+	\end{split}
+\end{equation*}
+
+\begin{equation*}
+		f(x)g(x)=\sum_{s=0}^{m+n}(\sum_{i+j=s}a_ib_j)x^s 
+\end{equation*}
+对于多项式的加减法，有：
+\begin{equation*}
+	\partial(f(x)\pm g(x))\le max(\partial f(x),\partial g(x))
+\end{equation*}
+$f(x)g(x)$的首项是：
+\begin{equation*}
+	a_nb_mx^{n+m}
+\end{equation*}
+
+多项式运算满足的一些规律：
+\\
+加法交换律：
+\[
+f(x)+g(x)=g(x)+f(x)
+\]
+加法结合律：
+\[
+(f(x)+g(x))+h(x)=f(x)+(g(x)+h(x))
+\]
+乘法交换律：
+\[
+f(x)g(x)=g(x)f(x)
+\]
+乘法结合律：
+\[
+(f(x)g(x))h(x)=f(x)(g(x)h(x))
+\]
+乘法对加法的分配律：
+\[
+f(x)(g(x)+h(x))=f(x)g(x)+f(x)h(x)
+\]
+乘法消去律：
+\\
+如果$f(x)g(x)=f(x)h(x)$且$f(x)\ne 0$，那么：
+\[
+g(x)=h(x)
+\]
+\subsection{定义：一元多项式环}
+所有系数在数域P中的一元多项式全体，称为数域P上的一元多项式环，记为P[x]，P称为P[x]的系数域。
+
+\section{整除的概念}
+\subsection{带余除法}
+ 对于p[x]中任意两个多项式$f(x)$与$g(x)$，其中$g(x)\ne0$，一定有p[x]中的多项式$q(x),r(x)$存在，使：
+ \begin{equation*}
+ 	f(x)=q(x)g(x)+r(x)
+ \end{equation*}
+成立，其中$\partial(r(x))<\partial(g(x))$或者$r(x)=0$，并且这样的$q(x),r(x)$是唯一决定的。
+\\ \hspace*{\fill} 
+
+带余除法中所得的$q(x)$通常称为$g(x)$除$f(x)$的商式，$r(x)$称为$g(x)$除$f(x)$的余式，简称商及余。
+\subsection{定义:整除}
+数域P上的多项式$g(x)$称为整除$f(x)$，如果有数域P上的多项式$h(x)$使等式
+\begin{equation*}
+	f(x)=g(x)h(x)
+\end{equation*}
+成立
+\subsection{定理}
+对于数域P上的任意两个多项式$f(x),g(x)$，其中$g(x)\ne0,g(x)|f(x)$的充要条件是$g(x)$除$f(x)$的余式为零。
+\\ \hspace*{\fill}
+
+如果$f(x)|g(x),g(x)|f(x)$，那么$f(x)=cg(x)$，其中c为非零常数。
+\\ \hspace*{\fill}
+
+如果$f(x)|g(x),g(x)|f(x)$，那么$f(x)|h(x)$。
+\\ \hspace*{\fill}
+
+如果$f(x)|g_i(x),i=1,2,\cdots,r$，那么
+\[
+f(x)|(u_1(x)g_1(x)+u_2(x)g_2(x)+\cdots+u_r(x)g_r(x))
+\]
+其中$u_i(x)$是数域P上的任意多项式。
+\\ \hspace*{\fill}
+
+两个多项式之间的整除关系不因为系数域的扩大而改变。
+\section{最大公因式}
+\subsection{定义：最大公因式}
+设$f(x),g(x)$是p[x]中两个多项式，P[x]中多项式$d(X)$称为$f(x),g(x)$的一个最大公因式，如果它满足：
+
+1）$d(x)$是$f(x),g(x)$的公因式；
+
+2）$f(x),g(x)$的公因式全是$d(X)$的因式；
+成立，那么$f(x),g(x)$和$g(x),r(x)$有相同的公因式。
+\\ \hspace*{\fill}
+
+对于任意多项式$f(x),f(x)$就是$f(x)$与0的一个最大公因式
+
+\subsection{引理}
+如果有等式
+\begin{equation*}
+	f(x)=q(x)g(x)+r(x)
+\end{equation*}
+
+\subsection{定理}
+对于P[x]中任意两个多项式$f(x),g(x)$，在P[x]中存在一个最大公因式$d(x)$，且$d(x)$可以表成$f(x),g(x)$的一个组合，即有P[x]中多项式$u(x),v(x)$使：
+\begin{equation*}
+	d(x)=u(x)f(x)+v(x)g(x)
+\end{equation*}
+
+两个多项式的最大公因式在可以相差一个非常数倍的意义下是唯一确定的。约定用：
+\[
+(f(x),g(x))
+\]
+来表示首项系数是1的那个最大公因式；
+
+\subsection{定义：互素}
+P[x]中两个多项式$f(x),g(x)$称为互素的，如果$(f(x),g(x))$=1
+
+\subsection{定理}
+P[x]中两个多项式互素$f(x),g(x)$的充要条件是有P[x]中的多项式$u(x),v(x)$使
+\[
+u(x)f(x)+v(x)g(x)=1
+\]
+
+\subsection{定理}
+如果$(f(x),g(x))=1$，且$f(X)|g(x)h(x)$，那么
+\[
+f(x)|h(x)
+\]
+
+\subsection{推论}
+如果$f_1(x)|g(x),f_2(x)|g(x)$，且$(f_1(x),f_2(x))=1$，那么$ f_1(x)f_2(x)|g(x) $
+
+\section{因式分解定理}
+\subsection{定义：不可约多项式}
+数域P上次数$ \ge $1的多项式p(x)称为数域P上的不可约多项式，如果它不能表成数域P上的两个次数比p(x)的次数低的多项式的乘积。
+\\ \hspace*{\fill}
+
+一次多项式总是不可约多项式。
+\\ \hspace*{\fill}
+
+一个多项式是否不可约依赖于系数域。
+\subsection{定理}
+如果$ p(x) $是一个不可约多项式，那么对于任意的两个多项式$ f(X),g(x) $，由$ p(x)|f(x)g(x) $一定推出$ p(x)|f(x) $或者$ p(x)|g(x) $。
+
+\subsection{因式分解及唯一性定理}
+数域P上每一次数$ \ge $1的多项式$ f(x) $都可以唯一地分解为数域P上一些不可约多项式的乘积。
+
+
+
+\section{重因式}
+\subsection{定义：重因式}
+不可约多项式p(x)称为多项式$
+f(x)$的重因式，如果$ p^k(x)|f(x) ,$而$ p^{k+1}(x)\nmid f(x) $
+
+\subsection{定理}
+如果不可约多项式p(x)是$f(x)$的k重因式$ k\ge 1 $，那么它是微商$ f'(x) $的k-1重因式
+
+\subsection{推论}
+如果不可约多项式p(x)是$f(x)$的k重因式$ k\ge 1 $，那么p(x)是$ f(x),f'(x),\cdots,f^{(k-1)}(x) $的因式，但不是$ f^{(k)}(x) $的因式
+
+\subsection{推论}
+不可约多项式$p(x)$是$f(x)$的重因式的充分必要条件为$p(x)$是$f(x)$和$ f'(x) $的重因式。
+
+\subsection{推论}
+多项式没有重因式的充要条件是$f(x)$和$ f'(x) $互素。
+
+
+\section{多项式函数}
+\subsection{定理：余数定理}
+用一次多项式x-a去除多项式f(x)所得的余式是一个常数，这个常数等于函数值f(a)。
+\\ \hspace*{\fill}
+
+如果$ f(x) $在$ x=a $时函数值$ f(a)=0 $，就称为$ f(x) $的一个根或零点。
+
+\subsection{推论}
+a是$ f(x) $的根的充分必要条件是$ (x-a)|f(x) $。
+\\ \hspace*{\fill}
+
+a称为$ f(x) $的k重根，如果$ x-a $是$ f(x) $的k重因式。
+
+\subsection{定理}
+$ P[x] $中n次多项式$ (n\ge0) $在数域P中的根不可能多于n个，n重根按重数计算。
+
+\subsection{定理}
+如果多项式$ f(x),g(x) $的次数都不超过n，而它们对$ n+1 $个不同的数$ a_1,a_2,\cdots,a_{n+1} $都有相同的值，即：
+\[
+f(a_i)=g(a_i)\qquad i=1,2,\cdots,n+1
+\]
+那么$ f(x)=g(x) $。
+\\ \hspace*{\fill}
+
+不同的多项式定义的函数也不相同。
+
+
+\section{复系数与实系数多项式的因式分解}
+\subsection{代数基本定理}
+每个次数$ \ge 1$的复系数多项式在复数域中有一根。
+
+\subsection{复系数多项式因式分解定理}
+每个次数$ \ge 1$的复系数多项式在复数域上都可以唯一地分解成一次因式的乘积。
+
+\subsection{实系数多项式因式分解定理}
+每个次数$ \ge 1$的实系数多项式在实数域上都可以唯一地分解成一次因式与二次不可约因式的乘积。
+
+
+\section{有理系数多项式}
+
+
+
+\section{多元多项式}
+\section{对数多项式}
+\end{document}

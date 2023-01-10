@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{mathrsfs}
+\usepackage{amsfonts,amssymb}
+\usepackage{euscript}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{CJKutf8}
+
+\title{Exercise 1}
+
+\definecolor{highlight}{rgb}{1,0,0}
+
+\newtcolorbox{defi}[2][]{colback=Salmon!20, colframe=Salmon!90!Black,title=\textbf{#2}}
+
+\newtcolorbox{theo}[2][]{colback=JungleGreen!10!Cerulean!15,colframe=CornflowerBlue!60!Black,title=\textbf{#2}}
+
+\newtcolorbox{prop}[2][]{colback=Emerald!10,colframe=cyan!40!black,title=\textbf{#2}}
+
+\newtcolorbox{com}[2][]{colback=OliveGreen!10,colframe=Green!70,title=\textbf{#2}}
+%colback=OliveGreen!10,colframe=Green!70
+
+
+
+
+\begin{document}
+\maketitle
+\begin{CJK}{UTF8}{gbsn}
+练习1：
+
+无限的$\sigma$代数意味着可测空间有无限个元素（有限个元素的power set的基数为有限），若m的不相交元素个数为有限个，则m有限，若m的不相交元素为无限个则其交并补构成一个power set，这个power set的基数和R基数一样
+
+\vspace{0.2cm}
+
+练习2:
+
+略
+
+\vspace{0.2cm}
+
+练习3:
+
+要证：$\forall V=(\alpha,\infty),\alpha\in \mathbb{R}$有$ f^{-1}(V)=\{x: f(x)>\alpha\}\in\mathfrak{M}$
+
+设：对任意$\alpha$选取$\alpha<r_n<\alpha+1/n,r_n\in\mathbb{Q}$,$B_n=\{x:f(x)\ge r_n\}\in\mathfrak{M}$
+
+$ f^{-1}(V)=\bigcup_{i=1}^{\infty}B_n\rightarrow f^{-1}(V)\in\mathfrak{M}$
+
+根据1.12（c）的证明，f是可测的
+
+
+
+
+
+
+
+
+\end{CJK}
+
+
+
+
+\end{document}

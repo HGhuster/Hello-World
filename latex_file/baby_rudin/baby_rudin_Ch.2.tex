@@ -1,0 +1,230 @@
+\documentclass{article}
+\title{baby rudin Ch.2}
+\author{Dawei Wang}
+\date{\today}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{theorem}
+\newtheorem{defi}{Definition}
+\newtheorem{theo}{Theorem}
+\newtheorem{rem}{Remark}
+\newtheorem{coro}{Corollary}
+\begin{document}
+	\maketitle
+\section{FINITE, COUNTABLE, AND UNCOUNTABLE SETS}
+\begin{defi}
+	Consider two sets A and B, whose elements may be any objects whatever, and suppose that with each element x of A there is associated, in some manner, an element of B, which we denote by f(x). Then f is said to be a function from A to B(or a mapping of A into B). The set A is called the domain of f(we also say f is defined on A), and the elements f(x) are called the values of f. The set of all values of f is called the range of f.
+\end{defi}
+
+\begin{defi}
+	Let A and B be two sets and let f be a mapping of A into B. If $ E\subset A $ is defined to be the set of all elements f(x), for $ x\in E $. We call f(E) the image of E under f. In this notation, f(a) is the range of f. It is clear that $ f(a)\subset B $. If f(A)=B, we say that f maps A onto B.
+	
+	If $ E\subset B $, $ f^{-1}(E) $ the set of all $ x\in A $ such that $ f(x)\in E $. We call $ f^{-1}(E) $ the inverse image of E under f. If $ y\in B $, $ f^{-1}(y) $ is the set of all $ x\in A $ such that f(x)=y. If, for each $ y\in B $, $ f^{-1}(y) $ consists of at most one element of A, then f is said to be a 1-1 (one-to-one) mapping of A into B.This may also be expressed as follows: f is a 1-1 mapping of A into B provided that $ f(x_1)\neq f(x_2) $ whenever $ x_1\neq x_2, x_1\in A, x_2\in A $.
+\end{defi}
+
+\begin{defi}
+	If there exists a 1-1 mapping of A onto B, we say that A and B can be put in 1-1 correspondence, or that A and B have the same cardinal number, or, briefly, that A and B are equivalent, and we write $ A\sim B $. This relation clearly has the following proprities:
+	
+	It is reflexive: $ A\sim A $.
+	
+	It is symmetric: If $ A\sim B $, then $ B\sim A $.
+	
+	It is transitive: If $ A\sim B $ and $ B\sim C $, then $ A\sim C $.
+	
+	Any relation with these three proprities is called an equivalence relation.
+\end{defi}
+
+\begin{defi}
+	For any positive integer n, let $ J_n $ be the set whose elements are the integers 1, 2, $\cdots$, n; let J be the set consisting of all positive integers. For any set A, we say:
+	
+	(a) A is finite if $ A\sim J_n $ for some n (the empty set is also considered to be finite).
+	
+	(b) A is infinite if A is not finite.
+	
+	(c) A is countable if $ A\sim J $.
+	
+	(d) A is uncountable if A is neither finite nor countable.
+	
+	(e) A is at most countable if A is finite or countable.
+\end{defi}
+
+For two finite sets A and B, we evidently have A~B if and only if A and B contain the same number of elements. For infinite sets, however, the idea of "having the same number of elements" becomes quite vague, whereas the notion of 1-1 correspondence retains its clarity.
+
+\begin{rem}
+	A finite set cannot be equivalent to one of its proper subsets. That this is, however, possible for infinite sets.
+\end{rem}
+
+\begin{defi}
+	By a sequence, we mean a function of f defined on the set of J of all positive integers. If $ f(n)=x_n $, for $ n\in J $, it is customary to denote the sequence f by the symbol {$ x_n $}, or sometimes by $x_1,x_2,x_3,\cdots$. The values of f, that is, the elements $ x_n $, are called the terms of the sequence. If A is a set and if $ x_n\in A $ for all $ n\in J $, then {$ x_n $} is said to be a sequence in A, or a sequence of elements of A.
+\end{defi}
+
+Since every countable set is the range of a 1-1 function defined on J, we may regard every countable set as the range of a sequence of distinct terms. Speaking more loosely, we may say that the elements of any countable set can be "arranged in a sequence."
+
+\begin{theo}
+	Every infinite subset of a countable set A is countable
+\end{theo}
+
+The theorem shows that, roughly speaking, countable sets represent the "smallest" infinity: No uncountable set can be a subset of a countable set.
+
+\begin{defi}
+	Let A and $\Omega$ be sets, and suppose that with each element $\alpha$ of A there is associated a subset of $\Omega$ which we denote by $ E_\alpha $
+\end{defi}
+
+The set whose elements are the sets $ E_\alpha $ will be denoted by {$ E_\alpha $}. Instead of speaking of sets of sets, we shall sometimes speak of a collection of sets, or a family of sets.
+
+The union of the sets $ E_\alpha $ is defined to be the set S such that $ x\in S $ if and only if $ x\in E_\alpha $ for at least one $ \alpha\in A $. We use the notation
+
+\[
+S=\bigcup_{\alpha\in A}E_\alpha
+\]
+
+If A consists of the integers 1,2,...,n, one usually writes
+
+\[
+S=\bigcup^n_{m=1}E_m
+\]
+
+If A is the set of all positive integers, the usual notation is 
+
+\[
+S=\bigcup^{\infty}_{m=1}E_m
+\]
+
+as for unions. If $ A\cap B $ is not empty, we say that A and B intersect; otherwise they are disjoint.
+
+Many properties of unions and intersections are quite similar to those of sums and products; in fact, the words sum and product were sometimes used in this connection, and the symbols $ \sum $ and $ \prod $ were written in place of $ \bigcup $ and $ \bigcap $.
+
+\begin{theo}
+	Let {$ E_n $}, n=1,2,3,..., be a sequence of countable sets, and put 
+	\[
+	S=\bigcup^{\infty}_{n=1}E_n
+	\]
+	Then S is countable.
+\end{theo}
+
+\begin{coro}
+	Suppose A is at most countable, and, for every $ \alpha\in A $, $ B_\alpha $ is at most countable. Put, 
+	\[
+	T=\bigcup_{\alpha\in A}B_\alpha
+	\]
+	
+	Then T is at most countable.
+\end{coro}
+
+For T is equivalent to a subset of S.
+
+\begin{theo}
+	 Let A be a countable set, and let $ B_n $ be the set of all n-tuples ($ a_1,...,a_n $), where $ a_k\in A $(k=1,...,n), and the elements $ a_1,...,a_n $ need not be distinct. The $ B_n $ is countable.
+\end{theo}
+
+\begin{coro}
+	The set of all rational numbers is countable.
+\end{coro}
+
+\begin{theo}
+	Let A be the set of all sequences whose elements are the digits 0 and 1. This set A is uncountable.
+\end{theo}
+The element of A are sequences like 1,0,0,1,0,1,1,1
+
+Readers who are familiar with the binary representation of the real numbers will notice that theorem 2.14 implies that the set of all real numbers is uncountable.
+
+\section{METRIC SPACES}
+\begin{defi}
+	A set X, whose elements we shall call points, is said to be a metric space if with any two points p and q of X there is associated a real number d(p,q), called the distance from p to q, such that
+	
+	(a) d(p,q)>0 if $ p\neq q $; d(p,p)=0;
+	
+	(b) d(p,q)=d(q,p);
+	
+	(c) d(p,q)$ \le $ d(p,r)+d(r,q), for any $ r\in X $.
+	
+	Any function with these three properties is called a distance function, or a metric.		
+
+\end{defi}
+
+The distance in $ R^k $ is defined by:
+\[
+d(\mathbf{x},\mathbf{y})=|\mathbf{x-y}|\qquad (\mathbf{x,y}\in R^k)
+\]
+
+It is important to observe that every subset Y of a metric space X is a metric space in its own right, with the same distance function.
+
+Thus every subset of a euclidean space is a metric space.
+
+\begin{defi}
+	By the segment (a,b) we mean the set of all real numbers x such that $ a<x<b $.
+	
+	By the segment [a,b] we mean the set of all real numbers x such that $ a<\le x\le b $.	
+	
+	Occasionally we shall also encounter "half-open intervals" [a,b) and (a,b];...
+	
+	If $ a_i<b_i $ for i=1,2,...,k, the set of all points $\mathbf{x}= (x_1,\cdots,x_k) $ in $ R^k $ whose coordinates satisfy the inequalities $ a_i\le x_i\le b_i (1\le i\le k)$ is called a k-cell.
+	
+	If $ \mathbf{x}\in R^k $ and r>0, the open (or closed) ball B with center at $ \mathbf{x} $ and radius r is defined to be the set of all $ \mathbf{y}\in R^k $ such that $ |\mathbf{y-x}|<r $(or $ |\mathbf{y-x}\le r| $)
+	
+	We call a set $ E\subset R^k $ convex if
+	\[
+	\lambda	\mathbf{x}+(1-\lambda)\mathbf{y}\in E
+	\]
+	whenever $ \mathbf{x}\in E,\mathbf{y}\in E $, and $ 0<\lambda<1 $.
+	
+\end{defi}
+
+\begin{defi}
+	Let X be a metric space. All points and sets mentioned below are understood to be elements and subsets of X.
+	
+	(a) A neighborhood of P is a set $ N_r(p) $ consisting of all q such that $ d(p,q)<r $, for some $ r>0 $. The number r is called the radius of $ N_r(p) $.
+	
+	(b) A point p is a limit point of the set E if every neighborhood of p contains a point $ q\neq p $ such that $ q\in E $.
+	
+	(c) If $ p\in E $ and p is not a limit point of E, then p is called an isolated point of E.
+	
+	(d) E is closed if every limit point of E is a point of E.
+	
+	(e) A point p is an interior point of E if there is a neighborhood N of p such that $ N\subset E $.
+	
+	(f) E is open if every point of E is an interior point of E.
+	
+	(g) The complement of E (denoted by $ E^c $) is the set of all points $ p\in X $ such that $ p\notin E $.
+	
+	(h) E is perfect if E is closed and every point of E is a limit point of E.
+	
+	(i) E is bounded if there is a real number M and a point $ q\in X $ such that d(p,q)<M for all $ p\in E $.
+	
+	(j) E is dense in X if every point of X is a limiti point of E, or a point of E(or both).
+	
+\end{defi}
+
+\begin{theo}
+	Every neighborhood is an open set.
+\end{theo}
+
+\begin{theo}
+	If p is a limit point of a set E, then every neighborhood of p contains infinitely many points of E.
+\end{theo}
+
+\begin{coro}
+	A finite point set has no limit points.
+\end{coro}
+
+\begin{theo}
+	Let {$ E_\alpha $} be a (finite or infinite) collection of sets $ E_\alpha $. Then
+	\[
+	(\bigcup_{\alpha} E_\alpha)^c=\bigcap_{\alpha}(E_\alpha^c)
+	\]
+\end{theo}
+
+\begin{theo}
+	A set E is open if and only if its complement is closed.
+\end{theo}
+
+\begin{coro}
+	A set E is cloed if and only if its complement is open.
+\end{coro}
+
+\begin{theo}
+	
+\end{theo}
+
+\end{document}

@@ -1,0 +1,442 @@
+\documentclass{article}
+\title{baby rudin Ch.2}
+\author{Dawei Wang}
+\date{\today}
+%\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+%\usepackage{theorem}
+\theoremstyle{definition}
+\newtheorem{defi}{Definition}
+\newtheorem{theo}{Theorem}
+\newtheorem{coro}{Corollary}
+\newtheorem*{cantor}{The Cantor set}
+\theoremstyle{remark}
+\newtheorem{Rem}{Remark}
+
+\begin{document}
+	\maketitle	
+
+FINITE, COUNTABLE, AND UNCOUNTABLE SETS
+	
+
+\begin{defi}
+	Consider two sets A and B, whose elements may be any objects whatsoever, and suppose that with each element x of A there is associated, in some manner, an element of B, which we denote by f(X). Then set A is called the domain of f(we also say f is defined on A), and elements f(X) are called the values of f. The set of all values of f is called the range of f.
+\end{defi}
+
+\begin{defi}
+	Let A and B be two sets and let f be a mapping of A into B. If $E\subset A$, 
+	f(E) is defined to be the set of all elements f(X), for $x\in E$. We all f(E) the image of E under f. In this notation, f(A) is the range of f. It is clear that $f(A)\subset B$. If $f(A)=B$, we say that f maps A onto B.
+	
+	If $E\subset B$, $f^{-1}(E)$ denotes the set of all $x\in A$ such that $f(x)\in E$. We call $f^{-1}(E)$ the inverse image of E under f. If $y\in B$, $f^-1(y)$ is the set of all $x\in A$ such that f(x)=y. If, for each $y\in B$, $f^-1(y)$ consists of at most one element of A, then f is said to be a 1-1 mapping of A into B. This may also be expressed as follows: f is a 1-1 mapping of A into B provided that $f(x_1)\ne f(x_2)$ whenever $x_1\ne x_2, x_1\in A, x_2 \in A$  
+\end{defi}
+
+\begin{defi}
+	If there exists a 1-1 mapping of A onto B, we say that A and B can be put in 1-1 correspondence, or that A and B have the same cardinal number or, briefly, that A and B are equivalent, and we write $A\sim B$. This relation clearly has the following properties:
+	
+	It is reflexive: $A\sim A$
+	
+	It is symmetric: If $A\sim B$, then $B\sim A$
+	
+	It is transitive: If $A\sim B$ and $B\sim C$, then $A\sim C$
+	
+	Any relation with these three properties is called an equivalence relation
+\end{defi}
+	
+\begin{defi}
+	For any positive integer n, let $J_n$ be the set whose elements are the integers 1,2,...,n; let J be the set consisting of all positive integers. For any set A, we say:	
+
+	(a) A is finite if $A\sim J_n$(the empty set is also considered to be finite).
+	
+	(b) A is infinite if A is not finite
+	
+	(c) A is countable if $A\sim J$.
+	
+	(d) A is uncountable if A is neither finite nor countable
+	
+	(e) A is at most countable if A is finite or countable
+	
+\end{defi}
+
+\begin{Rem}
+	A finite set cannot be equivalent to one of its proper subsets. That this is, however, possible for infinite sets. 
+\end{Rem}
+
+\begin{defi}
+	By a sequence, we mean a function f defined on the set J of all positive integers. If $f(n)=x_n$, for $n\in J$, it is customary denote the sequence f by the symbol ${x_n}$, or sometimes by $x_1,x_2,x_3,...$ The values of f, that is,  the elements $x_n$, are called the terms of the sequence. If A is a set and if $x_n\in A$ for all $n\in J$, then ${x_n}$ is said to be a sequence in A, or a sequence of elements of A.
+\end{defi}
+
+The terms $x_1, x_2, x_3,...$ of a sequence need not be distinct.
+
+Since ever countable set is the range of a 1-1 function defined on J, we may regard every countable set as the range of a sequence of distinct terms. Speaking more loosely, we may say that the elements of any countable set can be "arranged in a sequence."
+
+Some times it is more convenient to replace J in this definition by the set of all nonnegative integers, i.e., to start with 0 rather than with 1.
+
+
+\begin{theo}
+	Every infinite subset of a countable set A is countable.
+\end{theo}
+
+The theorem shows that, roughly speaking, countable sets represent the "smallest" infinity: No uncountable set can be a subset of a countable set.
+
+\begin{defi}
+	Let A and $\Omega$ be sets, and suppose that with each element $\alpha$ of A there is associated a subset of $\Omega$ which we denote by $E_\alpha$.
+	
+	The set whose elements are the sets $E_\alpha$ will be denoted by ${E_\alpha}$. Instead of speaking of sets of sets, we shall sometimes speak of a collection of sets, or a family of sets.
+	
+\end{defi}
+
+	The union of sets $E_\alpha$ is defined to be the set S such that $x\in S$ if and only if $x\in E_\alpha$ for at least one $\alpha\in A$. We use the notation.
+	
+	\begin{equation}
+		S=\bigcup_{\alpha\in A}E_\alpha
+	\end{equation}
+
+	If A consists of the integers 1,2,...,n, one usually writes
+	
+	\begin{equation}
+		S=\bigcup_{m=1}^nE_m
+	\end{equation}
+	
+	or
+	
+	\begin{equation}
+		S=E_1\cup E_2\cup ...\cup E_n.
+	\end{equation}
+	
+	If A is the set of all positive integers, the usual notation is 
+	
+	\begin{equation}
+		S=\bigcup_{m=1}^\infty E_m
+	\end{equation}
+
+	The intersection of the sets $E_\alpha$ is defined to be the set P such that $x\in P$ if and only if and only if $x\in E_\alpha$ for every $\alpha \in A.$ We use notation
+	
+	\begin{equation}
+		P=\bigcap_{\alpha\in A} E_\alpha
+	\end{equation}
+
+	or 
+	
+	\begin{equation}
+		P=\bigcap_{m=1}^n E_m=E_1\cap E_2\cap...\cap E_n
+	\end{equation}
+	
+	or
+	
+	\begin{equation}
+		P=\bigcap_{m=1}^\infty E_m
+	\end{equation}
+	
+	as for unions. If $A\cap B$ is not empty, we say that A and B intersect; otherwise they are disjoint.
+	
+	\begin{Rem}
+		Many properties of unions and intersections are quite similar to those of sums and products
+	\end{Rem}
+	
+	\begin{theo}
+		Let ${E_n}$, n=1,2,3,..., be a sequence of countable sets, and put 
+		
+		\begin{equation}
+			S=\bigcup_{n=1}^\infty E_n
+		\end{equation}
+		
+		Then S is countable.
+	\end{theo}
+	
+	\begin{coro}
+		Suppose A is at most countable, and, for every $\alpha\in A$, $B_\alpha$ is at most countable. Put
+		
+		\begin{equation}
+			T=\bigcup_{\alpha\in A}B_\alpha
+		\end{equation}
+		
+		Then T is at most countable.
+				
+	\end{coro}
+		For T is equivalent to a subset of (15).
+		
+	\begin{theo}
+		Let A be a countable set, and let $B_n$ be the set of all n-tuples $(a_1,...,a_n)$, where $a_k\in A(k=1,...,n)$, and the elements $a_1,...,a_n$ need not be distinct. Then $B_n$ is countable.
+	\end{theo}
+	
+	\begin{coro}
+	The set of all rational numbers is countable.	
+	\end{coro}
+	
+	In fact, even the set of all algebraic numbers is countable.
+	
+	\begin{theo}
+		Let A be the set of all sequences whose elements are the digits 0 and 1. This set A is uncountable.
+	\end{theo}
+
+	Theorem 4 implies that the set of all real numbers is uncountable.
+	
+	\newpage
+	
+	METRIC SPACE
+	
+	\begin{defi}
+		A set X, whose elements we shall call points, is said to be a metric space if with any two points p and q of X there is associated a real number d(p,q), called the distance from p to q, such that
+		
+		(a) d(p,q)$>$0 if $p\ne q$; d(p,q)=0;
+		
+		(b) d(p,q)=d(p,q);
+		
+		(c) d(p,q)$\le$ d(p,r)+d(r,q), for any $r\in X$.
+		
+		Any function with these three properties is called a distance function, or a metric.
+	\end{defi}
+	
+	The most important examples of metric spaces, from our standpoint, are the euclidean spaces $R^k$, especially $R^1$ and $R^2$; the distance in $R^k$ is defined by
+	
+	\begin{equation}
+		d(\mathtt{x},\mathtt{y})=|\mathtt{x}-\mathtt{y}|\quad (\mathtt{x},\mathtt{y}\in R^k)
+	\end{equation}
+	
+	It is important that every subset Y of a metric space X is a metric space in its own right, with the same distance function.
+	
+	Thus every subset of a euclidean space is a metric space.
+	
+	\begin{defi}
+		By the segment (a,b) we mean the set of all real numbers x such that $a<x<b$
+		
+		By the interval [a,b] we mean the set of all real numbers x such that $a\le x\le b$
+		
+		If $a_i<b_i$ for i=1,...,k, the set of all points $\mathtt{x}=(x_1,...,x_k)$ in $R^k$ whose coordinates satisfy the inequalities $a_i\le x_i\le b_i(1\le i\le k) is called a k-cell$.
+		
+		If $\mathtt{x}\in R^k$ and $r>0$, then open(or closed) ball B with center at $\mathtt{x}$ and radius r is defined to be the set of all $\mathtt{y}\in R^k$ such that $|\mathtt{y}-\mathtt{x}<r|$  (or$|\mathtt{y}-\mathtt{x}\le r|$ )
+		
+		We call a set $E\subset R^k$ convex if 
+		
+		\[
+		\lambda \mathtt{x} +(1-\lambda)\mathtt{y}\in E
+		\]
+		
+		whenever $\mathtt{x}\in E,\mathtt{y}\in E$, and $0<\lambda <1$.
+		
+	\end{defi}
+	
+	\begin{defi}
+	Let X be a metric space. All points and sets mentioned below are understood to be elements and subsets of X.
+	
+	(a) A neighborhood of p is a set $N_r(p)$ consisting of all q such that $d(p,q)<r$. The number r is called the radius of $N_r(P)$.
+	
+	(b) A point p is a limit point of the set E if every neighborhood of p contains a point $q\ne p$ such that $q\in E$.
+	
+	(c) If $p\in E$ and p is not a limit point of E, then p is called an isolated point of E.
+	
+	(d) E is closed if every limit point of E is a point of E.
+	
+	(e) A point p is an interior point of E if there is a neighborhood N of p such that $N\subset E$.
+	
+	(f) E is open if every point of E is an interior point of E.
+	
+	(g) The complement of E (denoted by $E^c$) is the set of all points $p\in \mathtt{x}$ such that $p\notin E$.
+	
+	(h) E is perfect if E is closed and if every point of E is a limit point of E.
+	
+	(i) E is bounded if there is a real number M and a point $q\in \mathtt{x}$ such that $d(p,q)<M$ for all $p\in E$.
+	
+ 	(j) E is dense in X if every point of X is a limit point of E, or a point of E(or both).
+ 	
+	\end{defi}
+	
+	Let us note that in $R^1$ neighborhoods are segments, whereas in $R^2$ neighborhoods are interiors of circles.
+	
+	
+	\begin{theo}
+		Every neighborhood is an open set.
+	\end{theo}
+	
+	\begin{theo}
+		If p is a limit point of a set E, then every neighborhood of p contains infinitely many points of E.
+	\end{theo}
+	
+	\begin{coro}
+		A finite point set has no limit points.
+	\end{coro}
+	
+	\begin{theo}
+		Let ${E_\alpha}$ be a (finite or infinite) collection of sets $E_\alpha$. Then 
+		
+		\begin{equation}
+			(\bigcup_\alpha E_\alpha)^c=\bigcap_\alpha(E_\alpha^c)
+		\end{equation}
+	\end{theo}
+	
+	\begin{theo}
+		A set E is open if and only if its complement is closed.
+	\end{theo}
+	
+	\begin{coro}
+		A set F is closed if and only if its complement is open
+	\end{coro}
+	
+	\begin{theo}
+		(a) For any collection ${G_a}$ of open sets, $\bigcup_\alpha G_\alpha$ is open.
+		
+		(b) For any collection ${F_\alpha}$ of closed sets, $\bigcap_\alpha G_\alpha$ is closed.
+	
+		(c) For any finite collection $G_1,...,G_n$ of open sets, $\bigcap_{i=1}^n G_i$ is open.
+		
+		(d) For any finite collection $F_1,...,F_n$ of closed sets, $\bigcup_{i=1}^n$ $F_i$ is closed.
+		
+	\end{theo}
+	
+	The intersection of an infinite collection of open sets need not be open. Similarly, the union of an infinite collection of closed sets need not be closed.
+	
+	\begin{defi}
+		If X is a metric space, if $E\subset X$, and if $E'$ denotes the set of all limit points of E in X, then the closure of E is the set $\overline{E}=E\cup E'$.
+	\end{defi}
+	
+	\begin{theo}
+		If X is a metric space and $E\subset X$, then
+		
+		(a) $\overline{E}$ is closed,
+		
+		(b) $E=\overline{E}$ if and only if E is closed,
+		
+		(c) $\overline{E}\subset F$ for every closed set $F\subset X$ such that $E\subset F$.
+		
+	\end{theo}
+	
+	By (a) and (c), $\overline{E}$ is the smallest closed subset of X that contains E.
+	
+	\begin{theo}
+		Let E be a nonempty set of real numbers which is bounded above. Let y= sup E. Then $y\in\overline{E}.$ Hence $y\in E$ if E is closed. 
+	\end{theo}
+	
+	\begin{Rem}
+		Suppose $E\subset Y\subset X$, where X is a metric space. To say that E is an open subset of X means that to each point $p\in E$ there is associated with a positive number r such that the conditions $d(p,q)<r, q\in X$ imply that $q\in E$. But we have already observed that Y is also a metric space, so that our definitions may equally well be made within Y. To be quite explicit, let us say that E is open relative to Y if to each $P\in E$ there is associated an $r>0$ such that $q\in E$ whenever $d(p,q)<r$ and $q\in Y$. A set may be open relative to Y without being an open subset of X.
+		
+	\end{Rem}
+	
+	\begin{theo}
+		Suppose $Y\subset X$. A subset E of Y is open relative to Y if and only if $E=Y\cap G$ for some open subset G of X.
+	\end{theo}
+	
+	\newpage
+	
+	COMPACT SETS
+	
+	\begin{defi}
+		By an open cover of a set E in a metric space X we mean a collection ${G_\alpha}$ of X such that $E\subset \bigcup_\alpha G_\alpha$
+	\end{defi}
+	
+	\begin{defi}
+		A subset K of a metric space X is said to be compact if every open cover of K contains a finite subcover.
+		
+		More explicitly, the requirement is that if ${G_\alpha}$ is an open cover of K, then there are finitely many indices $\alpha_1,\cdots,\alpha_n$ such that
+		
+		\[
+		K\subset G_{\alpha_1}\cup\cdots G_{\alpha_n}
+		\]
+		
+	\end{defi}
+	
+	It is clear that every finite set is compact.
+	
+	The property of being open depends on the space in which E is embedded. The same is true of the property of being closed.
+	
+	\begin{theo}
+		Suppose $K\subset Y\subset X$. Then K is compact relative to X if and only if K is compact relative to Y. 
+	\end{theo}
+	
+	By virtue of this theorem we are able, in many situations, to regard compact sets as metric spaces in their own right, without paying any attention to any embedding space. In particular, although it makes little sense to talk of open spaces, or of closed spaces(every metric space X is an open subset of itself, and is a closed subset of itself), it does make sense to talk of compact metric spaces.
+	
+	\begin{theo}
+		Compact subsets of metric spaces are closed.
+	\end{theo}  
+		
+	\begin{theo}
+		Closed subsets of compact sets are compact
+	\end{theo}
+	
+	\begin{coro}
+		If F is closed and K is compact, then $F\cap K$ is compact.
+	\end{coro}	
+	
+	\begin{theo}
+		If $\{K_\alpha\}$ is a collection of compact subsets of a metric space X such that the intersection of every finite subcollection of $\{K_\alpha\}$ is nonempty, then $\cap K_\alpha$ is nonempty.
+	\end{theo}
+	
+	\begin{coro}
+		If $\{K_n\}$ is a sequence of nonempty compact sets such that $K_n\supset K_n+1$(n=1,2,3,$\cdots$), then $\cap^\infty_1 K_n$ is not empty.
+	\end{coro}
+	
+	\begin{theo}
+		If E is an infinite subset of a compact set K, then E has a limit point in K.
+	\end{theo}
+	
+	\begin{theo}
+		If $\{I_n\}$ is a sequence of intervals in $R^1$, such that $I_n\supset I_{n+1}$(n=1,2,3,...), then $\cap^\infty_1 I_n$ is not empty.
+	\end{theo}
+	
+	\begin{theo}
+		Let k be a positive integer. If $\{I_n\}$ is a sequence of k-cells such that $I_n\supset I_{n+1}$(n=1,2,3,...), then $\cap^\infty_1 I_n$ is not empty.
+	\end{theo}
+	
+	\begin{theo}
+		Every k-cell is compact.
+	\end{theo}
+	
+	
+	\begin{theo}
+		If a set E in $R^k$ has one of the following three properties, then it has the other two:
+		
+		(a) E is closed and bounded.
+		
+		(b) E is compact
+		
+		(c) Every infinite subset of E has a limit point in E 
+	\end{theo}
+	
+	\begin{theo}
+		Every bounded infinite subset of $R^k$ has a limit point in $R^k$.
+	\end{theo}
+	
+	\newpage
+	
+	PERFECT SETS
+	
+	\begin{theo}
+		Let P be a nonempty perfect set in $R^k$. Then P is uncountable.
+	\end{theo}
+	
+	\begin{coro}
+		Every interval [a,b] $(a<b)$ is uncountable. In particular, the set of all real numbers is uncountable.
+	\end{coro}
+
+	\begin{cantor}
+		The Cantor set shows that there exist perfect sets in $R^1$ which contain no segment.
+	\end{cantor}
+	
+	One of the most interesting properties of the Cantor set is that it provides us with an example of an uncountable set of measure zero.
+	
+	\newpage
+	
+	CONNECTED SETS
+	
+	\begin{defi}
+		Two subsets A and B of a metric space X are said to be separated if both $A\cap \overline{B}$ and $\overline{A}\cap B$ are empty, i.e., if no point of A lies in the closure of B and no point of B lies in the closure of A.
+		
+		A set $E\subset X$ is said to be connected if E is not a union of two nonempty separated sets.
+	\end{defi}
+		
+	\begin{Rem}
+		Separated sets are of course disjoint, but disjoint sets need not be separated.
+	\end{Rem}
+	
+	\begin{theo}
+		A subset E of the real line $R^1$ is connected if and only if it has the following property: If $x\in E, y\in E$, and $x<y<z$, then $z\in E$. 
+	\end{theo}
+	
+	
+	
+	
+	
+	
+	
+\end{document}

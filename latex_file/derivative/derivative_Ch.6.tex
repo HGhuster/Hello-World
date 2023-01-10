@@ -1,0 +1,163 @@
+\documentclass{article}
+\title{Interest Rate Futures}
+\author{Dawei Wang}
+\date{\today}
+%\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+	\maketitle
+\section{Day count and quotation conventions}
+\subsection{Day counts}
+The day count defines the way in which interest accrues over time.
+
+The day count convention is usually expressed as X/Y. X defines the way in which the number of days between the two dates is calculatedm and Y defines the way in which the total number of days in the reference period is measured. The interest earned between the two dates is
+\[
+\frac{X}{Y}\times Interest\enspace earned\enspace in\enspace reference\enspace period 
+\]
+Three day count conventions that are commonly used in the United States are:
+
+1. Acutal/actual(in period)
+
+2. 30/360
+
+3. Actual/360
+
+The actual/actual day count is used for Treasury bonds in the United States. This means that the interest earned between two dates is based on the ratio of the actual days elapsed to the actual number of days in the period between coupon payments. 
+
+The 30/360 day count is used for corporate and municipal bonds in the United States. This means that we assume 30 days per month and 360 days per year when carrying out calculations. 
+
+The actual/360 day count is used for money market in instruments in the United States. This indicates that the reference period is 360 days.
+
+\subsection{Price quotations of US Treasury bills}
+The prices of money market instruments are sometimes quoted using a discount rate. This interest earned as a percentage of the final face value rather than as a percentage of the initial price paid for the instrument.
+In general, the relationship between the cash price and quoted price of a Treasury bill in the United States is
+\[
+P=\frac{360}{n}(100-Y)
+\]
+where P is the quoted price, Y is the cash price, and n is the remaining life of the Treasury bill in calendar days.
+
+\subsection{Price quotations of US Treasury bonds}
+Treasury bond prices in the United States are quoted in dollars and thirty-seconds of a dollar. The quoted price is for a bond with a face value of \$100.
+
+The quoted price, which traders refer to as the clean price, is not the same as the cash price paid by the purchaser of the bond, which is referred to by traders as the dirty price. In general,
+\[
+Cash\enspace price=Quoted\enspace price+Accrued\enspace interest\enspace since\enspace last\enspace coupon\enspace date
+\]
+
+\section{Treasury bond futures}
+In the Treasury bond futures contract, any goverment bond that has more than 15 years to maturity on the first day of the delivery month and is not callable within 15 years from that day can be delivered.
+
+\subsection{Quotes}
+Treasury bond and Treasury note futures contracts are quoted in dollars and thirty-seconds of a dollar per \$100 face value.
+
+\subsection{Conversion factors}
+When a particular bond is delivered, a parameter known as its conversion factor defines the price received for the bond by the party with the short position. The applicable quoted price is the product of the conversion factor and the most recent settlement price for the futures contract. Taking accrued interest into account, the cash received for each \$100 face value of the bond  delivered is
+\[
+(Most\enspace recent\enspace settlement\enspace price\times Conversion\enspace factor)+Accrued\enspace interest
+\]
+
+Each contract is for the delivery of \$100,000 face value of bonds.
+
+The conversion factor for a bond is set equal to the quoted price the bond would have per dollar of principal on the first day of the delivery month.
+
+\subsection{Cheapest-to-Deliver bond}
+At any given time during the delivery month, there are many bonds that can be delivered in the Treasury bond futures contract. The party with the short position can choose which of the available bonds is "cheapest" to deliver. Because the party with the short position receives
+\[
+(Most\enspace recent\enspace settlement\enspace price\times Conversion\enspace factor)+Accrued\enspace interest
+\]
+and the cost of purchasing a bond is
+\[
+Quoted\enspace bond\enspace price+Accrued\enspace interest
+\]
+the cheapest-to-deliver bond is the one for which
+\[
+Quoted\enspace bond\enspace price-(Most\enspace recent\enspace settlement\enspace price \times Conversion\enspace factor)
+\]
+is least.
+
+\subsection{Determining the futures price}
+An exact theorical futures price for the Treasury bond contract is difficult to determin because the short party's options concerned with the timing of delivery and choice of the bond that is delivered cannot easily be valued. However, if we assume that both the cheapest-to-deliver bond and the delivery date are known, the Treasury bond futures contract is a futures contract on a traded security that provides the holder with known income. Equation (5.2) then shows that the futures price, $ F_0 $, is related to the spot price, $ S_0 $,by
+\begin{equation}
+	F_0=(S_0-I)e^{rT}
+\end{equation}
+where I is the present value of the coupons during the life of the futures contract, T is the time until the futures contract matures, and r is the risk-free interest rate applicable to a time period of length T.
+
+\section{Eurodollar futures}
+A Eurodollar is a dollar deposited in a U.S. or foreign bank outside the United States. The Eurodollar interest rate is the rate of interest earned on Eurodollars deposited by on bank with another bank.
+
+Eurodollar futures contracts have maturities in March, June, September, and December for up to 10 years into the future. Short-maturity contracts trade for months other than March, June, September, and December.
+
+The futures quote is 100 minus the futures interest rate, an investor who is long gains when interest rates fall and one who is short gains when interest rates rise.
+
+\subsection{Forward vs. futures interest rates}
+The Eurodollar futures contract is similar to a forward rate agreement (FRA) in that it locks in an interest rate for a future period. For short maturities (up to a year or so), the Eurodollar futures interest rate can be assumed to be the same as the corresponding  forward interest rate. For long-dated contracts, differences between the contract become important.
+
+The timing of the cash flows from the hedge does not line up exactly with the timing of the interest cash flows. This is because the futures contract is settled daily. Also, the final settlement is on September 19, 2012, whereas interest payments on the investment are received three months after September 19, 2012.
+
+The Eurodollar futures contract is settled daily. The final settlement is at time $ T_1 $ and reflects the realized interest rate for the period between times $ T_1 $ and $ T_2 $. By contrast, the FRA is not settled daily and the final settlement reflecting the realized interest rate between times $ T_1 $ and $ T_2 $ is made at $ T_2 $.
+
+There are therefore two differences between a Eurodollar futures contract and an FRA. These are:
+
+1. The difference between a Eurodollar futures contract and a similar contract where there is no daily settlement.
+
+2. The difference between a forward contract where there is settlement at time $ T_1 $ and a forward contract where there is settlement at time $ T_2 $.
+
+Both decrease the forward rate relative to the futures rate, but for long-dated contracts the reduction caused by the second difference is much smaller than that caused by the first.
+
+\subsection{Convexity adjustment}
+Analysts make what is known as a convexity adjustment to account for the total difference between the two rates.
+\begin{equation}
+	Forward\enspace rate= Futures\enspace rate- \frac{1}{2}\sigma^2T_1T_2
+\end{equation}
+where, as above, $ T_1 $ is the time to maturity of the futures contrac and $ T_2 $ is the time to the maturity of the rate underlying the futures contract. The variable $ \sigma $ is the standard deviation of the change in the short-term interest rate in 1 years. Both rates are expressed with continuous compounding.
+
+\subsection{Using Eurodollar futures to extend the LIBOR zero curve}
+The LIBOR zero curve out to 1 year is determined by the 1-month, 3-month, 6-month, and 12-month LIBOR rates. Once the convexity adjustment just discribed has been made, Eurodollar futures are often used to extend the zero curve. Suppose that the ith Eruodollar futures contract matures at time $ T_i(i=1,2...) $. It is usually assumed that the forward interest rate calculated from the ith futures contract applies to the period $ T_i $ to $ T_{i+1} $. This enables a bootstrap procedure to be used to determine zero rates. Suppose that $ F_i $ is the forward rate calculated from the ith Eurodollar futures contract and $ R_i $ is the zero rate for a maturity $ T_i $.
+\[
+F_i=\frac{R_{i+1}T_{i+1}-R_iT_i}{T_{i+1}-T_i}
+\]
+so that
+\begin{equation}
+	R_{i+1}=\frac{F_i(T_{i+1}-T_i)+R_iT_i}{T_{i+1}}
+\end{equation}
+
+\section{Duration-based hedging stategies using futures}
+Consider the situation where a position in an asset that is interest rate dependent, such as a bond portofolio or a money market security, is being hedged using an interest rate futures contract. Define:
+
+$ V_F $: Contract price for one interest rate futures contract
+
+$ D_F $: Duration of the asset underlying the futures contract at the maturity of the futures contract
+
+P: Forward value of the portfolio being hedged at the maturity of the hedge (in practice, this is usually assumed to be the same as the value of the portfolio today)
+
+$ D_P $: Duration of the portfolio at the maturity of the hedge
+
+If we assume that the change in the yield, $ \Delta y $ is the same for all maturities, which means that only parallel shift in the yield curve can occur, it is approximately true that
+\[
+	\Delta P=-PD_P\Delta y
+\]
+It is also approximately true that
+\[
+	\Delta V_F=-V_FD_F\Delta y
+\]
+The number of contracts required to hedge against an uncertain $ \Delta y $, therefore, is
+\begin{equation}
+	N^*=\frac{PD_P}{V_FD_F}
+\end{equation}
+This is the duration-based hedge ratio. It is also called the price sensitivity hedge ratio.
+
+The hedger tries to choose the futures contract so that the duration of the underlying asset is as close as possible to the duration of the asset being hedged. Eurodollar futures tend to be used for exposures to short-term interest rates, whereas Treasury bond and Treasury note futures contracts are used for exposures to long-term rates.
+
+\section{Hedging portfolios of assets and liabilities}
+Financial institutions sometimes attempt to hedge themselves against interest rate risk by ensuring that the average duration of their assets equals the average duration of their liabilities. This strategy is known as duration matching or portfolio immunization. When implemented, it ensures that a small parallel shift in interest rates will have little effect on the value of the portfolio of assets and liabilities.
+
+Duration matching does not immunize a portfolio against nonparalel shifts in the zero curve. In practice, short-term rates are usually more vilatile than, and are not perfectly correlated with, long-term rates. Sometimes it even happens that short- and long-term rates move in opposite directions to each other.
+
+
+
+
+
+
+
+\end{document}

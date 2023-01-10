@@ -1,0 +1,122 @@
+\documentclass{article}
+\title{Trading Strategies Involving Options}
+\author{Dawei Wang}
+\date{\today}
+%\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+	\maketitle
+\section{PRINCIPAL-PROTCTED NOTES}
+Options are often used to create what are termed principal-protected notes for retail market. These are products that appeal to conservative investors.
+
+A zero-coupon bond plus a at-the-money European call option on a stock portfolio.
+
+The attraction of a principal-protected note is that an investor is able to take a risky position without risking any principal. The worst that can happen is that the investor loses the chance to earn interest, or other income such as dividends, on the initial investment for the life of the note.
+
+A bank will always bulid in a profit for itself when it creates a principal-portected note. In addition, investors are taking the risk that the bank will not be in a position to make the payoff on the principal-protected note at maturity. In some situations, therefore, an investor will be better off if he or she buys the underlying option in the usual way and invest the remaining principal in a risk-free investment. However, the investor is likely to face wilder bid-offer spreads on the option than the bank and is likely to earn lower interest rates than the bank. It is possible that the bank can add value for the investor while making a profit itself.
+
+There are a number of ways the bank can create a product in which the option has a lower price. For example, the strike price of the option can be increased so that the value of the portfolio has to rise by, say, 15\% before the investor could make a gain; the investor's return could be capped; the return of the investor could depend on the average price of the asset instead of the final price; a knockout barrier could be specified.
+
+\section{TRADING AN OPTION AND THE UNDERLYING ASSET}
+For convenience, we will assume that the asset underlying the options considered in the rest of the chapter is a stock. We will also follow the usual practice of calculating the profit from a trading strategy as the final payoff minus the initial cost without discounting.
+
+A long position in a stock plus a short position in a European call option: writing a covered call.
+
+The reverse of writing a covered call.
+
+Long put + long stock: protective put.
+
+The reverse of a protective put.
+
+\section{SPREADS}
+A spread trading strategy involves taking a position in two or more options of the same type.
+\subsection{Bull Spreads}
+This can be created by buying a European call option on a stock with a certain strike price and selling a European call option on the same stock with a higher strike price. Both options have the same expiration date. Because a call price always decreases as the strike price increases, the value of the option sold is always less than the value of the option bought. A bull spread, when created from calls, therefore requires an initial investment.
+
+If the stock price does well and is greater than the higher strike price , the payoff is the difference between the two strike prices, or $ K_2-K_1 $. If the stock price on the expiration date lies between the two strike prices, the payoff is $ S_T-K_1 $. If the stock price on the expiration date is below the lower strike price, the payoff is zero. The profit is calculated by subtracting the initial investment from the payoff.
+
+Three types of bull spreads can be distinguished:
+
+1. Both calls are initially out of money.
+
+2. One call is initially in the money; the other call is initially out of the money.
+
+3.Both call are initially in the money.
+
+The most aggressive bull spreads are those of type 1. They cost very little to set up and have a small probability of giving a relatively high payoff. As we move from type 1 to type 2 and from type 2 to type 3, the spreads become more conservative.
+
+Bull spreads can also be created by buying a European put with a low strike price and selling a European put with a high strike price. Unlike bull spreads created from calls, those created from puts involve a positive up-front cash flow to the investor and a payoff that is either negative or zero.
+
+\subsection{Bear Spreads}
+An investor who enters into a bull spread is hoping that the stock price will increase. By contrast, an investor who enters into a bear spread is hoping that the stock price will decline.
+
+Bear spreads can be created by buying a European put with one strike price and selling a European put with another strike price. The strike price of the option purchased is greater than the strike price of the option sold. A bear spread created from puts involves an initial cash outflow because the price of the put sold is less than the price of the put purchased.
+
+Assume that the strike prices are $ K_1 $ and $ K_2 $. If the stock price is greater than $ K_2 $, the payoff is zero. If the stock price is less than $ K_1 $, the payoff is $ K_2-K_1 $. If the price is between  $ K_1 $ and $ K_2 $, the payoff is $ K_2-S_T $. The profit is calculated by subtracting the initial cost from the payoff.
+
+Bear spreads can be created using calls intead of puts. The investor buys a call with a higher strike price and sells a call with a low strike price. Bear spreads created with calls involve an initial cash inflow.
+
+\subsection{Box Spreads}
+A box spread is a combination of a bull call spread with strike prices $ K_1 $ and $ K_2 $ and a bear put spread with the same two strike prices. The payoff from a box spread is always $ K_2-K_1 $. The value of a box spread is therefore always the present value of this payoff or $ (K_2-K_1)e^{-rT} $.
+
+It is important to realize that a box-spread arbitrage only works with European options.
+
+\subsection{Butterfly Spreads}
+A butterfly spread involves positions in options with three different strike prices. It can be created by buying a European call option with a relatively low strike price $ K_1 $, buying a European call option with a relatively high strike price $ K_3 $, and selling two European call options with a strike price $ K_2 $ that is halfway between $ K_1 $ and $ K_3 $. Generally, $ K_2 $ is close to the current stock price. A butterfly spreads leads to a profit if the stock price stays close to $ K_2 $, but gives rise to a small loss if there is a significant stock price in either direction. 
+
+Butterfly spreads can be created uing put options. The investor buys two European puts, one with a low strike price and one with a high strike price, and sells two European puts with an intermediate strike price.
+
+A butterfly spread can be sold or shorted by following the reverse strategy. Options are sold with strike prices of $ K_1 $ and $ K_3 $, and two options with the middle strike price $ K_2 $ are purchased. This strategy produce a modest profit if there is a significant movement in the stock price.
+
+\subsection{Calendar Spreads}
+We now move on to calendar spreads in which the options have the same strike price and different expiration dates.
+
+A calendar spread can be created by selling a European call option with a certain strike price and buying a longer-maturity European call option with the same strike price. The longer the maturity of an option, the more expensive it usually is. A calendar spread therefore usually requires an initial investment. The investor makes a profit if the stock price at the expiration of the short-maturity option is close to the strike price of the short-maturity option. However, a loss is incurred when the stock price is significantly above or significantly below this strike price.
+
+If the stock price is very low when the short-maturity option expires. The short-maturity option is worthless and the value of long-maturity option is close to zero. The investor therefore incurs a loss that is close to the cost of setting up the spread initially. Consider next what happens if the stock price, $ S_T $, is very high when the short-maturity option expires. The short-maturity option costs the investor $ S_T-K $, and the long-maturity option is worth close to $ S_T-K $, where K is the strike price of the options. Again, the investor makes a net loss that is close to the cost of setting up the spread initially. If $ S_T $ is close to K, the short-maturity option costs the investor either a small amount or nothing at all. However, the long-maturity option is still quite valuable. In this case a significant net profit is made.
+
+Neutral calendar spread: a strike price close to the current stock price is chosen.
+
+Bullish calendar spread: a higher strike price is chosen.
+
+Bearish calendar spread: a lower strike price is chosen.
+
+Calendar spreads can be created with put options as well as options. The investor buys a long-maturity put option and sells a short-maturity put option. The profit pattern is similar to that obtained from using calls.
+
+A reverse calendar spread is the opposite to above. The investor buys a short-maturity option and sells a long-maturity option. The profit pattern is also reverse.
+
+\subsection{Diagonal Spreads}
+Bull, bear, and calendar spreads can all be created from a long position in one call and a short position in another call. In the case of bull and bear spreads, the calls have different strike prices and the same expiration date. In the case of calendar spreads, the calls have the same strike price and different expiration dates.
+
+In a diagonal spread both the expiration date and the strike price of the calls are different. This increase the range of profit patterns that are possible.
+
+\section{COMBINATIONS}
+A combination is an option trading strategy that involves taking a position in both calls and puts on the same stock.
+\subsection{Straddle}
+A straddle involves buying a European call and put with the same strike price and expiration date.
+
+If the stock price is close to this strike price at expiration of the options, the straddle leads to a loss. However, if there is a sufficiently large move in either direction, a significant profit will result.
+
+A straddle is appropriate when an investor is expecting a large move in a stock price but does not know in which direction the move will be.
+
+An investor should carefully consider whether the jump that he or she anticipates is already reflected in option prices before putting on a straddle trade.
+
+The above straddle is sometimes referred to as a bottom straddle or straddle purchase. A top straddle or straddle write is the reverse position. It is created by selling a call and a put with the same exercise price and expiration date. It is a highly risky strategy. If the stock price on the expiration date is close to the strike price, a significant profit results. However, the loss arising from a large move is unlimited.
+
+\subsection{Strip and Straps}
+A Strip consists of a long position in one European call and two puts with the same strike price and expiration date. A strap consists of a long position in two European calls and one European put withe the same strike price and expiration date. In a strip the investor is betting that there will be a big stock price move and considers a decrease in the stock price to be more likely than an increase. In a strap the investor is also betting that there will be a big stock price move. However, in this case, an increase in the stock price is considered to be more likely than a decrease.	
+
+\subsection{Strangles}
+In a strangle, sometimes called a bottom vertical combination, an investor buys a European put and a European call with the same expiration date and different strike price. The call strike price , $ K_2 $ is higher than the put strike price, $ K_1 $.
+
+A strangle is a similar strategy to a straddle. The investor is betting that there will be a large price move, but is uncertain whether it will be an increase or a decrease. The stock price has to move farther in a stangle than in a straddle for the investor to make a profit. However, the downside risk if the stock price ends up at a central value is less with a stangle.
+
+The profit pattern obtained with a stangle depends on how close together the strike prices are. The farther they are apart, the less the downside risk and the farther the stock price has to move for a profit to be realized.
+
+The sale of a stangle is sometimes referred to as a top vertical combination. It can be appropriate for an investor who feels that large stock price moves are unlikely. However, as with sale of a straddle, it is a risky strategy involving unlimited potential loss to the investor.
+
+\section{OTHER PAYOFFS}
+
+
+\end{document}
